@@ -1,0 +1,305 @@
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.otf');
+}
+
+
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat/Montserrat-Regular.otf');
+}
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 62.5%;
+    background-color: #f0f0f0;
+}
+
+.container{
+    padding: 3rem;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+}
+
+.Lead-Heading{
+    font-size: 1.8rem;
+    font-family: 'Montserrat-SemiBold';
+}
+
+main{
+    padding: 8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    flex-basis: 40%;
+}
+
+.Verification-form{
+    flex-basis: 60%;
+    margin-left: 4rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* background-color: red; */
+}
+
+
+
+.form-heading{
+    font-family: 'Montserrat-SemiBold';
+    color: #1B1F3B;
+    font-size: 1.8rem;
+    margin-bottom: 4.5rem;
+    width: 100%;
+    /* letter-spacing: 1.41px; */
+
+}
+
+.form-body{
+    width: 75%;
+}
+
+
+.Lead-text{
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Regular';
+    color: #1B1F3B;
+    margin-bottom: 0.9rem;
+}
+
+.Verification-input{
+    width: 100%;
+    padding: 0.8rem 0.7rem;
+    border: 1px solid #9B9B9B;
+    border-radius: 3px;
+    outline: none  !important;
+    font-size: 1.1rem;
+    color: #1B1F3B;
+    margin-bottom: 5rem;
+    font-family: 'Montserrat-Regular';
+}
+
+.Verification-submit{
+    width: 102%;
+    color: #fff;
+    padding: 1rem;
+    background-color: #502274;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Montserrat-SemiBold';
+    margin-bottom: 1.2rem;
+}
+
+.Verification-failed{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat-Regular';
+    color: #1B1F3B;
+
+}
+
+.call a{
+    text-decoration: none;
+    color: #6C63FF;
+}
+
+.footer-paragraph{
+    margin-top: 15rem;
+    width: 80%;
+    text-align: center;
+    /* background-color: pink; */
+    font-size: 1.1rem;
+    font-family: 'Montserrat-Regular';
+    color: #1B1F3B;
+    letter-spacing: 1.6px;
+}
+
+
+
+
+@media(max-width: 1200px){
+    .container{
+        padding: 2rem;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    main{
+        padding: 5rem 1rem;
+    }
+
+    .Lead-text{
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .Verification-form{
+        flex-basis: 70%;
+        
+    }
+
+    img{
+        /* flex-basis: 20%; */
+        width: 30rem;
+    }
+
+    .form-body{
+        width: 100%;
+    }
+
+    .footer-paragraph{
+        margin-top: 7rem;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1000px){
+    img{
+        width: 25rem;
+    }
+
+    .Verification-input{
+        padding: 0.7rem 0.6rem;
+    }
+
+    .Verification-submit{
+        padding: 0.8rem;
+    }
+    
+    .form-heading{
+        font-size: 1.4rem;
+    }
+
+    .Lead-text{
+        font-size: 0.9rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .Verification-failed{
+        font-size: 0.8rem;
+    }
+
+    .footer-paragraph{
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
+@media(max-width: 800px){
+    img{
+        display: none;
+    }
+
+    .form-heading{
+        font-size: 1.4rem;
+    }
+
+    .Lead-text{
+        font-size: 0.9rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .Verification-failed{
+        font-size: 0.8rem;
+    }
+
+    .Verification-submit{
+        font-size: 1.2rem;
+    }
+
+    main{
+        justify-content: center;
+    }
+
+    .Verification-form{
+        margin: 0;
+        flex-basis: 90%;
+    }
+
+    .Verification-input{
+        padding: 0.7rem 0.6rem;
+    }
+
+    .Verification-submit{
+        padding: 0.8rem;
+    }
+
+    .footer-paragraph{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 500px){
+    /* .logo{
+        left: 30px;
+    } */
+
+    .container{
+        padding: 1rem;    
+    }
+
+    .Verification-form{
+        flex-basis: 100%;
+    }
+
+    .footer-paragraph{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        /* left: 30px; */
+        padding: 1rem;
+    }
+
+    .form-heading{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .Verification-input{
+        margin-bottom: 4rem;
+    }
+
+    main{
+        padding: 0;
+    }
+
+    .form-heading{
+        font-size: 1.2rem;
+        /* padding-bottom: 1rem */
+    }
+}
+
+
+@media(max-height: 575px){
+    .container{
+        overflow: auto;
+    }
+}
