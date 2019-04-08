@@ -235,6 +235,12 @@ button{
     border-bottom: 1px solid #6C63FF
 }
 
+@media(max-width: 950px){
+    .signup input.half{
+        width: 100%;
+    }
+}
+
 @media(max-width: 800px){
     .woman{
         display: none;
@@ -243,6 +249,9 @@ button{
         width: 80%;
         padding-left: 0;
         margin: auto;
+    }
+    .signup input.half{
+        width: 49%;
     }
 }
 
