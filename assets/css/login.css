@@ -73,6 +73,22 @@ button{
     box-sizing: border-box;
 }
 
+.password-div{
+    position: relative;
+}
+
+.password-div button{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    height: 26px;
+    margin-top: 2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
 .login-social{
     height: 20px;
     display: flex;
