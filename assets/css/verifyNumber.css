@@ -12,7 +12,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 62.5%;
 }
 
 *,
@@ -29,7 +29,7 @@ body{
 }
 
 .container{
-    padding: 1rem;
+    padding: 2rem;
     height: 100vh;
     overflow-y: hidden;
 }
@@ -45,7 +45,7 @@ header{
 }
 
 main{
-    padding: 6rem 2rem;
+    padding: 7rem 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -69,7 +69,7 @@ img{
     font-family: 'Montserrat-SemiBold';
     color: #1B1F3B;
     font-size: 1.8rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 8rem;
     width: 100%;
     /* letter-spacing: 1.41px; */
 
@@ -95,12 +95,12 @@ img{
     outline: none  !important;
     font-size: 1.1rem;
     color: #1B1F3B;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     font-family: 'Montserrat-Regular';
 }
 
 .Verification-submit{
-    width: 102%;
+    width: 100%;
     color: #fff;
     padding: 1rem;
     background-color: #502274;
@@ -124,8 +124,9 @@ img{
     text-decoration: none;
     color: #6C63FF;
 }
-                                                                                                                                                   .footer-paragraph{
-    margin-top: 15rem;
+
+.footer-paragraph{
+    margin-top: 13rem;
     width: 80%;
     text-align: center;
     /* background-color: pink; */
@@ -219,11 +220,11 @@ a.hoverme:hover{
     }
 
     main{
-        padding: 5rem 1rem;
+        padding: 6rem 1rem;
     }
 
     .Lead-text{
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         margin-bottom: 2rem;
     }
 
@@ -242,8 +243,12 @@ a.hoverme:hover{
     }
 
     .footer-paragraph{
-        margin-top: 7rem;
+        margin-top: 20rem;
         width: 100%;
+    }
+
+    .Verification-failed{
+        font-size: 1.2rem;
     }
 }
 
@@ -262,20 +267,20 @@ a.hoverme:hover{
     }
     
     .form-heading{
-        font-size: 1.4rem;
+        font-size: 1.9rem;
     }
 
     .Lead-text{
-        font-size: 0.9rem;
+        font-size: 1.4rem;
         margin-bottom: 1.3rem;
     }
 
     .Verification-failed{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .footer-paragraph{
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
 
@@ -288,16 +293,16 @@ a.hoverme:hover{
     }
 
     .form-heading{
-        font-size: 1.4rem;
+        font-size: 1.9rem;
     }
 
     .Lead-text{
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         margin-bottom: 1.3rem;
     }
 
     .Verification-failed{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .Verification-submit{
@@ -305,7 +310,7 @@ a.hoverme:hover{
     }
 
     main{
-        margin-top: 4rem;
+        margin-top: 5rem;
         justify-content: center;
     }
 
@@ -319,40 +324,23 @@ a.hoverme:hover{
     }
 
     .Verification-submit{
-        padding: 0.8rem;
+        padding: 1rem;
     }
 
     .footer-paragraph{
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 
     img.success-image{
-        /* position: absolute;
-        height: 70%;
-        width: 80%;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 5;
-        visibility: hidden; */
-        /* position: fixed; */
-        /* height: 30%; */
         width: 90%;
-        /* height: 50%; */
         display: block;
-        /* visibility: visible; */
         left: 50%;
-        top: 30%;
-        /* transform: translate(-50%,  ) */
+        top: 50%;
     }
     
 }
 
 @media(max-width: 500px){
-    /* .logo{
-        left: 30px;
-    } */
-
     .container{
         padding: 1rem;    
     }
@@ -387,8 +375,17 @@ a.hoverme:hover{
     }
 
     .form-heading{
-        font-size: 1.2rem;
+        font-size: 1.9rem;
+        margin-bottom: 4rem;
         /* padding-bottom: 1rem */
+    }
+    .Lead-text{
+        margin-bottom: 2rem;
+    }
+
+    .footer-paragraph{
+        font-size: 1.1rem;
+        margin-top: 15rem;
     }
 }
 
