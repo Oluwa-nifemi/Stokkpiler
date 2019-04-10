@@ -123,20 +123,84 @@ img{
     text-decoration: none;
     color: #6C63FF;
 }
-
-.footer-paragraph{
+                                                                                                                                                   .footer-paragraph{
     margin-top: 15rem;
     width: 80%;
     text-align: center;
     /* background-color: pink; */
     font-size: 1.1rem;
-    font-family: 'Montserrat-Regular';
-    color: #1B1F3B;
+    font-family: 'Montserrat-Regular'; 
     letter-spacing: 1.6px;
 }
 
+img.success-image{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #9B9B9B;
+    /* opacity: 0.5; */
+    z-index: 2;
+    visibility: hidden;
+}
 
 
+/* Animation Classes and animations */
+.backgroundBlend{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.show-success{
+    animation-name: slideDown;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes fadeIn{
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    to{
+        visibility: visible;
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideDown{
+    from {
+        visibility: hidden;
+        transform: translate(-50%, -100%);
+    }
+    to {
+        visibility: visible;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* @keyframes growOut{
+
+} */
 
 @media(max-width: 1200px){
     .container{
@@ -251,6 +315,27 @@ img{
     .footer-paragraph{
         font-size: 0.8rem;
     }
+
+    img.success-image{
+        /* position: absolute;
+        height: 70%;
+        width: 80%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        visibility: hidden; */
+        /* position: fixed; */
+        /* height: 30%; */
+        width: 90%;
+        /* height: 50%; */
+        display: block;
+        /* visibility: visible; */
+        left: 50%;
+        top: 30%;
+        /* transform: translate(-50%,  ) */
+    }
+    
 }
 
 @media(max-width: 500px){
