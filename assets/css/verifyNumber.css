@@ -45,7 +45,7 @@ header{
 }
 
 main{
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -124,8 +124,9 @@ img{
     text-decoration: none;
     color: #6C63FF;
 }
-                                                                                                                                                   .footer-paragraph{
-    margin-top: 15rem;
+
+.footer-paragraph{
+    margin-top: 13rem;
     width: 80%;
     text-align: center;
     /* background-color: pink; */
