@@ -144,7 +144,7 @@ button{
 }
 
 .sign-up{
-    width: 80px;
+    width: fit-content;
     text-align: center;
     color: #502274;
     display: block;
@@ -153,6 +153,11 @@ button{
     font-size: 14px;
     margin: 20px auto;
     outline: none;
+}
+
+.sign-up:hover{
+    border-bottom: 1px solid #502274;
+    margin-bottom: 19px
 }
 
 .forgot-password,.terms-and-conditions{

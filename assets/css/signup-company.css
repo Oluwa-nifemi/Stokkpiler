@@ -188,7 +188,7 @@ button{
     margin-top: 10px;
 }
 
-.sign-up{
+.login{
     width: fit-content;
     text-align: center;
     color: #502274;
@@ -200,7 +200,7 @@ button{
     outline: none;
 }
 
-.sign-up:hover{
+.login:hover{
     border-bottom: 1px solid #502274;
     margin-bottom: 16px;
 }
@@ -226,7 +226,7 @@ button{
     border: none;
 }
 
-.signup a:hover:not(.sign-up){
+.signup a:hover:not(.login){
     border-bottom: 1px solid #6C63FF
 }
 

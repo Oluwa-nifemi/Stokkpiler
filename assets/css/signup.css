@@ -198,8 +198,8 @@ button{
     margin-top: 20px;
 }
 
-.sign-up{
-    width: 80px;
+.login{
+    width: fit-content;
     text-align: center;
     color: #502274;
     display: block;
@@ -208,6 +208,11 @@ button{
     font-size: 14px;
     margin: 20px auto;
     outline: none;
+}
+
+.login:hover{
+    border-bottom: 1px solid #502274;
+    margin-bottom: 19px;
 }
 
 .forgot-password,.terms-and-conditions{
@@ -231,7 +236,7 @@ button{
     border: none;
 }
 
-.signup a:hover:not(.sign-up){
+.signup a:hover:not(.login){
     border-bottom: 1px solid #6C63FF
 }
 
