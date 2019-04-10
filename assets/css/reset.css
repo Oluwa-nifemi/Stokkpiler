@@ -116,6 +116,7 @@ button{
     width: 100%;
     text-align: center;
     color: #828282;
+    margin-bottom: 10px;
 }
 
 .terms-and-conditions a{
@@ -134,4 +135,22 @@ hr{
     height: 1px;
     background-color: #E2E1E7;
     border: none;
+}
+
+@media(max-width: 800px){
+    .forgot-password{
+        display: none;
+    }
+    .reset{
+        width: 80%;
+        padding-left: 0;
+        margin: auto;
+    }
+}
+
+
+@media(max-height: 575px){
+    .container{
+        overflow: auto;
+    }
 }
