@@ -14,6 +14,10 @@
     src: url('../fonts/montserrat/Montserrat-Medium.otf');
 }
 
+@font-face{
+    font-family: 'Segoe UI-Regular';
+    src: url('../fonts/Segoe UI/Segoe UI.woff')
+}
 
 html{
     box-sizing: border-box;
@@ -153,7 +157,7 @@ nav.navbar{
     font-size: 1.6rem;
     text-align: left;
     color: #7AA1B9;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Segoe UI-Regular';
     width: 80%;
     line-height: 1.7;
     margin-bottom: 5rem;
