@@ -142,9 +142,6 @@ nav.navbar{
     flex-basis: 40%;
 }
 
-/* .img-blocks{
-    flex-basis: 50%;
-} */
 
 .Header-Large-Heading{
     font-size: 3.5rem;
@@ -620,4 +617,10 @@ footer{
     text-decoration: none;
     font-family: 'Montserrat-Regular';
     margin-right: 1rem;
+}
+
+@media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
 }
