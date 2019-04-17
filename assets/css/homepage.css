@@ -22,6 +22,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 *,
@@ -34,14 +35,12 @@ html{
 
 body{
     background-color: #f0f0f0;
-    overflow-x: hidden;
 }
 
 .container{
     margin: 0;
     padding: 0;
     height: 100%;
-    /* overflow-x: hidden; */
     /* overflow-y: auto; */
 }
 
@@ -65,11 +64,13 @@ header{
     /* position: relative; */
     position: absolute;
     z-index: -1;
-    top: 86%;
-    /* bottom: 0; */
-    transform: rotate(-8deg);
+    /* top: 86%; */
+    bottom: 0;
+    /* position: fixed; */
+    transform: rotate(-0deg);
     /* transform-origin: left; */
-    /* width: 23%; */
+    width: 15%;
+    opacity: 0.5;
 }
 
 .Header-content{
@@ -92,7 +93,11 @@ header{
     color: #FFFFFF;
     font-size: 2rem; 
     flex-basis: 20%;
+}
 
+.logo a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 nav.navbar{
@@ -412,7 +417,7 @@ section.why-stockpiler{
 
 .faq{
     position: relative;
-    flex-basis: 50%;
+    flex-basis: 45%;
     padding: 4rem;
     text-align: center;
     margin: 5rem 0;
@@ -560,7 +565,7 @@ footer{
 .hundred-percent-input{
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 3px solid #9B9B9B;
     color: #9B9B9B;
     padding: 0.8rem 0;
     outline: none;
@@ -619,8 +624,109 @@ footer{
     margin-right: 1rem;
 }
 
+.soc-icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (max-width: 1200px){
-    body{
+    .container{
         overflow-x: hidden;
+        position: fixed;
     }
+    .Header-background{
+        transform: translateY(-27%);
+    }
+    img.img-blocks{
+        width: 55% !important;
+    }
+    .text-section{
+        flex-basis: 45%;
+    }
+    .Header-lead-text{
+        width: 100%;
+        margin-bottom: 7rem;
+    }   
+    .Header-background-2{
+        display: none;
+    }
+    section.why-stockpiler{
+        padding: 14rem 20rem;
+        text-align: center;
+    }
+    .why-stockpiler-heading-lead{
+        font-size: 3rem;
+    }
+    .reason-header{
+        margin-bottom: 1rem;
+    }
+    .Features-heading-lead{
+        font-size: 3rem;
+    }
+    .Features{
+        padding: 14rem 20rem;
+    }
+
+    .How-it-works-heading-lead{
+        font-size: 3rem;
+    }
+
+    .How-it-works{
+        padding: 14rem 20rem;
+    }
+
+    .FAQs-heading-lead{
+        font-size: 3rem;
+    }
+    .FAQs{
+        padding: 14rem 19rem;
+    }
+}
+
+
+@media(max-width: 1000px){
+    footer{
+        padding: 15rem 5rem;
+        padding-bottom: 0;
+    }
+    section.why-stockpiler{
+        padding: 15rem 10rem;
+        text-align: center;
+    }
+    .How-it-works{
+        padding: 15rem 10rem;
+    }
+    .Features{
+        padding: 15rem 10rem;
+    }
+    .FAQs{
+        padding: 15rem 10rem;
+    }
+    nav.navbar{
+        flex-basis: 70%;
+    }
+    .Header-background{
+        position: absolute;
+        transform: translateY(-20%);
+        width: 108%;
+        z-index: -1;
+    }
+    .Header-Large-Heading{
+        font-size: 3rem;
+    }
+    
+    img.img-blocks{
+        transform: translateY(-3rem);
+    }
+    .Header-lead-text{
+        margin-bottom: 4rem;
+    }
+    
+}
+
+
+@media(max-width: 800px){
+
 }
