@@ -47,20 +47,20 @@ button{
     box-sizing: border-box;
 }
 
-.login{
+.signup{
     width: 50%;
     box-sizing: border-box;
-    padding-top: 75px;
+    padding-top: 30px;
     padding-left: 75px;
 }
 
-.login-header{
+.signup-header{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.login input{
+.signup input:not([type=checkbox]){
     border: 1px solid rgba(155, 155, 155, 0.3);
     width: 100%;
     height: 30px;
@@ -88,16 +88,61 @@ button{
     outline: none;
 }
 
+.agree{
+    position: relative;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 10px;
+    color: #828282;
+    display: flex;
+    height: 14px;
+    align-items: center;
+    margin-top: 16px
+}
 
-.login-social{
+.agree input{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+.agree label{
+    height: 10px;
+    width: 10px;
+    border-radius: 4px;
+    border: 1px solid #979797;
+    background-color: white;
+    display: inline-flex;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.agree label img{
+    height: 9px;
+    margin: 0;
+    width: 10px;
+    display: none;
+}
+
+.agree input:checked + label img{
+    display: inline;
+}
+
+.agree label,.agree span{
+    position: relative;
+    z-index: 1;
+}
+
+.signup-social{
     height: 20px;
     display: flex;
     align-items: center;
     position: relative;
-    margin: 50px 0 15px;
+    margin: 30px 0 15px;
 }
 
-.login-social-text{
+.signup-social-text{
     font-family: 'Montserrat-Medium';
     text-align: center;
     width: 225px;
@@ -109,7 +154,7 @@ button{
     font-size: 12px
 }
 
-.login-social-line{
+.signup-social-line{
     height: 2px;
     background-color: rgba(155, 155, 155, 0.3);
     position: absolute;
@@ -140,24 +185,24 @@ button{
     font-family: 'Montserrat-SemiBold';
     font-size: 14px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.sign-up{
+.login{
     width: fit-content;
     text-align: center;
     color: #502274;
     display: block;
     text-decoration: none;
     font-family: 'Montserrat-Regular';
+    margin: 17px auto;
     font-size: 14px;
-    margin: 20px auto;
     outline: none;
 }
 
-.sign-up:hover{
+.login:hover{
     border-bottom: 1px solid #502274;
-    margin-bottom: 19px
+    margin-bottom: 16px;
 }
 
 .forgot-password,.terms-and-conditions{
@@ -181,7 +226,7 @@ button{
     border: none;
 }
 
-.login a:hover:not(.sign-up){
+.signup a:hover:not(.login){
     border-bottom: 1px solid #6C63FF
 }
 
@@ -189,7 +234,7 @@ button{
     .woman{
         display: none;
     }
-    .login{
+    .signup{
         width: 80%;
         padding-left: 0;
         margin: auto;
@@ -202,7 +247,7 @@ button{
     }
 }
 
-@media(max-height: 575px){
+@media(max-height: 585px){
     .container{
         overflow: auto;
     }

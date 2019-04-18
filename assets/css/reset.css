@@ -41,93 +41,43 @@ button{
     color: black;
 }
 
-.woman{
+.forgot-password{
     width: 40%;
     padding: 0 50px;
     box-sizing: border-box;
 }
 
-.login{
+.reset{
     width: 50%;
     box-sizing: border-box;
     padding-top: 75px;
     padding-left: 75px;
 }
 
-.login-header{
+.reset-header{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
-.login input{
+.reset-text{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: #1B1F3B;
+}
+
+.reset input{
     border: 1px solid rgba(155, 155, 155, 0.3);
     width: 100%;
     height: 30px;
     display: block;
-    margin: 10px 0;
+    margin: 10px 0 40px;
     font-family: 'Montserrat-Regular', sans-serif;
     outline: none;
     font-size: 11px;
     padding-left: 10px;
     box-sizing: border-box;
-}
-
-.password-div{
-    position: relative;
-}
-
-.password-div button{
-    position: absolute;
-    top: 0;
-    right: 4px;
-    height: 26px;
-    margin-top: 2px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-
-
-.login-social{
-    height: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 50px 0 15px;
-}
-
-.login-social-text{
-    font-family: 'Montserrat-Medium';
-    text-align: center;
-    width: 225px;
-    margin: 0 auto;
-    background-color: #F0F0F0;
-    z-index: 2;
-    box-sizing: border-box;
-    color: #828282;
-    font-size: 12px
-}
-
-.login-social-line{
-    height: 2px;
-    background-color: rgba(155, 155, 155, 0.3);
-    position: absolute;
-    width: 100%;
-    bottom: -8px;
-}
-
-.social-media-links{
-    display: flex;
-    height: 40px;
-    align-content: center;
-    justify-content: center;
-}
-
-.social-media-links button{
-    background-color: transparent;
-    border: none;
-    margin: 0 5px;  
 }
 
 .submit{
@@ -141,12 +91,12 @@ button{
     font-size: 14px;
     text-align: center;
     margin-top: 20px;
-}
+} 
 
-.sign-up{
+.cancel{
     width: fit-content;
     text-align: center;
-    color: #502274;
+    color: #000000;
     display: block;
     text-decoration: none;
     font-family: 'Montserrat-Regular';
@@ -155,52 +105,49 @@ button{
     outline: none;
 }
 
-.sign-up:hover{
-    border-bottom: 1px solid #502274;
-    margin-bottom: 19px
+.cancel:hover{
+    margin-bottom: 19px;
+    border-bottom: 1px solid #000000;
 }
 
-.forgot-password,.terms-and-conditions{
+.terms-and-conditions{
     font-family: 'Montserrat-Regular';
     font-size: 14px;
     width: 100%;
     text-align: center;
     color: #828282;
+    margin-bottom: 10px;
 }
 
-.forgot-password a,.terms-and-conditions a{
+.terms-and-conditions a{
     color: #6C63FF;
     text-decoration: none;
 }
 
-.forgot-password + hr{
+.terms-and-conditions a:hover{
+    border-bottom: 1px solid #6C63FF
+}
+
+hr{
     width: auto;
     margin-left: 0;
+    margin-top: 100px;
     height: 1px;
     background-color: #E2E1E7;
     border: none;
 }
 
-.login a:hover:not(.sign-up){
-    border-bottom: 1px solid #6C63FF
-}
-
 @media(max-width: 800px){
-    .woman{
+    .forgot-password{
         display: none;
     }
-    .login{
+    .reset{
         width: 80%;
         padding-left: 0;
         margin: auto;
     }
 }
 
-@media(max-width: 500px){
-    .logo{
-        left: 30px;
-    }
-}
 
 @media(max-height: 575px){
     .container{
