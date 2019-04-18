@@ -62,7 +62,6 @@ img{
     flex-basis: 60%;
     margin-left: 8rem;
     /* transform: t */
-
 }
 
 
@@ -335,32 +334,15 @@ a.hoverme:hover{
     }
 
     img.success-image{
-        /* position: absolute;
-        height: 70%;
-        width: 80%;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 5;
-        visibility: hidden; */
-        /* position: fixed; */
-        /* height: 30%; */
         width: 90%;
-        /* height: 50%; */
         display: block;
-        /* visibility: visible; */
         left: 50%;
         top: 50%;
-        /* transform: translate(-50%,  ) */
     }
     
 }
 
 @media(max-width: 500px){
-    /* .logo{
-        left: 30px;
-    } */
-
     .container{
         padding: 1rem;    
     }
@@ -399,7 +381,6 @@ a.hoverme:hover{
         margin-bottom: 4rem;
         /* padding-bottom: 1rem */
     }
-
     .Lead-text{
         margin-bottom: 2rem;
     }
