@@ -5,17 +5,21 @@ const close = document.querySelector(".sidebar-close");
 const clickable = document.querySelector(".clickable");
 
 
-hamburger.addEventListener('click', (e) => {
+hamburger.addEventListener('click', open)
+
+
+close.addEventListener("click", closeSideBar)
+
+clickable.addEventListener("click", closeSideBar) 
+
+
+function open() {
     overlay.style.display = "flex";
     clickable.style.display = "block"
     sidebar.classList.add("sidebarAnim");
-})
+}
 
-
-
-
-
-close.addEventListener("click", (e) => {
+function closeSideBar() {
     sidebar.classList.add("slideOutAnim");
     setTimeout(() => {
     sidebar.classList.remove("sidebarAnim");
@@ -23,14 +27,4 @@ close.addEventListener("click", (e) => {
     overlay.style.display = "none";
     clickable.style.display = "none"
     },700)
-})
-
-clickable.addEventListener("click", (e) => {
-    sidebar.classList.add("slideOutAnim");
-    setTimeout(() => {
-    sidebar.classList.remove("sidebarAnim");
-    sidebar.classList.remove("slideOutAnim");    
-    overlay.style.display = "none";
-    clickable.style.display = "none"
-    },700)
-})
+}
