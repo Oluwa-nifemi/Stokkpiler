@@ -43,16 +43,10 @@ body{
     height: 100%;
     overflow-x: hidden;
     position: fixed;
-    /* overflow-y: auto; */
 }
 
 header{
-    /* position: relative; */
     width: 100%;
-    /* overflow-x: hidden; */
-
-    /* background-color: red; */
-    /* height: 75vh;     */
 }
 
 .Header-background{
@@ -63,14 +57,10 @@ header{
 }
 
 .Header-background-2{
-    /* position: relative; */
     position: absolute;
     z-index: -1;
-    /* top: 86%; */
     bottom: 0;
-    /* position: fixed; */
     transform: rotate(-0deg);
-    /* transform-origin: left; */
     width: 15%;
     opacity: 0.5;
 }
@@ -79,7 +69,6 @@ header{
     position: relative;
     z-index: 2;
     padding: 3rem 6rem;
-    /* background-color: orangered;       */
 }
 
 .heading-top{
@@ -101,6 +90,23 @@ header{
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    width: 3.4rem;
+}
+
+.hamburger-child{
+    height: 0.3rem;
+    width: 100%;
+    background-color: #112C3D;
+}
+
+.hamburger-child:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
 
 nav.navbar{
     flex-basis: 60%;
@@ -140,9 +146,7 @@ nav.navbar{
 
 .header-bottom{
     display: flex;
-    /* justify-content: center; */
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .text-section{
@@ -643,6 +647,9 @@ footer{
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    background-color: #000000c0;
+    display: none;
+
 }
 
 .sidebar{
@@ -652,9 +659,137 @@ footer{
 
 .clickable{
     flex-basis: 15%;
-    background-color: #0000008e
+    background-color: #00000004;
+    display: none;
 }
 
+/* sidebar design */
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateX(100%);
+}
+
+.sidebarAnim{
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideOutAnim{
+    animation-name: slideOut;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes slideOut{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+
+.sidebar-header{
+    flex-basis: 10%;
+    /* background-color: orangered; */
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Montserrat-SemiBold';
+    /* flex-basis: 80%; */
+}
+
+.sidebar-close{
+    /* display: none; */
+    /* flex-basis: 20%; */
+    position: absolute;
+    left: 2rem;
+    padding: 1rem;
+
+}
+
+.sidebar-close i {
+    color: #FFFFFF;
+    font-size: 1.7rem;
+}
+
+
+.sidebar-content{
+    margin-top: 9rem;
+    width: 100%;
+}
+
+.sidebar-options{
+    list-style: none;
+}
+
+.sidebar-option{
+    /* margin-bottom:rem; */
+    padding: 2rem 4rem;
+    background-color: #00000028;
+    transition: all 0.4s ease;
+}
+
+.sidebar-option:hover{
+    color: #FFFFFF; 
+    background-color: #0000006b;
+}
+
+a.sidebar-link{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Montserrat-Regular";
+}
+
+.sidebar-buttons{
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sidebar-btn{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: #502274c7;
+    font-size: 1.3rem;
+    font-family: 'Montserrat-Regular';
+    border-radius: 5px;
+}
+
+.sidebar-btn:hover{
+    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.178);
+}
 
 
 @media (max-width: 1500px){
@@ -720,15 +855,19 @@ footer{
     section.why-stockpiler{
         padding: 15rem 10rem;
         text-align: center;
+        padding-bottom: 0;
     }
     .How-it-works{
         padding: 15rem 10rem;
+        padding-bottom: 0;
     }
     .Features{
         padding: 15rem 10rem;
+        padding-bottom: 0;
     }
     .FAQs{
         padding: 15rem 10rem;
+        padding-bottom: 0;
     }
     nav.navbar{
         flex-basis: 70%;
@@ -858,6 +997,15 @@ footer{
         margin-bottom: 1rem;
     }
 
+
+    .social-media-lead{
+        margin-bottom: 1.5rem;
+    }
+
+    .soc-icons{
+        width: 80%;
+    }
+
     .fifty-percent {
         display: inline-block;
         width: 100%;
@@ -967,6 +1115,10 @@ footer{
         display: none;
     }
 
+    .hamburger	{
+        display: flex;
+    }
+
     .text-section{
         flex-basis: 100%;
     }
@@ -980,7 +1132,7 @@ footer{
 
     .logo{
         text-align: center;
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
     }
 
     .Header-Large-Heading {
