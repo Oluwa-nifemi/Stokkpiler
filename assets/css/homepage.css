@@ -1035,7 +1035,7 @@ a.sidebar-link{
 
     .faq{
         flex-basis: 100%;
-        margin: 3rem 0;
+        margin: 0;
     }
     .faq-text{
         width: 50%;
@@ -1075,7 +1075,7 @@ a.sidebar-link{
     }
 
     .method-group:not(:last-child) {
-        margin-bottom: 9rem;
+        margin-bottom: 7rem;
     }
 
     .method-heading{
@@ -1090,21 +1090,21 @@ a.sidebar-link{
         width: 50%;
     }
     .feature{
-        margin: 3rem 0;
+        margin: 0;
     }
     
     section.why-stockpiler{
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
         text-align: center;
     }
     .How-it-works{
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
     }
     .Features{
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
     }
     .FAQs{
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
     }
 
     .Header-background{
@@ -1151,16 +1151,16 @@ a.sidebar-link{
     }
 
     .FAQs-heading{
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
     }
     .Features-heading{
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
     }
     .why-stockpiler-heading{
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
     }
     .How-it-works-heading{
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
     }
     
 }
