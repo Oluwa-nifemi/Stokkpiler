@@ -236,8 +236,8 @@ button{
     }
     .signup{
         width: 80%;
-        padding-left: 0;
-        margin: auto;
+        padding: 0;
+        margin: 100px auto;
     }
 }
 
@@ -247,7 +247,7 @@ button{
     }
 }
 
-@media(max-height: 585px){
+@media(max-height: 700px){
     .container{
         overflow: auto;
     }

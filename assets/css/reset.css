@@ -143,8 +143,8 @@ hr{
     }
     .reset{
         width: 80%;
-        padding-left: 0;
-        margin: auto;
+        padding: 0;
+        margin: 100px auto;
     }
 }
 

@@ -252,8 +252,8 @@ button{
     }
     .signup{
         width: 80%;
-        padding-left: 0;
-        margin: auto;
+        padding: 0;
+        margin: 70px auto;
     }
     .signup input.half{
         width: 49%;
@@ -269,7 +269,7 @@ button{
     }
 }
 
-@media(max-height: 575px){
+@media(max-height: 720px){
     .container{
         overflow: auto;
     }

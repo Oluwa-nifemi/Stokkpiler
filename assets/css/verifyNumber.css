@@ -421,5 +421,10 @@ a.hoverme:hover{
     .container{
         overflow: auto;
     }
+    .footer-paragraph{
+        margin: 20px auto 0;
+        position: relative;
+        bottom: 0;
+    }
 }
 
