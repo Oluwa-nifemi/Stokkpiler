@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards</title>
+    <link rel="stylesheet" href="../assets/css/no-card.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a class="logo" href="../index.html">Stokkpile.com</a>
+            <div class="links">
+                <div class="link">
+                    <img src="../assets/images/home.svg" alt="">
+                    <a>Home</a>
+                </div>
+                <div class="link">
+                    <img src="../assets/images/chart.svg" alt="">
+                    <a>Plans</a>
+                </div>
+                <div class="link">
+                    <img src="../assets/images/calculator.svg" alt="">
+                    <a>Transactions</a>
+                </div>
+                <div class="link">
+                    <img src="../assets/images/withdraw.svg" alt="">
+                    <a>Withdraw</a>
+                </div>
+                <div class="link active">
+                    <img src="../assets/images/wallet-white.svg" alt="">
+                    <a>Cards</a>
+                </div>
+                <div class="link">
+                    <img src="../assets/images/settings.svg" alt="">
+                    <a>Settings</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="top">
+                <div class="back">
+                    <img src="../assets/images/back.svg" alt="">
+                    <a href="">Back</a>
+                </div>
+                <table class="rates">
+                    <tr>
+                        <td>Rates</td>
+                        <td>Block</td>
+                        <td>Cement</td>
+                    </tr>
+                    <tr>
+                        <td>Local</td>
+                        <td>
+                            <img src="../assets/images/rate-down.svg" alt="">
+                            N200
+                        </td>
+                        <td>
+                            <img src="../assets/images/rate-up.svg" alt="">
+                            N2000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>International</td>
+                        <td>
+                            <img src="../assets/images/rate-down.svg" alt="">
+                            $2
+                        </td>
+                        <td>
+                            <img src="../assets/images/rate-up.svg" alt="">
+                            $2
+                        </td>
+                    </tr>
+                </table>
+                <div class="user-controls">
+                    <div class="notifications">
+                        <img src="../assets/images/notifications.svg" alt="">
+                    </div>
+                    <div class="user">
+                        <img src="../assets/images/user.svg" alt="">
+                    </div>
+                    <button class="logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+            <div class="body">
+                <div class="no-card hide">
+                    <p class="card-rules">
+                        You can only add the local card of your chosen country or a dollar card. If you do not have a Dollar Card, <br> <a href="">click here</a> to get a virtual Dollar Card with GetBarter
+                    </p>
+                    <p class="add-card">
+                        Add card to your account
+                    </p>
+                    <button class="add-card-btn">
+                        <img src="../assets/images/add.svg" alt="">
+                    </button>
+                    <p class="add-card-text">
+                        Add a card
+                    </p>
+                    <div class="card-brands">
+                        <img src="../assets/images/visa.svg" alt="">
+                        <img src="../assets/images/verve.svg" alt="">
+                        <img src="../assets/images/master-card.svg" alt="">
+                    </div>
+                </div>
+                <form method="post" action="cards.html">
+                    <p class="card-rules">
+                        You can only add the local card of your chosen country or a dollar card. If you do not have a Dollar Card, <br> <a href="">click here</a> to get a virtual Dollar Card with GetBarter
+                    </p>
+                    <div class="form-group">
+                        <label for="name">Name on Card</label>
+                        <input type="text" id="name" placeholder="Samuel Fapoun" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234-XXXX-XXXX-XXXX" maxlength="19" required>
+                    </div>
+                    <div class="form-group inline">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div class="form-group inline">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="***" maxlength="3" required>
+                    </div>
+                    <p class="disclaimer">You will not be billed until the start date of your savings</p>
+                    <button type="submit">Add Card</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/no-card.js"></script>
+</body>
+</html>
