@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Withdraw</title>
+    <link rel="stylesheet" href="../assets/css/withdraw.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="withdraw-sidebar">
+            <div class="withdraw-sidebar-logo">
+                <h1>Stokkpile.com</h1>
+            </div>
+
+            <div class="withdraw-sidebar-main">
+                <ul class="sidebar-options">
+                    <a href="http://">
+                        <li class="sidebar-option">
+                            <img class="hoverImage" src="../assets/images/ios-white-business.svg" alt="">
+                            <img class="normalImage" src="../assets/images/ios-business.svg" alt="">
+                            <span class="option-text">
+                                Home
+                            </span>
+                        </li>
+                    </a>
+                    <a href="http://">
+                        <li class="sidebar-option">
+                            <img class="hoverImage" src="../assets/images/md-white-stats.svg" alt="">
+                            <img class="normalImage" src="../assets/images/md-stats.svg" alt="">
+                            <span class="option-text">
+                                My plans
+                            </span>
+                        </li>
+                    </a>
+                    <a href="http://">
+                        <li class="sidebar-option">
+                            <img class="hoverImage" src="../assets/images/ios-white-calculator.svg" alt="">
+                            <img class="normalImage" src="../assets/images/ios-calculator.svg" alt="">
+                            <span class="option-text">
+                                Transactions
+                            </span>
+                        </li>
+                    </a>
+                    <a href="http://">
+                        <li class="sidebar-option active">
+                            <img class="hoverImage" src="../assets/images/ios-white-send.svg" alt="">
+                            <img class="normalImage" src="../assets/images/ios-send.svg" alt="">
+                            <span class="option-text">
+                                Withdraw
+                            </span>
+                        </li>
+                    </a>
+                    <a href="http://">
+                        <li class="sidebar-option">
+                            <img class="hoverImage" src="../assets/images/white-wallet (1).svg" alt="">
+                            <img class="normalImage" src="../assets/images/wallet (1).svg" alt="">
+                            <span class="option-text">
+                                Cards
+                            </span>
+                        </li>
+                    </a>
+                    <a href="http://">
+                        <li class="sidebar-option">
+                            <img class="hoverImage" src="../assets/images/ios-white-settings.svg" alt="">
+                            <img class="normalImage" src="../assets/images/ios-settings.svg" alt="">
+                            <span class="option-text">
+                                Settings
+                            </span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+           <a href="http://">
+            <div class="logout">
+                    <img src="../assets/images/logout.svg" alt="">
+                    <span class="option-text">
+                        Logout
+                    </span>
+            </div>
+            </a> 
+        </div>
+
+        <main>
+
+
+                <div class="overlay">
+                        <div class="withdrawal-confirmation">
+                                <div class="confirmation-header">
+                                    <h2> <span class="underline">WITH</span>DRAWAL CONFIRMATION</h2>
+                                </div>
+                             <table>
+                                 
+                             </table>   
+                        </div>
+                        <img src="" alt="" class="success-img">
+                        <img src="" alt="" class="failed-img">
+                </div>
+
+
+
+
+            <div class="main-container">
+                    <div class="main-header">
+                            <div class="back">
+                                <img src="" alt="">
+                                <h2>Back</h2>
+                            </div>
+                            <div class="stocks">
+                                <div class="tableheadings"> <span class="stock-heading">Block</span> <span class="stock-heading">Cememt</span> </div>
+                                <div class="localRates">
+                                    <span class="block-local">
+                                        <img class="down-arrow" src="" alt="">
+                                        <h3>N200</h3>
+                                    </span>
+                                    <span class="cement-local">
+                                            <img class="up-arrow" src="" alt="">
+                                            <h3>N200</h3>
+                                    </span>
+                                </div>
+                                <div class="internationalRates">
+                                        <span class="block-international">
+                                                <img class="down-arrow" src="" alt="">
+                                                <h3>$2</h3>
+                                            </span>
+                                            <span class="cement-international">
+                                                    <img class="up-arrow" src="" alt="">
+                                                    <h3>$2</h3>
+                                            </span>
+                                </div>
+                            </div>
+                            <div class="personalize">
+                                <img class="notification-bell" src="" alt="">
+                                <div class="avatar">
+                                    <img src="" alt="">
+                                </div>
+                                <a href="/logout" class="logout">
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="main-body">
+                            <form action="" class="plans">
+                                <div class="form-group-full">
+                                    <div class="form-group-header">
+                                         <h2>Plan Name</h2>
+                                        <img class="question-mark" src="" alt=""> 
+                                    </div>
+                                    <input type="text" class="form-input-full">
+                                </div>
+                                <div class="form-group-full">
+                                    <div class="form-group-header">
+                                        <h2>Choose Location</h2>
+                                    </div>
+                                    <div class="select-group">                            
+                                        <input type="radio" name="connected" id="one">
+                                        <label for="one">One Location</label>
+                                        <input type="radio" name="connected" id="various">
+                                        <label for="various">Various Locations</label>
+                                    </div>
+                                </div>
+                                <div class="form-group-full">
+                                    <div class="form-group-header">
+                                        <h2>Location</h2>
+                                    </div>
+                                    <div class="units-of">
+                                        <label for="blocks-unit">Unit of Blocks</label>
+                                        <input type="number" id="blocks-unit">
+                                        <label for="cement-unit">Bags of Cement</label>
+                                        <input type="number" id="cement-unit">
+                                    </div>
+                                    <input type="text" class="form-input-full" placeholder="Type Your Address">
+                                    <a href="/extra-location">
+                                        add another location
+                                    </a>
+                                </div>
+                                <div class="form-group-full">
+                                    <div class="form-group-header">
+                                            <h2>Password</h2>
+                                    </div>
+                                    <input type="text" class="form-input-full">
+                                </div>
+                                <button class="btn plans-submit">Submit</button>
+                            </form>
+            
+                            <!-- <form action="" class="card-details">
+                                <div class="lead-text">
+                                    You can only add the local card of your given country or a dollar card. If you do not have a Dollar Card, <a href="http://" class="inline-text">click here</a>
+                                    to get virtual Dollar card with GetBarter.
+                                </div>
+                                <div class="form-group-full">
+                                    <label for="card-name">
+                                        Name on Card
+                                    </label>
+                                    <input type="text" class="form-input-full" id="card-name">
+                                </div>
+                                <div class="form-group-full">
+                                    <label for="card-no">Card Number</label>
+                                    <input type="number" class="form-input-full" id="card-no" placeholder="xxxx xxxx xxxx xxxx">
+                                </div>
+                                <div class="form-group-full">
+                                        <label for="expiry-date">Expiry Date</label>
+                                        <input type="number" class="form-input-full" id="expiry-date" placeholder="mm yy">
+                                </div>
+                                <div class="footer-text">
+                                    <p>you will not be charged until the start of your savings</p>
+                                </div>
+                                <button class="btn card-details-submit">
+                                    Add Card
+                                </button>
+                            </form> -->
+                        </div>
+            </div>     
+        </main>
+    </div>
+
+</body>
+</html>
