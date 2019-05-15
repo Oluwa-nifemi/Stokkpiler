@@ -13,6 +13,11 @@
     src: url('../fonts/montserrat/Montserrat-Medium.otf')
 }
 
+@font-face{
+    font-family: 'Copperplate Light';
+    src: url('../fonts/copperplate/OPTICopperplate-Light.otf')
+}
+
 body{
     margin: 0;
 }
@@ -151,125 +156,83 @@ button{
     background-color: transparent;
 }
 
-.body{
-    padding-top: 50px;
-    box-sizing: border-box
-}
-
-.card-rules{
-    width: 620px;
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 0px;
+    padding: 20px 50px 0;
+    box-sizing: border-box;
     margin: auto;
-    font-family: 'montserrat', sans-serif;
-    font-size: 12px;
-    text-align: center;
-    line-height: 22px
 }
 
-.card-rules a{
-    color:#6C63FF;
+.card{
+    width: 380px;
+    border-radius: 9px;
+    box-shadow: 5px 15px 16px rgba(0, 0, 0, 0.16);
+    height: 230px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 35px 35px 40px 30px;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    font-family: 'Copperplate Light';
 }
 
-.add-card{
-    color: #9B9B9B;
-    margin: 50px auto 0px;
-    text-align: center;
-    width: 200px;
-    font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 15px;
+.card.black{
+    background-color: #000000;
 }
 
-.add-card-btn{
-    margin: 50px auto 45px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    background-color: #502274;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    outline: none
+.card.light-green{
+    background-color: #8EC5AC
 }
 
-.add-card-text{
-    font-size: 20px;
-    font-family: 'Montserrat-Regular', sans-serif;
-    width: 108px;
-    margin: 0 auto 100px;
+.card.blue{
+    background-color: #3C52DD
 }
 
-.card-brands{
-    width: 230px;
+.card.dark-green{
+    background-color: #23B173;
+}
+
+.card__brands{
     display: flex;
     justify-content: space-between;
-    margin: auto
 }
 
-form{
-    padding-left: 50px;
-    font-family: 'Montserrat-Medium', sans-serif
+.card__brands img:last-of-type{
+    width: 44px;
 }
 
-form .card-rules{
-    margin: 0 0 46px;
-    text-align: left;
+.card__numbers{
+    margin: 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.form-group{
-    margin-bottom: 35px;
+.card__numbers span{
+    font-size: 16px;
 }
 
-.form-group *{
-    display: block;
+.card__details{
+    display: flex;
+    justify-content: space-between;
 }
 
-.form-group label{
-    font-size: 12px;
+.card__details div{
+    display: flex;
+    flex-direction: column;
 }
 
-.form-group input{
-    width: 450px;
-    height: 40px;
-    border: 1px solid #D8D8D8;
-    border-radius: 3px;
-    box-sizing: border-box;
-    outline: none;
-    padding-left: 10px;
-    font-family: 'Montserrat-Regular', sans-serif
+.card__details div p{
+    margin: 0;
 }
 
-.form-group input::placeholder{
+.card__details div p:first-of-type{
     font-size: 8px;
-    font-family: 'Montserrat-Medium', sans-serif;
+    color: #9b9b9b
 }
 
-.form-group.inline{
-    display: inline-block;
-    margin-right: 45px;
-}
-
-.form-group.inline input{
-    width: 200px;
-}
-
-.disclaimer{
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    font-size: 10px;
-    color: #9B9B9B;
-    margin-bottom: 20px;
-}
-
-form button{
-    width: 160px;
-    height: 40px;
-    align-items: center;
-    text-align: center;
-    background-color: #502274;
-    border: none;
-    border-radius: 3px;
-    font-size: 12px;
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    color: white;
-    outline: none
-
+.card__details div p:last-of-type{
+    font-size: 14px;
 }
