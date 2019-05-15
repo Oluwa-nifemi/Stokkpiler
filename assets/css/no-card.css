@@ -35,9 +35,7 @@ button{
 .sidebar{
     width: 17%;
     background-color: white;
-    box-shadow: 5px 0px 5px #F0F0F0;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 5px 0px 5px #F0F0F0
 }
 
 .main{
@@ -48,17 +46,13 @@ button{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 20px;
     color: #502274;
-    margin: 30px auto auto;
+    margin: 20px auto 50px;
     display: block;
     width: fit-content;
     text-decoration: none;
 }
 
-.links{
-    margin-bottom: auto;
-}
-
-.links .link,.logout__link{
+.links .link{
     width: 100%;
     color: #502274;
     height: 60px;
@@ -75,12 +69,8 @@ button{
     color: white;
 }
 
-.links .link img,.logout__link img{
+.links .link img{
     margin-right: 10px
-}
-
-.logout__link{
-    text-decoration: none;
 }
 
 .top{
@@ -256,7 +246,7 @@ form .card-rules{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 10px;
     color: #9B9B9B;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 form button{
