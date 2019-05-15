@@ -1,0 +1,348 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat/Montserrat-Regular.otf')
+}
+
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.otf')
+}
+
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/montserrat/Montserrat-Bold.otf')
+}
+
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/montserrat/Montserrat-Medium.otf')
+}
+
+@font-face{
+    font-family: 'Copperplate Light';
+    src: url('../fonts/copperplate/OPTICopperplate-Light.otf')
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    background-color: #F0F0F0;
+    height: 100VH;
+}
+
+.sidebar{
+    width: 17%;
+    background-color: white;
+    box-shadow: 5px 0px 5px #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+
+.main{
+    width: 83%;
+    margin-left: 17%;
+}
+
+.logo{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 20px;
+    color: #502274;
+    margin: 30px auto auto;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.links{
+    margin-bottom: auto;
+}
+
+.links .link,.logout__link{
+    width: 100%;
+    color: #502274;
+    height: 60px;
+    font-size: 14px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.links .link.active{
+    background-color: #502274;
+    color: white;
+}
+
+.links .link img,.logout__link img{
+    margin-right: 10px
+}
+
+.logout__link{
+    text-decoration: none;
+}
+
+.top{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
+    background-color: rgba(80, 34, 116, 0.06);
+}
+
+.back{
+    font-family: 'Montserrat-Medium', sans-serif;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+.back a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+.rates{
+    width: 280px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.rates td{
+    margin-bottom: 5px;
+}
+
+.rates td img{
+    vertical-align: middle;
+    margin-right: 2px
+}
+
+.rates tr:nth-of-type(n + 2) td:nth-of-type(n + 2){
+    font-weight: 1000
+}
+
+.user-controls{
+    display: flex;
+    align-items: center;
+    margin-right: 50px
+}
+
+.user{
+    margin: 0 30px;
+}
+
+.logout{
+    border: 1px solid #502274;
+    border-radius: 5px;
+    color: #502274;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    width: 85px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.content{
+    height: calc(100% - 70px);
+    padding: 30px 50px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.cards{
+    height: 148px;
+    width: 100%;
+    display: flex;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.cards .header{
+    font-size: 14px;
+    margin: 11px 20px;
+}
+
+.cards .bold{
+    font-family: 'Montserrat-Bold';
+    font-size: 24px;
+    margin: 15px 20px;
+}
+
+.cards .light{
+    font-size: 10px;
+}
+
+.total-amount{
+    width: 248px;
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 14px;
+    border: 1px solid #EAEAEA;
+}
+
+.materials-withdrawn{
+    width: 290px;
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 14px;
+    border: 1px solid #EAEAEA;
+}
+
+.materials-left{
+    width: 290px;
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 14px;
+    border: 1px solid #EAEAEA;
+}
+
+.add-plan{
+    width: 185px;
+    border-radius: 3px;
+    background-color: #502274;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.add-plan button{
+    background-color: transparent;
+    border: none;
+}
+
+.cards div span.line-h{
+    height: 1px;
+    background-color: #EAEAEA;
+    display: block;
+    width: 100%;
+}
+
+.cards div.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 17px 20px;
+    height: 80px;
+}
+
+.cards div.grid .light{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.cards div.grid div:first-of-type{
+    border-right: 1px solid #EAEAEA;
+}
+
+.cards div.grid .bold{
+    margin: 0;
+}
+
+.cards div.grid div:last-of-type{
+    text-align: right;
+}
+
+.materials-withdrawn .bold{
+    color: #B21F1E;
+}
+
+.materials-left .bold{
+    color: #008000;
+}
+
+.download-pdf{
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-top: 14px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #EAEAEA;
+}
+
+.download-pdf span{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 12px;
+}
+
+.download-pdf button{
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #502274;
+    color: #502274;
+    width: 135px;
+    height: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+}
+
+.transactions{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    width: 100%;
+    padding: 0 20px;
+    background-color: white;
+    margin-top: 14px;
+    box-shadow: 0 1px #000000 4px;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+}
+
+.transactions tr{
+    height: 44px;
+}
+
+.transactions tr.deposit{
+    color: #008000;
+}
+
+.transactions tr.withdraw{
+    color: #B21F1E;
+}
+
+.transactions tr td:first-of-type{
+    padding-left: 30px;
+}
+
+.transactions tr td:not(:first-of-type){
+    text-align: center;
+}
+
+.transactions tr:nth-of-type(2n){
+    background-color: rgba(216, 216, 216, 0.29)
+}
+
+.transactions tr td p{
+    margin: 3px;
+}
