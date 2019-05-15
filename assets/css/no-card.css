@@ -1,0 +1,275 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat/Montserrat-Regular.otf')
+}
+
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.otf')
+}
+
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/montserrat/Montserrat-Medium.otf')
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    background-color: #F0F0F0;
+    height: 100VH;
+}
+
+.sidebar{
+    width: 17%;
+    background-color: white;
+    box-shadow: 5px 0px 5px #F0F0F0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    width: 83%;
+}
+
+.logo{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 20px;
+    color: #502274;
+    margin: 30px auto auto;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.links{
+    margin-bottom: auto;
+}
+
+.links .link,.logout__link{
+    width: 100%;
+    color: #502274;
+    height: 60px;
+    font-size: 14px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.links .link.active{
+    background-color: #502274;
+    color: white;
+}
+
+.links .link img,.logout__link img{
+    margin-right: 10px
+}
+
+.logout__link{
+    text-decoration: none;
+}
+
+.top{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
+    background-color: rgba(80, 34, 116, 0.06);
+}
+
+.back{
+    font-family: 'Montserrat-Medium', sans-serif;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+.back a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+.rates{
+    width: 280px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.rates td{
+    margin-bottom: 5px;
+}
+
+.rates td img{
+    vertical-align: middle;
+    margin-right: 2px
+}
+
+.rates tr:nth-of-type(n + 2) td:nth-of-type(n + 2){
+    font-weight: 1000
+}
+
+.user-controls{
+    display: flex;
+    align-items: center;
+    margin-right: 50px
+}
+
+.user{
+    margin: 0 30px;
+}
+
+.logout{
+    border: 1px solid #502274;
+    border-radius: 5px;
+    color: #502274;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    width: 85px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.body{
+    padding-top: 50px;
+    box-sizing: border-box
+}
+
+.card-rules{
+    width: 620px;
+    margin: auto;
+    font-family: 'montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px
+}
+
+.card-rules a{
+    color:#6C63FF;
+}
+
+.add-card{
+    color: #9B9B9B;
+    margin: 50px auto 0px;
+    text-align: center;
+    width: 200px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 15px;
+}
+
+.add-card-btn{
+    margin: 50px auto 45px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-color: #502274;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    outline: none
+}
+
+.add-card-text{
+    font-size: 20px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    width: 108px;
+    margin: 0 auto 100px;
+}
+
+.card-brands{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto
+}
+
+form{
+    padding-left: 50px;
+    font-family: 'Montserrat-Medium', sans-serif
+}
+
+form .card-rules{
+    margin: 0 0 46px;
+    text-align: left;
+}
+
+.form-group{
+    margin-bottom: 35px;
+}
+
+.form-group *{
+    display: block;
+}
+
+.form-group label{
+    font-size: 12px;
+}
+
+.form-group input{
+    width: 450px;
+    height: 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 10px;
+    font-family: 'Montserrat-Regular', sans-serif
+}
+
+.form-group input::placeholder{
+    font-size: 8px;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.form-group.inline{
+    display: inline-block;
+    margin-right: 45px;
+}
+
+.form-group.inline input{
+    width: 200px;
+}
+
+.disclaimer{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 10px;
+    color: #9B9B9B;
+    margin-bottom: 20px;
+}
+
+form button{
+    width: 160px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    background-color: #502274;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    color: white;
+    outline: none
+
+}
