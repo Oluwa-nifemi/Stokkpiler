@@ -24,3 +24,14 @@ document.querySelector('#expiry-date').addEventListener('input', function(){
     },[])
     this.value = split.join('/')
 })
+
+document.querySelector('form').addEventListener('submit',(e) => {
+    e.preventDefault()
+    document.querySelector('.success-background').classList.remove('hide')
+    setTimeout(() => {
+        document.querySelector('.success').classList.add('active')
+    },50)
+    setTimeout(() => {
+        document.querySelector('.success').classList.add('show')
+    },350)
+})
