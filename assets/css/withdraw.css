@@ -37,19 +37,20 @@ html{
 body{
     background-color: #f0f0f0;
     box-sizing: border-box;
+    color: #4A4A4A;
 }
 
 .container{
     width: 100%;
     height: 100%;      
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .withdraw-sidebar{
-    flex-basis: 18%;
+    width: 220px;
     background-color: #FFFFFF;
     height: 100vh;
     display: flex;
@@ -57,8 +58,11 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 3rem 0;
-
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0.3rem 0rem 1.5rem #70707013;
 }
 
 .withdraw-sidebar-logo{
@@ -93,10 +97,15 @@ body{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    /* margin-bottom: 10px; */
-    /* background: #502274; */
 }
 
+.center-me{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 1rem;
+}
 
 .hoverImage{
     display: none;
@@ -143,7 +152,7 @@ body{
     display: none;
 }
 
-.active .option-text{
+.active .option-text{ 
     color: #FFFFFF;
 }
 
@@ -151,18 +160,350 @@ body{
 
 
 main{
-    flex-basis: 82%;
-    overflow-y: scroll;
+    margin-left: 220px;
+    width: 100%;
+    height: 100%;
+    /* background-color: orangered; */
+    position: relative;
     /* position: relative;  */
 }
 
 
+
+
 .overlay{
     position: absolute;
-    z-index: 100;
+    display: none;
+    z-index: 200;
     height: 100vh;
     width: 100%;
-
+    background-color: rgba(155, 155, 155, 0.57);
     /* background-color: red; */
 }
+
+.withdrawal-confirmation{
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 10px;
+    height: 70%;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    padding: 3rem 5rem;
+}
+
+.confirmation-header{
+    width: 100%;
+}
+
+.confirmation-header h2{
+    color: #000;
+    font-family:"Montserrat-SemiBold"; 
+}
+
+.underline{
+    border-bottom: 2px solid #502274;
+    padding-bottom: 0.5rem;
+}
+
+table.popup{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 70%;
+}
+
+th{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1.2rem;
+}
+
+td{
+    font-family: 'Montserrat-Regular';
+}
+
+.popup td{
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #F0F0F0;
+    margin: 0;
+}
+
+.top-cell{
+    border: 1px solid #F0F0F0;
+    border-top: none;
+}
+
+.bottom-cell{
+    border: 1x solid #f0f0f0;
+    border-bottom: none;
+}
+
+.right-cell{
+    border: 1x solid #f0f0f0;
+    border-right: none;
+}
+
+.left-cell{
+    border: 1x solid #f0f0f0;
+    border-left: none;
+}
+
+.confirm{
+    float: right;
+    text-decoration: none;
+    padding: 0.7rem 3rem;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    background-color: #502274;
+    border: none;
+    border-radius: 4px;
+}
+
+.notify-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.success-img{
+    display: none;
+}
+
+.failed-img{
+    display: none;
+}
+
+
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header{
+    height: 7rem;
+    background-color: #50227410;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-body{
+    padding: 6rem 5rem;
+    width: 100%;
+    
+}
+
+.plans{
+    width: 45%;
+}
+
+.form-group-full{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.form-group-header{
+    margin-bottom: 0.3rem;
+    display: flex;
+}
+
+.form-group-header h2{
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 1rem;
+}
+
+.form-group-full label{
+    font-family: 'Montserrat-medium';
+    color: #4A4A4A;
+}
+
+.form-input-full{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+}
+
+.select-group{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.units-of{
+    width: 90%;
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.half-input{
+    padding: 0.8rem 1rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    width: 60%;
+}
+
+.half-groups{
+    display: flex;
+    flex-direction: column;
+}
+
+.half-groups label{
+    margin-bottom: 0.6rem;
+}
+
+.add-location{
+    float: right;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #6C63FF;
+    font-family: 'Montserrat-Medium';
+    text-transform: capitalize;
+}
+
+.btn{
+    background-color: #502274;
+    border: none;
+    color: #FFFFFF;
+    padding: 1rem 3.5rem; 
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: 'Montserrat-Medium';
+
+}
+
+a.backlink{
+    text-decoration: none;
+    color: inherit;
+    width: 20%;
+}
+
+.back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.back h2{
+    font-family: 'Montserrat-Medium';
+    font-size: 1.4rem;
+    letter-spacing: 0.53;
+    margin-left: 1rem;
+}
+
+
+.stocks{
+    width: 33%;
+}
+
+.stocks tr{
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+.stocks td{
+    text-align: left;
+}
+
+.stocks td h3{
+    display: inline-block;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.stocks td img{
+    margin-right: 0.5rem;
+}
+
+
+
+
+.personalize{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+
+.logoutNav{
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #502274;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #502274;
+    font-family: "Montserrat-SemiBold";
+    font-size: 1rem;
+}
+
+.block-international{
+    transform: translateX(-2rem);
+}
+
+
+
+
+
+/* Action classes */
+
+.openOverlay{
+    opacity: 0;
+    display: block;
+    animation: openOverlay 1s ease 1 forwards;
+
+}
+
+@keyframes openOverlay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.hideConfirmation{
+    opacity: 0;
+    display: none;
+}
+
+.showSuccess{
+    opacity: 0;
+    display: block;
+    animation: displayImage 1s ease 1s 1 forwards;
+}
+
+.showFailed{
+    opacity: 0;
+    display: block;  
+    animation: displayImage 1s ease 1s 1 forwards;
+}
+
+
+@keyframes displayImage{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 
