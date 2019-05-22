@@ -50,7 +50,7 @@ body{
 }
 
 .withdraw-sidebar{
-    width: 220px;
+    width: 18%;
     background-color: #FFFFFF;
     height: 100vh;
     display: flex;
@@ -160,8 +160,8 @@ body{
 
 
 main{
-    margin-left: 220px;
-    width: 100%;
+    margin-left: 18%;
+    width: 82%;
     height: 100%;
     /* background-color: orangered; */
     position: relative;
