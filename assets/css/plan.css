@@ -71,7 +71,6 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 3rem 0;
     position: fixed;
     top: 0;
@@ -83,6 +82,8 @@ input{
 .withdraw-sidebar-logo{
     width: 100%;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
 }
 
 .withdraw-sidebar-logo h1{
@@ -93,6 +94,7 @@ input{
 
 .withdraw-sidebar-main{
     width: 100%;
+    margin-bottom: auto;
 }
 
 .sidebar-options{
@@ -120,6 +122,10 @@ input{
     align-items: center;
     justify-content: left;
     padding-left: 1rem;
+}
+
+.logout{
+    margin-bottom: 3rem;
 }
 
 .hoverImage{
@@ -487,6 +493,9 @@ a.backlink{
     animation: showForm 1s ease 0.2s 1 forwards;
 }
 
+
+
+
 @keyframes showForm{
     from{
         opacity: 0;
@@ -495,6 +504,152 @@ a.backlink{
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* sidebar action classes */
+
+.bar{
+    /* width: 7px; */
+    height: 3px;
+    padding: 0 1.3rem;
+    border-radius: 1px;
+}
+
+.bar-left{
+    transform: rotate(45deg) translateY(0.2rem);
+}
+
+.bar-right{
+    transform: rotate(-45deg) translateY(-0.2rem);
+    /* background-color: #FFFFFF; */
+}
+
+
+.open{
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    display: none;
+}
+
+.open .bar{
+    width: 100%;
+    background-color: #502274;
+}
+
+.open .bar:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+/* Action classes */
+
+.openOverlay{
+    opacity: 0;
+    display: block;
+    animation: openOverlay 1s ease 1 forwards;
+
+}
+
+
+
+
+
+/* Animations */
+
+.slidein{
+    animation: slideIn 1.2s cubic-bezier(0.77, 0, 0.175, 1) 1 forwards;
+}
+
+.slideout{
+    animation: slideOut 1s cubic-bezier(0.77, 0, 0.175, 1) 1 forwards;
+}
+
+
+.footer{
+    padding: 3rem 5rem;
+    background-color: #50227410;
+    padding-bottom: 5rem;
+    display: none;
+}
+
+h2.footer-heading{
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat-SemiBold';
+}
+
+
+.footer .stocks{
+    width: 100%;
+    display: block;
+}
+
+
+.footer .stocks tr{
+    width: fit-content;
+    /* background-color: #502274; */
+}
+
+
+.footer .stocks td{
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+
+
+
+
+@keyframes openOverlay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn{
+    from{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut{
+    from{
+        opacity: 1;
+        transform: translateX(0%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-100%)
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Styling for the slider */
@@ -647,6 +802,16 @@ span.Important{
     justify-content: space-evenly;
 }
 
+.detail-container-actions img{
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.detail-container-actions img:hover{
+    background-color: rgba(155, 155, 155, 0.1);
+}
+
 .plan-Header .detail-container{
     color: #4A4A4A;
     font-family: 'Montserrat-Medium';
@@ -677,3 +842,326 @@ span.Important{
 .tag{
     display: none;
 }
+
+.close{
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .withdraw-sidebar{
+        width: 25%;
+    }
+    .center-me{
+        width: 65%;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    main{
+        margin-left: 25%;
+        width: 75%;
+    }
+    .plans{
+        width: 60%;
+    }
+
+    .main-body{
+        padding: 8rem 6rem;
+    }
+
+    .NewPlanForm{
+        width: 60%;
+    }
+    .plan-group{
+        justify-content: space-between;
+    }
+    .serial{
+        width: 7rem;
+    }
+        
+}
+
+@media (max-width: 1000px){
+    .withdraw-sidebar{
+        width: 32%;
+    }
+    main{
+        margin-left: 32%;
+        width: 68%;
+    }
+    .plans{
+        width: 80%;
+    }
+    .logoutNav{
+        display: none;
+    }
+    .stocks{
+        flex-basis: 50%;
+    }
+    .personalize{
+        flex-basis: 13%;
+    }
+    a.backlink{
+        flex-basis: 10%;
+    }
+
+    .withdrawal-confirmation{
+        width: 90%;
+        height: 85%;
+    }
+
+    .notify-img{
+        width: 80%;
+    }
+
+    .NewPlanForm{
+        width: 80%;
+    }
+
+     /* plan items */
+
+     .plans-body{
+        background-color: transparent;
+        box-shadow: none;
+        padding: 2rem 0;
+    }
+
+    .plan-Header{
+        display: none;
+    }
+    
+    p.tag{
+        display: inline-block;
+        font-family: 'Montserrat-SemiBold';
+        color: #000000;
+        font-size: 1.2rem;
+        margin-right: 0.7rem;
+        margin-bottom: 0.7rem;
+
+    }
+
+    .plan-group{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #FFFFFF;
+        margin-bottom: 5rem;
+        border-radius: 5px;
+        box-shadow: 0.2rem 0.3rem 0.3rem #70707010;
+        padding: 2rem;
+
+    }
+
+    .detail-container-actions{
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+
+    .plan-group:nth-child(2n){
+        background-color: #FFFFFF;
+    }
+
+    .detail-container{
+        flex-direction: row;
+        width: 100%;
+    }
+
+   
+}
+
+@media (max-width: 768px){
+    .cover-overlay{
+        position: absolute;
+        display: none;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: rgba(155, 155, 155, 0.57);
+    }
+
+
+    .withdraw-sidebar{
+        width: 45%;
+        box-shadow: 0.3rem 0.1rem 1.3rem #70707030;
+        transform: translateX(-100%);
+        visibility: hidden; 
+    }
+
+    .withdraw-sidebar-logo{
+        margin-top: 8rem;
+        margin-bottom: 6rem;
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 0.5rem;
+        padding: 2rem;
+    }
+
+    .close .bar{
+        background-color: #502274;
+    }
+
+
+    .center-me{
+        /* background-color: red; */
+        /* justify-content: center; */
+        padding-left: 2rem;
+    }
+    
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    .plans{
+        width: 90%;
+    }
+
+    a.backlink{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .withdrawal-confirmation{
+        width: 90%;
+        height: 85%;
+        padding: 3rem 2rem;
+    }
+
+    .notify-img{
+        width: 80%;
+    }
+
+    .NewPlanForm{
+        width: 100%;
+    }
+
+    .main-header{
+        position: fixed;
+        top: 0;
+        background-color: #E6E3E8;
+        z-index: 800;
+    }
+    .main-body{
+        margin-top: 5rem;
+    }
+    
+    .visible{
+        visibility: visible;
+    }
+
+    
+
+
+}
+
+
+@media (max-width: 620px){
+    .center-me{
+        padding-left: 0.7rem;
+    }
+}
+
+@media (max-width: 575px){
+    .withdraw-sidebar{
+        width: 70%;
+    }
+
+    .center-me{
+        width: 60%;
+        padding-left: 2.5rem;
+    }
+    .plans{
+        width: 100%;
+    }
+
+    .main-body{
+        padding: 8rem 3rem;
+    }
+
+    .stocks{
+        display: none;
+    }
+
+    .personalize{
+        flex-basis: 20%;
+    }
+
+    .withdrawal-confirmation{
+        width: 95%;
+    }
+
+    .notify-img{
+        width: 90%;
+    }
+
+    .footer{
+        display: block;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    h2.footer-heading{
+        position: absolute;
+        top: 2.5rem;
+        /* left: 4.5rem; */
+    }
+
+    .footer .stocks{
+        margin-top: 3rem;
+    }
+
+    /* half inputs */
+
+    .units-of{
+        width: 100%;
+    }
+
+    .half-groups{
+        width: 49%;
+        margin-left: 1%;
+    }
+
+    .half-input{
+        width: 100%;
+    }
+
+
+    
+}
+
+
+@media(max-width: 425px){
+    .withdraw-sidebar{
+        width: 80%;
+    }
+    .center-me{
+        width: 70%;
+    }
+
+    .main-body{
+        padding: 8rem 2rem;
+    }
+    .personalize{
+        flex-basis: 23%;
+    }
+
+    .units-of{
+        flex-direction: column;
+    }
+
+    .half-groups{
+        width: 100%;
+        margin-top: 1rem;
+        /* margin-left: 1%; */
+    }
+}
+

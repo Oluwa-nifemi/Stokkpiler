@@ -56,7 +56,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
     padding: 3rem 0;
     position: fixed;
     top: 0;
@@ -483,14 +482,14 @@ a.backlink{
 
 .open{
     padding: 1rem 1.5rem;
-    background-color: #502274;
+    background-color: transparent;
     border-radius: 3px;
     display: none;
 }
 
 .open .bar{
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #502274;
 }
 
 .open .bar:not(:last-child){
@@ -570,14 +569,6 @@ h2.footer-heading{
     padding: 1rem 2rem;
 }
 
-.stocks td h3{
-    display: inline-block;
-    font-family: 'Montserrat-SemiBold';
-}
-
-.stocks td img{
-    margin-right: 0.5rem;
-}
 
 
 
@@ -753,6 +744,9 @@ h2.footer-heading{
 
     .notify-img{
         width: 80%;
+    }
+    .visible{
+        visibility: visible;
     }
 }
 

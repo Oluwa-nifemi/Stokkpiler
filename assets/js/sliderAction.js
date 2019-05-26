@@ -7,8 +7,8 @@ let overlayNew = document.querySelector(".cover-overlay")
 
 const openSlider = () => {
     overlayNew.style.display = "block"
-    menu.style.visibility = "visible"
     menu.classList.add("slidein")    
+    menu.classList.add("visible")
 }
 
 
@@ -18,8 +18,8 @@ const closeSlider = () => {
     setTimeout(() => {
         menu.classList.remove("slidein")
         menu.classList.remove("slideout")
+        menu.classList.remove("visible")
         overlayNew.style.display = "none"
-        menu.style.visibility = "hidden"
     }, 1000)
 
 }
