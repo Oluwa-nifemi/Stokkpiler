@@ -9,31 +9,66 @@
 </head>
 <body>
     <div class="container">
+        <div class="sidenav__container">
+            <div class="sidebar sidenav">
+                <a class="logo" href="../index.html">Stokkpile.com</a>
+                <button class="sidenav-close">
+                    <img src="../assets/images/close.svg">
+                </button>
+                <div class="links">
+                    <div class="link">
+                        <img src="../assets/images/home.svg">
+                        <a>Home</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/chart.svg">
+                        <a>Plans</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/calculator.svg">
+                        <a>Transactions</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/withdraw.svg">
+                        <a>Withdraw</a>
+                    </div>
+                    <div class="link active">
+                        <img src="../assets/images/wallet-white.svg">
+                        <a>Cards</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/settings.svg">
+                        <a>Settings</a>
+                    </div>
+                </div>
+                <a class="logout__link" href="./login.html"><img src="../assets/images/logout.svg"> Logout</a>
+            </div>
+        </div>
         <div class="sidebar">
             <a class="logo" href="../index.html">Stokkpile.com</a>
             <div class="links">
                 <div class="link">
-                    <img src="../assets/images/home.svg" alt="">
+                    <img src="../assets/images/home.svg">
                     <a>Home</a>
                 </div>
                 <div class="link">
-                    <img src="../assets/images/chart.svg" alt="">
+                    <img src="../assets/images/chart.svg">
                     <a>Plans</a>
                 </div>
                 <div class="link">
-                    <img src="../assets/images/calculator.svg" alt="">
+                    <img src="../assets/images/calculator.svg">
                     <a>Transactions</a>
                 </div>
                 <div class="link">
-                    <img src="../assets/images/withdraw.svg" alt="">
+                    <img src="../assets/images/withdraw.svg">
                     <a>Withdraw</a>
                 </div>
                 <div class="link active">
-                    <img src="../assets/images/wallet-white.svg" alt="">
+                    <img src="../assets/images/wallet-white.svg">
                     <a>Cards</a>
                 </div>
                 <div class="link">
-                    <img src="../assets/images/settings.svg" alt="">
+                    <img src="../assets/images/settings.svg">
                     <a>Settings</a>
                 </div>
             </div>
@@ -41,11 +76,14 @@
         </div>
         <div class="main">
             <div class="top">
+                <button class="sidenav-btn">
+                    <img src="../assets/images/menu.svg">
+                </button>
                 <div class="back">
-                    <img src="../assets/images/back.svg" alt="">
+                    <img src="../assets/images/back.svg">
                     <a href="">Back</a>
                 </div>
-                <table class="rates">
+                <table class="rates top">
                     <tr>
                         <td>Rates</td>
                         <td>Block</td>
@@ -54,32 +92,32 @@
                     <tr>
                         <td>Local</td>
                         <td>
-                            <img src="../assets/images/rate-down.svg" alt="">
+                            <img src="../assets/images/rate-down.svg">
                             N200
                         </td>
                         <td>
-                            <img src="../assets/images/rate-up.svg" alt="">
+                            <img src="../assets/images/rate-up.svg">
                             N2000
                         </td>
                     </tr>
                     <tr>
                         <td>International</td>
                         <td>
-                            <img src="../assets/images/rate-down.svg" alt="">
+                            <img src="../assets/images/rate-down.svg">
                             $2
                         </td>
                         <td>
-                            <img src="../assets/images/rate-up.svg" alt="">
+                            <img src="../assets/images/rate-up.svg">
                             $2
                         </td>
                     </tr>
                 </table>
                 <div class="user-controls">
                     <div class="notifications">
-                        <img src="../assets/images/notifications.svg" alt="">
+                        <img src="../assets/images/notifications.svg">
                     </div>
                     <div class="user">
-                        <img src="../assets/images/user.svg" alt="">
+                        <img src="../assets/images/user.svg">
                     </div>
                     <button class="logout">
                         Logout
@@ -152,7 +190,37 @@
                     </div>
                 </div>
             </div>
+            <table class="rates bottom">
+                <tr>
+                    <td>Rates</td>
+                    <td>Block</td>
+                    <td>Cement</td>
+                </tr>
+                <tr>
+                    <td>Local</td>
+                    <td>
+                        <img src="../assets/images/rate-down.svg">
+                        N200
+                    </td>
+                    <td>
+                        <img src="../assets/images/rate-up.svg">
+                        N2000
+                    </td>
+                </tr>
+                <tr>
+                    <td>International</td>
+                    <td>
+                        <img src="../assets/images/rate-down.svg">
+                        $2
+                    </td>
+                    <td>
+                        <img src="../assets/images/rate-up.svg">
+                        $2
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
+    <script src="../assets/js/sidenav.js"></script>
 </body>
 </html>

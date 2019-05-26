@@ -10,6 +10,41 @@
 </head>
 <body>
     <div class="container">
+        <div class="sidenav__container">
+            <div class="sidebar sidenav">
+                <a class="logo" href="../index.html">Stokkpile.com</a>
+                <button class="sidenav-close">
+                    <img src="../assets/images/close.svg">
+                </button>
+                <div class="links">
+                    <div class="link">
+                        <img src="../assets/images/home.svg">
+                        <a>Home</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/chart.svg">
+                        <a>Plans</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/calculator.svg">
+                        <a>Transactions</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/withdraw.svg">
+                        <a>Withdraw</a>
+                    </div>
+                    <div class="link active">
+                        <img src="../assets/images/wallet-white.svg">
+                        <a>Cards</a>
+                    </div>
+                    <div class="link">
+                        <img src="../assets/images/settings.svg">
+                        <a>Settings</a>
+                    </div>
+                </div>
+                <a class="logout__link" href="./login.html"><img src="../assets/images/logout.svg"> Logout</a>
+            </div>                 
+        </div>
         <div class="sidebar">
             <a class="logo" href="../index.html">Stokkpile.com</a>
             <div class="links">
@@ -42,11 +77,15 @@
         </div>
         <div class="main">
             <div class="top">
+                <button class="sidenav-btn">
+                    <img src="../assets/images/menu.svg">
+                </button>
+
                 <div class="back">
                     <img src="../assets/images/back.svg" alt="">
                     <a href="">Back</a>
                 </div>
-                <table class="rates">
+                <table class="rates top">
                     <tr>
                         <td>Rates</td>
                         <td>Block</td>
@@ -131,165 +170,118 @@
                     <span>RECENT TRANSACTIONS</span>
                     <button>Download (PDF)</button>
                 </div>
-                <table class="transactions">
+                <div class="transactions">
+                    <div class="transactions__header">
+                        <p>Billing Date</p>
+                        <p>Transaction ID</p>
+                        <p>Materials Withdrawn</p>
+                        <p>Amount</p>
+                        <p>Status</p>
+                    </div>
+                    <p class="transactions__header__small">
+                        TRANSACTIONS
+                    </p>
+                    <div class="transaction deposit">
+                        <p><span class="label">Billing Date:</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID:</span> 345648097657IF</p>
+                        <p><span class="label">Materials Withdrawn:</span> </p>
+                        <p><span class="label">Amount:</span> N2,000.00</p>
+                        <p><span class="label">Status:</span> Paid</p>
+                    </div>
+                    <div class="transaction deposit">
+                        <p><span class="label">Billing Date:</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID:</span> 345648097657IF</p>
+                        <p><span class="label">Materials Withdrawn:</span> </p>
+                        <p><span class="label">Amount:</span> N2,000.00</p>
+                        <p><span class="label">Status:</span> Paid</p>
+                    </div>
+                    <div class="transaction deposit">
+                        <p><span class="label">Billing Date:</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID:</span> 345648097657IF</p>
+                        <p><span class="label">Materials Withdrawn:</span> </p>
+                        <p><span class="label">Amount:</span> N2,000.00</p>
+                        <p><span class="label">Status:</span> Paid</p>
+                    </div>
+                    <div class="transaction deposit">
+                        <p><span class="label">Billing Date:</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID:</span> 345648097657IF</p>
+                        <p><span class="label">Materials Withdrawn:</span> </p>
+                        <p><span class="label">Amount:</span> N2,000.00</p>
+                        <p><span class="label">Status:</span> Paid</p>
+                    </div>
+                    <div class="transaction deposit">
+                        <p><span class="label">Billing Date:</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID:</span> 345648097657IF</p>
+                        <p><span class="label">Materials Withdrawn:</span> </p>
+                        <p><span class="label">Amount:</span> N2,000.00</p>
+                        <p><span class="label">Status:</span> Paid</p>
+                    </div>
+                    <div class="transaction withdraw">
+                        <p><span class="label">Billing Date</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID</span> 345648097657IF</p>
+                        <p>
+                            <span class="label">Materials Withdrawn:</span>
+                            100 Bags of cement
+                            <span class="br"></span>
+                            7,000 Units of Blocks
+                        </p>
+                        <p><span class="label">Amount:</span> -</p>
+                        <p><span class="label">Status:</span> Debit</p>
+                    </div>
+                    <div class="transaction withdraw">
+                        <p><span class="label">Billing Date</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID</span> 345648097657IF</p>
+                        <p>
+                            <span class="label">Materials Withdrawn:</span>
+                            <span>
+                                100 Bags of cement
+                                <span class="br"></span>
+                                7,000 Units of Blocks
+                            </span>
+                        </p>
+                        <p><span class="label">Amount:</span> -</p>
+                        <p><span class="label">Status:</span> Debit</p>
+                    </div>  
+                    <div class="transaction deposit">
+                        <p><span class="label">Billing Date:</span> 14.09.2019   00:00</p>
+                        <p><span class="label">Transaction ID:</span> 345648097657IF</p>
+                        <p><span class="label">Materials Withdrawn:</span>-</p>
+                        <p><span class="label">Amount:</span> N2,000.00</p>
+                        <p><span class="label">Status:</span> Paid</p>
+                    </div>
+                </div>
+                <table class="rates bottom">
                     <tr>
+                        <td>Rates</td>
+                        <td>Block</td>
+                        <td>Cement</td>
+                    </tr>
+                    <tr>
+                        <td>Local</td>
                         <td>
-                            Billing Date
+                            <img src="../assets/images/rate-down.svg">
+                            N200
                         </td>
                         <td>
-                            Transaction ID
-                        </td>
-                        <td>
-                            Materials Withdrawn
-                        </td>
-                        <td>
-                            Amount
-                        </td>
-                        <td>
-                            Status
+                            <img src="../assets/images/rate-up.svg">
+                            N2000
                         </td>
                     </tr>
-                    <tr class="deposit">
+                    <tr>
+                        <td>International</td>
                         <td>
-                            14.09.2019   00:00
+                            <img src="../assets/images/rate-down.svg">
+                            $2
                         </td>
                         <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            N2,000.00
-                        </td>
-                        <td>
-                            Paid
-                        </td>
-                    </tr>
-                    <tr class="deposit">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            N2,000.00
-                        </td>
-                        <td>
-                            Paid
-                        </td>
-                    </tr>
-                    <tr class="deposit">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            N2,000.00
-                        </td>
-                        <td>
-                            Paid
-                        </td>
-                    </tr>
-                    <tr class="deposit">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            N2,000.00
-                        </td>
-                        <td>
-                            Paid
-                        </td>
-                    </tr>
-                    <tr class="deposit">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            N2,000.00
-                        </td>
-                        <td>
-                            Paid
-                        </td>
-                    </tr>
-                    <tr class="withdraw">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            <p>100 Bags of Cement</p>
-                            <p>7,000 Units of Blocks</p>
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            Debit
-                        </td>
-                    </tr>
-                    <tr class="withdraw">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            <p>100 Bags of Cement</p>
-                            <p>7,000 Units of Blocks</p>
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            Debit
-                        </td>
-                    </tr>
-                    <tr class="deposit">
-                        <td>
-                            14.09.2019   00:00
-                        </td>
-                        <td>
-                            345648097657IF
-                        </td>
-                        <td>
-                            -
-                        </td>
-                        <td>
-                            N2,000.00
-                        </td>
-                        <td>
-                            Paid
+                            <img src="../assets/images/rate-up.svg">
+                            $2
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
+    <script src="../assets/js/sidenav.js"></script>
 </body>
 </html>

@@ -15,6 +15,7 @@
 
 body{
     margin: 0;
+    background-color: #F0F0F0;
 }
 
 button{
@@ -25,7 +26,7 @@ button{
     width: 100%;
     display: flex;
     background-color: #F0F0F0;
-    height: 100VH;
+    min-height: 100vh;
 }
 
 .sidebar{
@@ -34,10 +35,45 @@ button{
     box-shadow: 5px 0px 5px #F0F0F0;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+
+.sidenav__container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.sidebar.sidenav{
+    width: 0%;
+    position: absolute;
+    transition: 400ms;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidenav-close{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    right: 10px;
+    top: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .main{
     width: 83%;
+    margin-left: 17%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
@@ -86,6 +122,21 @@ button{
     position: relative;
     height: 70px;
     background-color: #DDDBF1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidenav-btn{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    width: 43px;
+    outline: none;
+    display: none;
+}
+
+.sidenav-btn img{
+    width: 100%;
 }
 
 .back{
@@ -113,6 +164,11 @@ button{
 
 .rates td{
     margin-bottom: 5px;
+    min-width: 100px;
+}
+
+.rates.bottom{
+    display: none;
 }
 
 .rates td img{
@@ -273,7 +329,7 @@ form button{
 .success-background{
     width: 83%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -318,4 +374,135 @@ form button{
 
 .hide{
     display: none;
+}
+
+@media(max-width: 965px){
+    .sidebar{
+        width: 24%;
+    }
+    .main{
+        width: 76%;
+        margin-left: 24%;
+    }
+    .card-rules{
+        width: 90%;
+    }
+    .success-background{
+        width: 76%;
+    }
+}
+
+@media(max-width: 800px){
+    .sidebar{
+        width: 30%;
+    }
+    .main{
+        width: 70%;
+        margin-left: 30%;
+        padding-bottom: 0;
+    }
+    .success-background{
+        width: 70%;
+    }
+    .success.active{
+        width: 80%;
+    }
+    .links .link, .logout__link{
+        padding-left: 20%;
+    }
+    .rates.top{
+        display: none;
+    }
+    .rates.bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        background-color: rgba(221, 219, 241, 0.8);
+        width: 100%;
+    }
+    .rates td{
+        min-width: 100px;
+    }
+    .sidebar{
+        box-shadow: none;
+    }
+    form{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 750px){
+    .body{
+        padding-top: 20px;
+    }
+    form .card-rules{
+        margin-bottom: 30px;
+    }
+    form{
+        padding-left: 30px;
+    }
+    .form-group input{
+        width: 90%;
+    }
+    .form-group.inline{
+        width: 44%;
+        margin-right: 0;
+    }
+    .form-group.inline input{
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+    .success-background{
+        width: 100%;
+    }
+    .sidebar.sidenav.active{
+        width: 50%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .sidenav__container.active{
+        display: block;
+    }
+    .top{
+        position: fixed;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+    .sidenav-btn{
+        display: inline-block;
+    }
+    .top .back{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 15%;
+    }
+    .links .link, .logout__link{
+        padding-left: 15%
+    }
+    .body{
+        margin-top: 70px;
+    }
+}
+
+@media(max-width: 450px){
+    .sidebar.sidenav.active{
+        width: 70%;
+    }
+    .success.active{
+        width: 90%;
+        padding: 50px 10px;
+    }
+    .success.active p{
+        text-align: center;
+    }
 }

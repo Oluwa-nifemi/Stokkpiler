@@ -32,6 +32,7 @@
 
 body{
     margin: 0;
+    background-color: #F0F0F0;
 }
 
 button{
@@ -46,7 +47,6 @@ button{
     width: 100%;
     display: flex;
     background-color: #F0F0F0;
-    height: 100VH;
 }
 
 .sidebar{
@@ -55,10 +55,43 @@ button{
     box-shadow: 5px 0px 5px #F0F0F0;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+
+.sidenav__container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.sidebar.sidenav{
+    width: 0%;
+    position: absolute;
+    transition: 400ms;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidenav-close{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    right: 10px;
+    top: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .main{
     width: 83%;
+    margin-left: 17%;
+    padding-bottom: 20px;
+    box-sizing: border-box
 }
 
 .logo{
@@ -107,6 +140,21 @@ button{
     position: relative;
     height: 70px;
     background-color: #DDDBF1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidenav-btn{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    width: 43px;
+    outline: none;
+    display: none;
+}
+
+.sidenav-btn img{
+    width: 100%;
 }
 
 .back{
@@ -130,6 +178,10 @@ button{
     font-size: 12px;
     border-collapse: separate;
     border-spacing: 0 5px;
+}
+
+.rates.bottom{
+    display: none;
 }
 
 .rates td{
@@ -231,7 +283,7 @@ button{
 .content__properties__details .title{
     font-size: 10px;
     font-family: 'Montserrat-Medium',sans-serif;
-    width: 150px;
+    width: 65%;
     display: inline-block;
 }
 
@@ -268,3 +320,107 @@ button{
     background-color: var(--green-bg)
 }
 
+@media(max-width: 965px){
+    .cards{
+        grid-gap: 40px 10px;
+        padding: 20px 20px 0;
+    }
+    .sidebar{
+        width: 24%;
+    }
+    .main{
+        width: 76%;
+        margin-left: 24%;
+    }
+}
+
+@media(max-width: 800px){
+    .sidebar{
+        width: 30%;
+    }
+    .main{
+        width: 70%;
+        margin-left: 30%;
+        padding-bottom: 0;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .links .link, .logout__link{
+        padding-left: 20%;
+    }
+    .rates.top{
+        display: none;
+    }
+    .rates.bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: rgba(221, 219, 241, 0.8);
+        width: 100%;
+    }
+    .rates td{
+        width: 100px;
+    }
+    .sidebar{
+        box-shadow: none;
+    }
+}
+
+@media(max-width: 600px){
+    .sidebar.sidenav.active{
+        width: 50%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .sidenav__container.active{
+        display: block;
+    }    
+    .cards{
+        margin-top: 70px;
+    }
+    .top{
+        position: fixed;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+    .sidenav-btn{
+        display: inline-block;
+    }
+    .top .back{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 15%;
+    }
+    .links .link, .logout__link{
+        padding-left: 15%
+    }
+}
+
+@media(max-width: 450px){
+    .sidebar.sidenav.active{
+        width: 70%;
+    }
+    .card{
+        height: unset;
+    }
+    .content{
+        grid-template-columns: 1fr;
+        padding-right: 12px;
+    }
+    .content__amount__deposited{
+        border-top: 1px solid #E6E6E6;
+        color: black;
+        padding-top: 18.5px;
+        padding-left: 0;
+        border-left: none;
+    }
+}
