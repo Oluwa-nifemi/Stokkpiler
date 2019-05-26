@@ -25,6 +25,7 @@
 
 body{
     margin: 0;
+    background-color: #F0F0F0
 }
 
 button{
@@ -39,7 +40,7 @@ button{
     width: 100%;
     display: flex;
     background-color: #F0F0F0;
-    height: 100VH;
+    min-height: 100vh;
 }
 
 .sidebar{
@@ -52,9 +53,39 @@ button{
     height: 100%;
 }
 
+.sidenav__container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.sidebar.sidenav{
+    width: 0%;
+    position: absolute;
+    transition: 400ms;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidenav-close{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    right: 10px;
+    top: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
 .main{
     width: 83%;
     margin-left: 17%;
+    padding-bottom: 20px;
+    box-sizing: border-box
 }
 
 .logo{
@@ -103,6 +134,21 @@ button{
     position: relative;
     height: 70px;
     background-color: #DDDBF1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidenav-btn{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    width: 43px;
+    outline: none;
+    display: none;
+}
+
+.sidenav-btn img{
+    width: 100%;
 }
 
 .back{
@@ -126,6 +172,10 @@ button{
     font-size: 12px;
     border-collapse: separate;
     border-spacing: 0 5px;
+}
+
+.rates.bottom{
+    display: none;
 }
 
 .rates td{
@@ -168,7 +218,6 @@ button{
     height: calc(100% - 70px);
     padding: 30px 50px;
     box-sizing: border-box;
-    overflow: auto;
 }
 
 .cards{
@@ -225,10 +274,16 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 12px;
     color: white;
     font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+.add-plan p{
+    width: 90%;
 }
 
 .add-plan button{
@@ -308,41 +363,226 @@ button{
 .transactions{
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 12px;
-    border-collapse: separate;
-    border-spacing: 0 5px;
     width: 100%;
-    padding: 0 20px;
+    padding: 10px 20px;
     background-color: white;
     margin-top: 14px;
     box-shadow: 0 1px #000000 4px;
     border: 1px solid #EAEAEA;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
-.transactions tr{
+.transactions__header{
+    color: black;
+}
+
+.transactions__header__small{
+    display: none;
+    text-align: center
+}
+
+.transaction,.transactions__header{
     height: 44px;
+    display: grid;
+    grid-template-columns: 0.7fr repeat(4,1fr)
 }
 
-.transactions tr.deposit{
+.transaction p,.transactions__header p{
+    padding-left: 20px;
+    box-sizing: border-box
+}
+
+.transaction p span.label{
+    display: none;
+    color: black;
+    margin-right: 20px;
+}
+
+.transaction p span.br{
+    display: block;
+}
+
+.transaction.deposit{
     color: #008000;
 }
 
-.transactions tr.withdraw{
+.transactions__header p:not(:nth-of-type(1)){
+    text-align: center
+}
+
+.transaction p:not(:nth-of-type(1)){
+    text-align: center
+}
+
+.transaction.withdraw{
     color: #B21F1E;
 }
 
-.transactions tr td:first-of-type{
-    padding-left: 30px;
-}
-
-.transactions tr td:not(:first-of-type){
-    text-align: center;
-}
-
-.transactions tr:nth-of-type(2n){
+.transaction:nth-of-type(2n){
     background-color: rgba(216, 216, 216, 0.29)
 }
 
-.transactions tr td p{
-    margin: 3px;
+@media(max-width: 1050px){
+    .cards{
+        height: unset
+    }
+    .cards div.grid{
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    .cards div.grid div:first-of-type{
+        border: none;
+        border-bottom: 1px solid #EAEAEA;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .cards div.grid div:last-of-type{
+        text-align: center;
+        margin-top: 10px
+    }
+    .cards .header{
+        text-align: center;
+    }
+}
+
+@media(max-width: 965px){
+    .sidebar{
+        width: 24%;
+    }
+    .main{
+        width: 76%;
+        margin-left: 24%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+    .total-amount,.materials-withdrawn,.materials-left,.add-plan{
+        margin: 0 auto;
+        width: 248px;
+    }
+    .content{
+        padding: 30px 20px;
+        padding-bottom: 0;
+    }
+    .transactions{
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    .transaction, .transactions__header{
+        height: unset;
+    }
+}
+
+@media(max-width: 800px){
+    .sidebar{
+        width: 30%;
+    }
+    .main{
+        width: 70%;
+        margin-left: 30%;
+        padding-bottom: 0;
+    }
+    .links .link, .logout__link{
+        padding-left: 20%;
+    }
+    .rates.top{
+        display: none;
+    }
+    .rates.bottom{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(221, 219, 241, 0.8);
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .rates td{
+        width: 100px;
+    }
+    .sidebar{
+        box-shadow: none;
+    }
+    .transactions{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .transactions__header{
+        display: none;
+    }
+    .transaction{
+        display: block;
+    }
+    .transaction p:not(:nth-of-type(1)){
+        text-align: left
+    }
+    .transaction p span.label{
+        display: inline-block;
+    }
+    .transaction p{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 5px;
+    }   
+    .transactions__header__small{
+        display: block;
+    }
+}
+
+@media(max-width: 775px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .add-plan{
+        min-height: 220px;
+    }
+}
+
+@media(max-width: 600px){
+    .sidebar.sidenav.active{
+        width: 50%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .sidenav__container.active{
+        display: block;
+    }    
+    .top{
+        position: fixed;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+    .sidenav-btn{
+        display: inline-block;
+    }
+    .top .back{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 15%;
+    }
+    .links .link, .logout__link{
+        padding-left: 15%
+    }
+    .content{
+        margin-top: 70px;
+    }
+}
+
+@media(max-width: 450px){
+    .sidebar.sidenav.active{
+        width: 70%;
+    }
+    .content{
+        padding: 30px 0 0;
+    }
 }
