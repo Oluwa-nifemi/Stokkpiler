@@ -65,7 +65,7 @@ button{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 20px;
     color: #502274;
-    margin: 30px auto auto;
+    margin: 30px auto 20px;
     display: block;
     width: fit-content;
     text-decoration: none;
@@ -106,7 +106,7 @@ button{
     justify-content: space-between;
     position: relative;
     height: 70px;
-    background-color: rgba(80, 34, 116, 0.06);
+    background-color: #DDDBF1;
 }
 
 .back{
