@@ -701,7 +701,7 @@ h2.footer-heading{
         width: 45%;
         box-shadow: 0.3rem 0.1rem 1.3rem #70707030;
         transform: translateX(-100%);
-        visibility: hidden;
+        visibility: hidden; 
     }
 
     .withdraw-sidebar-logo{
@@ -748,6 +748,7 @@ h2.footer-heading{
     .withdrawal-confirmation{
         width: 90%;
         height: 85%;
+        padding: 3rem 2rem;
     }
 
     .notify-img{
