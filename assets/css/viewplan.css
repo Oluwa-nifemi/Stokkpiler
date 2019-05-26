@@ -509,9 +509,8 @@ button.btn{
 
 
 .footer{
-    padding: 3rem 5rem;
+    padding: 0rem 5rem 1rem;
     background-color: #50227410;
-    padding-bottom: 5rem;
     display: none;
 }
 
@@ -525,6 +524,8 @@ h2.footer-heading{
 .footer .stocks{
     width: 100%;
     display: block;
+    border-spacing: 0 5px;
+    border-collapse: separate;
 }
 
 
@@ -537,7 +538,9 @@ h2.footer-heading{
 .footer .stocks td{
     text-align: left;
     font-size: 1.2rem;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
+    min-width: 100px;
+    margin-bottom: 5px;
 }
 
 
@@ -816,7 +819,7 @@ h2.footer-heading{
     }
 
     .main-body{
-        padding: 8rem 3rem;
+        padding: 8rem 3rem 0;
     }
 
     .stocks{
@@ -840,7 +843,8 @@ h2.footer-heading{
         display: flex;
         justify-content: center;
         position: relative;
-        padding: 2rem 2rem;
+        /* padding: 2rem 2rem; */
+        margin-top: 10px;
     }
 
     h2.footer-heading{
@@ -851,6 +855,8 @@ h2.footer-heading{
 
     .footer .stocks{
         margin-top: 3rem;
+        border-spacing: 0 5px;
+        border-collapse: separate;
     }
 
     /* half inputs */

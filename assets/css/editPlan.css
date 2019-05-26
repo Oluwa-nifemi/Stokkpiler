@@ -547,9 +547,8 @@ a.backlink{
 
 
 .footer{
-    padding: 3rem 5rem;
+    padding: 0rem 5rem 1rem;
     background-color: #50227410;
-    padding-bottom: 5rem;
     display: none;
 }
 
@@ -575,7 +574,9 @@ h2.footer-heading{
 .footer .stocks td{
     text-align: left;
     font-size: 1.2rem;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
+    border-spacing: 0 5px;
+    border-collapse: separate;
 }
 
 
@@ -964,7 +965,7 @@ span.Important{
     }
 
     .main-body{
-        padding: 8rem 3rem;
+        padding: 8rem 3rem 0;
     }
 
     .stocks{
@@ -988,7 +989,8 @@ span.Important{
         display: flex;
         justify-content: center;
         position: relative;
-        padding: 2rem 2rem;
+        margin-top: 10px;
+        /* padding: 2rem 2rem; */
     }
 
     h2.footer-heading{

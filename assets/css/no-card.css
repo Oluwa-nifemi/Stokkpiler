@@ -419,6 +419,7 @@ form button{
         margin-top: auto;
         background-color: rgba(221, 219, 241, 0.8);
         width: 100%;
+        padding: 10px 5px;
     }
     .rates td{
         min-width: 100px;

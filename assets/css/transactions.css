@@ -497,7 +497,7 @@ button{
         justify-content: center;
         background-color: rgba(221, 219, 241, 0.8);
         width: 100%;
-        padding: 0 5px;
+        padding: 10px 5px;
         box-sizing: border-box;
     }   
     .sidebar{
