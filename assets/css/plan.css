@@ -566,11 +566,11 @@ a.backlink{
 /* Animations */
 
 .slidein{
-    animation: slideIn 1.2s cubic-bezier(0.77, 0, 0.175, 1) 1 forwards;
+    animation: slideIn 0.4s 1 forwards;
 }
 
 .slideout{
-    animation: slideOut 1s cubic-bezier(0.77, 0, 0.175, 1) 1 forwards;
+    animation: slideOut 0.4s 1 forwards;
 }
 
 

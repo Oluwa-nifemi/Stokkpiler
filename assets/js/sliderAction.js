@@ -20,7 +20,7 @@ const closeSlider = () => {
         menu.classList.remove("slideout")
         menu.classList.remove("visible")
         overlayNew.style.display = "none"
-    }, 1000)
+    }, 400)
 
 }
 
