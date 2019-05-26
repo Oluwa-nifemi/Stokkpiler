@@ -23,6 +23,13 @@
     src: url('../fonts/copperplate/OPTICopperplate-Light.otf')
 }
 
+:root{
+    --brown-bg: #D4D2A5;
+    --blue-bg: #B4C5E4;
+    --pink-bg: #EFBCD5;
+    --green-bg: #92C9B1;
+}
+
 body{
     margin: 0;
 }
@@ -48,13 +55,10 @@ button{
     box-shadow: 5px 0px 5px #F0F0F0;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    height: 100%;
 }
 
 .main{
     width: 83%;
-    margin-left: 17%;
 }
 
 .logo{
@@ -164,185 +168,103 @@ button{
     background-color: transparent;
 }
 
-.content{
-    height: calc(100% - 70px);
-    padding: 30px 50px;
-    box-sizing: border-box;
-    overflow: auto;
-}
-
 .cards{
-    height: 148px;
-    width: 100%;
-    display: flex;
-    font-family: 'Montserrat-Regular', sans-serif;
-}
-
-.cards .header{
-    font-size: 14px;
-    margin: 11px 20px;
-}
-
-.cards .bold{
-    font-family: 'Montserrat-Bold';
-    font-size: 24px;
-    margin: 15px 20px;
-}
-
-.cards .light{
-    font-size: 10px;
-}
-
-.total-amount{
-    width: 248px;
-    border-radius: 3px;
-    background-color: white;
-    margin-right: 14px;
-    border: 1px solid #EAEAEA;
-}
-
-.materials-withdrawn{
-    width: 290px;
-    border-radius: 3px;
-    background-color: white;
-    margin-right: 14px;
-    border: 1px solid #EAEAEA;
-}
-
-.materials-left{
-    width: 290px;
-    border-radius: 3px;
-    background-color: white;
-    margin-right: 14px;
-    border: 1px solid #EAEAEA;
-}
-
-.add-plan{
-    width: 185px;
-    border-radius: 3px;
-    background-color: #502274;
-    border: 1px solid #EAEAEA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-}
-
-.add-plan button{
-    background-color: transparent;
-    border: none;
-}
-
-.cards div span.line-h{
-    height: 1px;
-    background-color: #EAEAEA;
-    display: block;
-    width: 100%;
-}
-
-.cards div.grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 17px 20px;
-    height: 80px;
-}
-
-.cards div.grid .light{
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.cards div.grid div:first-of-type{
-    border-right: 1px solid #EAEAEA;
-}
-
-.cards div.grid .bold{
-    margin: 0;
-}
-
-.cards div.grid div:last-of-type{
-    text-align: right;
-}
-
-.materials-withdrawn .bold{
-    color: #B21F1E;
-}
-
-.materials-left .bold{
-    color: #008000;
-}
-
-.download-pdf{
-    padding: 0 20px;
+    grid-gap: 40px 35px;
+    padding: 20px 50px 0;
     box-sizing: border-box;
+    margin: auto;
+}
+
+.card{
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    height: 230px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card .header,.card .content{
+    padding-left: 18px;
+}
+
+.card .header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 50px;
-    margin-top: 14px;
-    background-color: white;
-    border-radius: 3px;
-    border: 1px solid #EAEAEA;
-}
-
-.download-pdf span{
-    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-family: 'Montserrat-SemiBold',sans-serif;
     font-size: 12px;
 }
 
-.download-pdf button{
-    border-radius: 3px;
-    background-color: transparent;
-    border: 1px solid #502274;
-    color: #502274;
-    width: 135px;
-    height: 25px;
-    font-family: 'Rubik', sans-serif;
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 19px 0;
+    box-sizing: border-box;
+}
+
+.content__properties{
+    color: black;
+}
+
+.content__properties__header,.content__amount__deposited__header{
+    font-family: 'Montserrat-Medium',sans-serif;
     font-size: 12px;
+    margin: 0;
+    margin-top: 4px;
 }
 
-.transactions{
-    font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 12px;
-    border-collapse: separate;
-    border-spacing: 0 5px;
-    width: 100%;
-    padding: 0 20px;
-    background-color: white;
-    margin-top: 14px;
-    box-shadow: 0 1px #000000 4px;
-    border: 1px solid #EAEAEA;
-    border-radius: 3px;
+.content__properties__details{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 22px;
 }
 
-.transactions tr{
-    height: 44px;
+.content__properties__details .title{
+    font-size: 10px;
+    font-family: 'Montserrat-Medium',sans-serif;
+    width: 150px;
+    display: inline-block;
 }
 
-.transactions tr.deposit{
-    color: #008000;
+
+.content__properties__details .amount,.content__amount__deposited .amount{
+    font-family: 'Montserrat-Bold',sans-serif;
+    font-size: 24px;
 }
 
-.transactions tr.withdraw{
-    color: #B21F1E;
+.content__amount__deposited{
+    border-left: 1px solid #E6E6E6;
+    color: black;
+    padding-left: 18.5px;
+    box-sizing: border-box;
 }
 
-.transactions tr td:first-of-type{
-    padding-left: 30px;
+.content__amount__deposited .amount{
+    margin-top: 20px;
 }
 
-.transactions tr td:not(:first-of-type){
-    text-align: center;
+.card.brown .header{
+    background-color: var(--brown-bg)
 }
 
-.transactions tr:nth-of-type(2n){
-    background-color: rgba(216, 216, 216, 0.29)
+.card.blue .header{
+    background-color: var(--blue-bg)
 }
 
-.transactions tr td p{
-    margin: 3px;
+.card.pink .header{
+    background-color: var(--pink-bg)
 }
+
+.card.green .header{
+    background-color: var(--green-bg)
+}
+
