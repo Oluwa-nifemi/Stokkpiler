@@ -310,6 +310,12 @@ button{
     .cards{
         padding: 20px 10px 0;
     }
+    .logout{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0px;
+    }
 }
 
 @media(max-width: 800px){

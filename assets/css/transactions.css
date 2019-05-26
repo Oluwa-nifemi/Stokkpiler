@@ -445,6 +445,12 @@ button{
     .cards .header,.cards .bold{
         text-align: center;
     }
+    .logout{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0px;
+    }
 }
 
 @media(max-width: 965px){

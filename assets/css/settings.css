@@ -371,6 +371,12 @@ form button{
         padding-left: 10px;
         box-sizing: border-box
     }
+    .logout{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0px;
+    }
 }
 
 @media(max-width: 800px){
