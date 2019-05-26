@@ -424,6 +424,7 @@ a.backlink{
 
 .stocks td{
     text-align: left;
+    min-width: 100px;
 }
 
 .stocks td h3{

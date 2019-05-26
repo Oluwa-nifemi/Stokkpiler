@@ -186,6 +186,7 @@ button{
 
 .rates td{
     margin-bottom: 5px;
+    min-width: 100px;
 }
 
 .rates td img{

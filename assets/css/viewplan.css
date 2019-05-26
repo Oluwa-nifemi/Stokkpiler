@@ -232,6 +232,7 @@ a.backlink{
 .stocks td{
     text-align: left;
     font-family: 'Montserrat-Regular';
+    min-width: 100px;
 }
 
 .stocks td h3{
