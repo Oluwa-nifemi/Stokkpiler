@@ -1,6 +1,3 @@
-document.addEventListener("DOMContentLoaded", function (e) {slideBitches()})
-
-
 const slideBitches = (e) => {
 
     // main js
@@ -10,10 +7,12 @@ const slideBitches = (e) => {
     const Form = document.querySelector(".NewPlanForm")
     const listOfSpecialInputs = document.querySelectorAll(".special-dropdown")
 
-    AddPlan.addEventListener("click", (e) => {
-        EmptyDiv.style.display = "none"
-        Form.classList.add("show-form")
-    })
+    if (AddPlan !== null) {
+        AddPlan.addEventListener("click", (e) => {
+            EmptyDiv.style.display = "none"
+            Form.classList.add("show-form")
+        })    
+    }
 
     listOfSpecialInputs.forEach((input) => {
         input.addEventListener("click", (e) => {
@@ -23,15 +22,35 @@ const slideBitches = (e) => {
 
 
 
+    function listener(elm, listeners, cb) {
+        let events = listeners.split(" ").filter(a => a).join("").split(",")
+        events.forEach(event => {
+            if(elm !== null){
+            elm.addEventListener(event, cb)}
+        })
+    }
+
     // slider code
 
     const slider = document.querySelector(".slider")
     const currentPercent = document.querySelector(".current")
     const leftOver = document.querySelector(".negative")
-    slider.addEventListener("mousemove", (e) => {
+
+    listener(slider, "mousemove,touchmove,change", (e) => {
         let sliderValue = slider.value
         updateSlider(sliderValue)
     })
+
+    // slider.addEventListener("mousemove", )
+
+    // slider.addEventListener("touchmove", (e) => {
+    //     let sliderValue = slider.value
+    //     console.log("noo")
+    //     updateSlider(sliderValue)
+    // })
+
+    console.log(slider) 
+
 
     const updateSlider = (val) => {
         document.documentElement.style.setProperty("--colorMax", `${val}%`)
@@ -40,3 +59,4 @@ const slideBitches = (e) => {
     }
 }
 
+document.addEventListener("DOMContentLoaded", slideBitches)
