@@ -10,6 +10,10 @@
 <body>
     <div class="container">
         <div class="withdraw-sidebar">
+            <div class="close">
+                    <div class="bar bar-left"></div>
+                    <div class="bar bar-right"></div>
+            </div>
             <div class="withdraw-sidebar-logo">
                 <h1>Stokkpile.com</h1>
             </div>
@@ -83,10 +87,10 @@
                         </li>
                     </a>
                 </ul>
-            </div>
+            </div> 
 
-           <a href="http://">
-            <div class="logout">
+           <a class="logout" href="http://">
+            <div>
                     <img src="../assets/images/logout.svg" alt="">
                     <span class="option-text">
                         Logout
@@ -94,6 +98,8 @@
             </div>
             </a> 
         </div>
+
+        <div class="cover-overlay"></div>
 
         <main>
 
@@ -165,6 +171,11 @@
 
             <div class="main-container">
                     <div class="main-header">
+                        <div class="open">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
                             <a href="http://" class="backlink">
                                 <div class="back">
                                         <img src="/assets/images/Path 3 Copy.svg" alt="">
@@ -201,31 +212,7 @@
                                 </tr>
    
                             </table>
-                            <!-- <div class="stocks">
-                                <div class="tableheadings"> <span class="stock-heading">rates</span> <span class="stock-heading">Block</span> <span class="stock-heading">Cememt</span> </div>
-                                <div class="localRates">
-                                    <span class="group-heading">Local</span>
-                                    <span class="block-local arrows">
-                                        <img class="down-arrow" src="/assets/images/Group 44.svg" alt="">
-                                        <h3>N200</h3>
-                                    </span>
-                                    <span class="cement-local arrows">
-                                            <img class="up-arrow" src="/assets/images/Group 38.svg" alt="">
-                                            <h3>N200</h3>
-                                    </span>
-                                </div>
-                                <div class="internationalRates">
-                                        <span class="group-heading">Internatinal</span>
-                                        <span class="block-international arrows">
-                                                <img class="down-arrow" src="/assets/images/Group 44.svg" alt="">
-                                                <h3>$2</h3>
-                                            </span>
-                                            <span class="cement-international arrows">
-                                                    <img class="up-arrow" src="/assets/images/Group 38.svg" alt="">
-                                                    <h3>$2</h3>
-                                            </span>
-                                </div>
-                            </div> -->
+
                             <div class="personalize">
                                 <img class="notification-bell" src="/assets/images/Group 3.svg" alt="">
                                 <div class="avatar">
@@ -292,38 +279,45 @@
                                 </div>
                                 <button class="btn plans-submit">Submit</button>
                             </form>
-            
-                            <!-- <form action="" class="card-details">
-                                <div class="lead-text">
-                                    You can only add the local card of your given country or a dollar card. If you do not have a Dollar Card, <a href="http://" class="inline-text">click here</a>
-                                    to get virtual Dollar card with GetBarter.
-                                </div>
-                                <div class="form-group-full">
-                                    <label for="card-name">
-                                        Name on Card
-                                    </label>
-                                    <input type="text" class="form-input-full" id="card-name">
-                                </div>
-                                <div class="form-group-full">
-                                    <label for="card-no">Card Number</label>
-                                    <input type="number" class="form-input-full" id="card-no" placeholder="xxxx xxxx xxxx xxxx">
-                                </div>
-                                <div class="form-group-full">
-                                        <label for="expiry-date">Expiry Date</label>
-                                        <input type="number" class="form-input-full" id="expiry-date" placeholder="mm yy">
-                                </div>
-                                <div class="footer-text">
-                                    <p>you will not be charged until the start of your savings</p>
-                                </div>
-                                <button class="btn card-details-submit">
-                                    Add Card
-                                </button>
-                            </form> -->
                         </div>
+            </div>
+            <div class="footer">
+                <div class="footer-inner">
+                                <table class="stocks">
+                                        <tr>
+                                            <td>Rates</td>
+                                            <td>Blocks</td>
+                                            <td>Cement</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Local</td>
+                                            <td>
+                                                <img src="/assets/images/Group 44.svg" alt="">
+                                                <h3>N200</h3>
+                                            </td>
+                                            <td>
+                                                <img src="/assets/images/Group 38.svg" alt="">
+                                                <h3>N200</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Internatinal</td>
+                                            <td>
+                                                <img class="down-arrow" src="/assets/images/Group 44.svg" alt="">
+                                                <h3>$2</h3>
+                                            </td>
+                                            <td>
+                                                <img class="up-arrow" src="/assets/images/Group 38.svg" alt="">
+                                                <h3>$2</h3>
+                                            </td> 
+                                        </tr>
+            
+                                    </table>            
+                </div>
             </div>     
         </main>
     </div>
-
-    <script src="../assets/js/withdraw.js"></script>
+    <script src="/assets/js/withdraw.js"></script>
+    <script src="/assets/js/sliderAction.js"></script>
 </body>
 </html>
