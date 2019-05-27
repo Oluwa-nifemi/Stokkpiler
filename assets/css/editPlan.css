@@ -940,6 +940,12 @@ span.Important{
     .visible{
         visibility: visible;
     }
+    .half-groups{
+        width: 49%;
+    }
+    .half-input{
+        width: 90%;
+    }
 
 }
 
