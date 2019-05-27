@@ -189,7 +189,7 @@ main{
 
 .main-header{
     height: 7rem;
-    background-color: #50227410;
+    background-color: #DDDBF1;
     width: 100%;
     padding: 1.5rem 2.5rem;
     display: flex;
@@ -1051,7 +1051,7 @@ span.Important{
     .main-header{
         position: fixed;
         top: 0;
-        background-color: #E6E3E8;
+        background-color: #DDDBF1;
         z-index: 800;
     }
     .main-body{
