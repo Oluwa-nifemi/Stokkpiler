@@ -111,13 +111,15 @@ button{
 
 .links .link a{
     color: #502274;
+    text-decoration: none
 }
 
 .links .link.active{
     background-color: #502274;
+    color: white;
 }
 
-.links .link.active a{
+.links .link.active a,.links .link:hover a{
     color: white;
 }
 
@@ -127,9 +129,6 @@ button{
 
 .links .link:hover{
     background-color: #502274;
-}
-
-.links .link:hover a{
     color: white;
 }
 
