@@ -67,8 +67,7 @@ body{
 .withdraw-sidebar-logo{
     width: 100%;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 8rem;
+    margin: 2rem 0;
 }
 
 .withdraw-sidebar-logo h1{
@@ -699,8 +698,7 @@ h2.footer-heading{
     }
 
     .withdraw-sidebar-logo{
-        margin-top: 8rem;
-        margin-bottom: 6rem;
+        margin: 2rem 0;
     }
 
     .close{
