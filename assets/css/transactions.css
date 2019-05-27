@@ -112,6 +112,30 @@ button{
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    transition: 0.3s ease;
+}
+
+.links .link.active{
+    background-color: #502274;
+    color: white;
+}
+
+.links .link svg,.logout__link img{
+    margin-right: 10px
+}
+
+.links .link:hover{
+    background-color: #502274;
+    color: white;
+}
+
+.links .link svg{
+    fill: #502274;
+    transition: 0.3s ease;
+}
+
+.links .link.active svg,.links .link:hover svg{
+    fill: #fff;
 }
 
 .links .link.active{
