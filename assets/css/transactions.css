@@ -50,7 +50,7 @@ button{
     display: flex;
     flex-direction: column;
     position: fixed;
-    height: 100%;
+    min-height: 100%;
 }
 
 .sidenav__container{
@@ -112,6 +112,39 @@ button{
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    transition: 0.3s ease;
+}
+
+.links .link a{
+    color: #502274;
+    text-decoration: none
+}
+
+.links .link.active{
+    background-color: #502274;
+    color: white;
+}
+
+.links .link.active a,.links .link:hover a{
+    color: white;
+}
+
+.links .link svg,.logout__link img{
+    margin-right: 10px
+}
+
+.links .link:hover{
+    background-color: #502274;
+    color: white;
+}
+
+.links .link svg{
+    fill: #502274;
+    transition: 0.3s ease;
+}
+
+.links .link.active svg,.links .link:hover svg{
+    fill: #fff;
 }
 
 .links .link.active{
@@ -142,13 +175,33 @@ button{
     height: 100%;
     border: none;
     background-color: transparent;
-    width: 43px;
+    width: 38px;
     outline: none;
+    display: none;
+    border-radius: 3px;
     display: none;
 }
 
-.sidenav-btn img{
+.bar{
+    height: 3px;
+    border-radius: 1px;
+}
+
+.bar-left{
+    transform: rotate(45deg) translateY(0.2rem);
+}
+
+.bar-right{
+    transform: rotate(-45deg) translateY(-0.2rem);
+}
+
+.sidenav-btn .bar{
     width: 100%;
+    background-color: #502274;
+}
+
+.sidenav-btn .bar:not(:last-child){
+    margin-bottom: 5px;
 }
 
 .back{
@@ -180,6 +233,7 @@ button{
 
 .rates td{
     margin-bottom: 5px;
+    min-width: 100px;
 }
 
 .rates td img{
@@ -367,7 +421,7 @@ button{
     padding: 10px 20px;
     background-color: white;
     margin-top: 14px;
-    box-shadow: 0 1px #000000 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid #EAEAEA;
     border-radius: 3px;
     box-sizing: border-box;
@@ -441,8 +495,14 @@ button{
         text-align: center;
         margin-top: 10px
     }
-    .cards .header{
+    .cards .header,.cards .bold{
         text-align: center;
+    }
+    .logout{
+        display: none;
+    }
+    .user-controls{
+        margin-right: 0px;
     }
 }
 
@@ -496,12 +556,9 @@ button{
         justify-content: center;
         background-color: rgba(221, 219, 241, 0.8);
         width: 100%;
-        padding: 0 5px;
+        padding: 10px 5px;
         box-sizing: border-box;
-    }
-    .rates td{
-        width: 100px;
-    }
+    }   
     .sidebar{
         box-shadow: none;
     }
