@@ -1,0 +1,828 @@
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.otf');
+}
+
+
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/montserrat/Montserrat-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/montserrat/Montserrat-Medium.otf');
+}
+
+@font-face{
+    font-family: 'Segoe UI-Regular';
+    src: url('../fonts/Segoe UI/Segoe UI.woff')
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    color: #4A4A4A;
+}
+
+.container{
+    width: 100%;
+    height: 100%;      
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.withdraw-sidebar{
+    width: 18%;
+    background-color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0.3rem 0rem 1.5rem #70707013;
+}
+
+.withdraw-sidebar-logo{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.withdraw-sidebar-logo h1{
+    color: #502274;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 2rem;
+}
+
+.withdraw-sidebar-main{
+    width: 100%;
+}
+
+.sidebar-options{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-options a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-option{
+    padding: 2rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.center-me{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 1rem;
+}
+
+.hoverImage{
+    display: none;
+}
+
+.normalImage{
+    display: block;
+}
+
+.sidebar-option:hover{
+    background-color: #502274;
+}
+
+.sidebar-option:hover .option-text{
+    color: #FFFFFF;
+}
+
+.sidebar-option:hover .hoverImage{
+    display: block;
+}
+
+.sidebar-option:hover .normalImage{
+    display: none;
+}
+
+
+
+.option-text{
+    margin-left: 2rem;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1.4rem;
+    color: #502274;
+}
+
+.active{
+    background-color: #502274;
+}
+
+.active .hoverImage{
+    display: block;
+}
+
+.active .normalImage{
+    display: none;
+}
+
+.active .option-text{ 
+    color: #FFFFFF;
+}
+
+.logout{
+    margin-top: auto;
+    margin-bottom: 3rem;
+}
+
+
+
+main{
+    margin-left: 18%;
+    width: 82%;
+    height: 100%;
+    /* background-color: orangered; */
+    position: relative;
+    /* position: relative;  */
+}
+
+
+
+
+.overlay{
+    position: absolute;
+    display: none;
+    z-index: 200;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(155, 155, 155, 0.57);
+    /* background-color: red; */
+}
+
+.withdrawal-confirmation{
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 10px;
+    height: 70%;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    padding: 3rem 5rem;
+}
+
+.confirmation-header{
+    width: 100%;
+}
+
+.confirmation-header h2{
+    color: #000;
+    font-family:"Montserrat-SemiBold"; 
+}
+
+.underline{
+    border-bottom: 2px solid #502274;
+    padding-bottom: 0.5rem;
+}
+
+table.popup{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 70%;
+}
+
+th{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1.2rem;
+}
+
+td{
+    font-family: 'Montserrat-Regular';
+}
+
+.popup td{
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #F0F0F0;
+    margin: 0;
+}
+
+.top-cell{
+    border: 1px solid #F0F0F0;
+    border-top: none;
+}
+
+.bottom-cell{
+    border: 1x solid #f0f0f0;
+    border-bottom: none;
+}
+
+.right-cell{
+    border: 1x solid #f0f0f0;
+    border-right: none;
+}
+
+.left-cell{
+    border: 1x solid #f0f0f0;
+    border-left: none;
+}
+
+.confirm{
+    float: right;
+    text-decoration: none;
+    padding: 0.7rem 3rem;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    background-color: #502274;
+    border: none;
+    border-radius: 4px;
+}
+
+.notify-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.success-img{
+    display: none;
+}
+
+.failed-img{
+    display: none;
+}
+
+
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header{
+    height: 7rem;
+    background-color: #DDDBF1;
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-body{
+    padding: 6rem 5rem;
+    width: 100%;
+    
+}
+
+.plans{
+    width: 45%;
+}
+
+.form-group-full{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.form-group-header{
+    margin-bottom: 0.3rem;
+    display: flex;
+}
+
+.form-group-header h2{
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 1rem;
+}
+
+.form-group-full label{
+    font-family: 'Montserrat-medium';
+    color: #4A4A4A;
+}
+
+.form-input-full{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+}
+
+.select-group{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.units-of{
+    width: 90%;
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.half-input{
+    padding: 0.8rem 1rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    width: 60%;
+}
+
+.half-groups{
+    display: flex;
+    flex-direction: column;
+}
+
+.half-groups label{
+    margin-bottom: 0.6rem;
+}
+
+.add-location{
+    float: right;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #6C63FF;
+    font-family: 'Montserrat-Medium';
+    text-transform: capitalize;
+}
+
+.btn{
+    background-color: #502274;
+    border: none;
+    color: #FFFFFF;
+    padding: 1rem 3.5rem; 
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: 'Montserrat-Medium';
+
+}
+
+a.backlink{
+    text-decoration: none;
+    color: inherit;
+    width: 20%;
+}
+
+.back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.back h2{
+    font-family: 'Montserrat-Medium';
+    font-size: 1.4rem;
+    letter-spacing: 0.53;
+    margin-left: 1rem;
+}
+
+
+.stocks{
+    width: 38%;
+}
+
+.stocks tr{
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+.stocks td{
+    text-align: left;
+    min-width: 100px;
+}
+
+.stocks td h3{
+    display: inline-block;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.stocks td img{
+    margin-right: 0.5rem;
+}
+
+
+
+
+.personalize{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+
+.logoutNav{
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #502274;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #502274;
+    font-family: "Montserrat-SemiBold";
+    font-size: 1rem;
+}
+
+.block-international{
+    transform: translateX(-2rem);
+}
+
+
+
+/* sidebar action classes */
+.bar{
+    /* width: 7px; */
+    height: 3px;
+    padding: 0 1.3rem;
+    border-radius: 1px;
+}
+
+.bar-left{
+    transform: rotate(45deg) translateY(0.2rem);
+}
+
+.bar-right{
+    transform: rotate(-45deg) translateY(-0.2rem);
+    /* background-color: #FFFFFF; */
+}
+
+
+.open{
+    padding: 1rem 1.5rem 1rem 0;
+    background-color: transparent;
+    border-radius: 3px;
+    display: none;
+}
+
+.open .bar{
+    width: 100%;
+    background-color: #502274;
+}
+
+.open .bar:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+/* Action classes */
+
+.openOverlay{
+    opacity: 0;
+    display: block;
+    animation: openOverlay 1s ease 1 forwards;
+
+}
+
+.hideConfirmation{
+    opacity: 0;
+    display: none;
+}
+
+.showSuccess{
+    opacity: 0;
+    display: block;
+    animation: displayImage 1s ease 1s 1 forwards;
+}
+
+.showFailed{
+    opacity: 0;
+    display: block;  
+    animation: displayImage 1s ease 1s 1 forwards;
+}
+
+
+
+
+
+/* Animations */
+
+.slidein{
+    animation: slideIn 0.4s 1 forwards;
+}
+
+.slideout{
+    animation: slideOut 0.4s  1 forwards;
+}
+
+
+.footer{
+    padding: 0rem 5rem 1rem;
+    background-color: #50227410;
+    display: none;
+    margin-top: 10px;
+}
+
+h2.footer-heading{
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat-SemiBold';
+}
+
+
+.footer .stocks{
+    width: 100%;
+    display: block;
+    border-spacing: 0 5px;
+    border-collapse: separate;
+}
+
+
+.footer .stocks tr{
+    width: fit-content;
+    /* background-color: #502274; */
+}
+
+
+.footer .stocks td{
+    text-align: left;
+    font-size: 1.2rem;
+    /* padding: 1rem 2rem; */
+}
+
+
+
+
+
+@keyframes displayImage{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes openOverlay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn{
+    from{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut{
+    from{
+        opacity: 1;
+        transform: translateX(0%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-100%)
+    }
+
+}
+
+
+
+/* Responsiveness design */
+
+@media (max-width: 1300px) {
+    .withdraw-sidebar{
+        width: 25%;
+    }
+    .center-me{
+        width: 65%;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    main{
+        margin-left: 25%;
+        width: 75%;
+    }
+    .plans{
+        width: 60%;
+    }
+
+    .main-body{
+        padding: 8rem 6rem;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .withdraw-sidebar{
+        width: 32%;
+    }
+    main{
+        margin-left: 32%;
+        width: 68%;
+    }
+    .plans{
+        width: 80%;
+    }
+    .logoutNav{
+        display: none;
+    }
+    .stocks{
+        flex-basis: 50%;
+    }
+    .personalize{
+        flex-basis: 13%;
+    }
+    a.backlink{
+        flex-basis: 10%;
+    }
+
+    .withdrawal-confirmation{
+        width: 90%;
+        height: 85%;
+    }
+
+    .notify-img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    .cover-overlay{
+        position: absolute;
+        display: none;
+        z-index: 800;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(155, 155, 155, 0.57);
+    }
+
+
+    .withdraw-sidebar{
+        width: 45%;
+        box-shadow: 0.3rem 0.1rem 1.3rem #70707030;
+        transform: translateX(-100%);
+        visibility: hidden; 
+    }
+
+    .withdraw-sidebar-logo{
+        margin: 2rem 0;
+    }
+
+    .close{
+        position: absolute;
+        top: 1.5rem;
+        right: 0.5rem;
+        padding: 2rem;
+    }
+
+    .close .bar{
+        background-color: #502274;
+    }
+
+
+    .center-me{
+        /* background-color: red; */
+        /* justify-content: center; */
+        padding-left: 2rem;
+    }
+    
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    .plans{
+        width: 90%;
+    }
+
+    a.backlink{
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .withdrawal-confirmation{
+        width: 90%;
+        height: 85%;
+        padding: 3rem 2rem;
+    }
+
+    .notify-img{
+        width: 80%;
+    }
+    .visible{
+        visibility: visible;
+    }
+}
+
+
+@media (max-width: 620px){
+    .center-me{
+        padding-left: 0.7rem;
+    }
+}
+
+@media (max-width: 575px){
+    .withdraw-sidebar{
+        width: 70%;
+    }
+
+    .center-me{
+        width: 60%;
+        padding-left: 2.5rem;
+    }
+    .plans{
+        width: 100%;
+    }
+
+    .main-body{
+        padding: 8rem 3rem 0;
+    }
+
+    .stocks{
+        display: none;
+    }
+
+    .personalize{
+        flex-basis: 20%;
+    }
+
+    .withdrawal-confirmation{
+        width: 95%;
+    }
+
+    .notify-img{
+        width: 90%;
+    }
+
+    .footer{
+        display: block;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    h2.footer-heading{
+        position: absolute;
+        top: 2.5rem;
+        /* left: 4.5rem; */
+    }
+
+    .footer .stocks{
+        margin-top: 3rem;
+    }
+}
+
+
+@media(max-width: 425px){
+    .withdraw-sidebar{
+        width: 80%;
+    }
+    .center-me{
+        width: 70%;
+    }
+
+    .main-body{
+        padding: 8rem 2rem;
+    }
+    .personalize{
+        flex-basis: 23%;
+    }
+}
+
