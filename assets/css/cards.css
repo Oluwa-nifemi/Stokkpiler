@@ -99,7 +99,6 @@ button{
 
 .links .link,.logout__link{
     width: 100%;
-    color: #502274;
     height: 60px;
     font-size: 14px;
     font-family: 'Montserrat-SemiBold', sans-serif;
@@ -110,8 +109,15 @@ button{
     transition: 0.3s ease;
 }
 
+.links .link a{
+    color: #502274;
+}
+
 .links .link.active{
     background-color: #502274;
+}
+
+.links .link.active a{
     color: white;
 }
 
@@ -121,6 +127,9 @@ button{
 
 .links .link:hover{
     background-color: #502274;
+}
+
+.links .link:hover a{
     color: white;
 }
 
