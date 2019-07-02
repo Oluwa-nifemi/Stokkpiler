@@ -71,12 +71,14 @@ button{
     font-size: 11px;
     padding-left: 10px;
     box-sizing: border-box;
+    border-radius: 3px;
 }
 
 .signup input.half{
     width: 49%;
     display: inline-flex;
     margin-bottom: 0;
+    border-radius: 3px;
 }
 
 .signup input.half:first-of-type{
@@ -230,6 +232,7 @@ button{
 
 .forgot-password + hr{
     width: auto;
+    margin-bottom: 2.5rem;
     margin-left: 0;
     height: 1px;
     background-color: #E2E1E7;
@@ -244,6 +247,7 @@ button{
     .signup input.half{
         width: 100%;
     }
+
 }
 
 @media(max-width: 800px){
@@ -267,6 +271,13 @@ button{
     .signup input.half{
         width: 100%;
     }
+    .forgot-password{
+        /*font-size: 0.9rem;*/
+    }
+    .terms-and-conditions{
+        /*font-size: 0.9rem;*/
+    }
+    
 }
 
 @media(max-height: 720px){
