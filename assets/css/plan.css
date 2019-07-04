@@ -118,7 +118,7 @@ input{
 }
 
 .center-me{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -860,7 +860,7 @@ span.Important{
         width: 25%;
     }
     .center-me{
-        width: 65%;
+        width: 100%;
         text-align: center;
         padding: 0 0.5rem;
     }
@@ -1003,6 +1003,10 @@ span.Important{
         margin-top: 3rem;
     }
 
+    .sidebar-options{
+        margin-top: 0;
+    }
+
     .close{
         display: block;
         position: absolute;
@@ -1086,7 +1090,7 @@ span.Important{
     }
 
     .center-me{
-        width: 60%;
+        width: 100%;
         padding-left: 2.5rem;
     }
     .plans{
@@ -1155,7 +1159,7 @@ span.Important{
         width: 80%;
     }
     .center-me{
-        width: 70%;
+        width: 100%;
     }
 
     .main-body{
