@@ -105,6 +105,7 @@ input{
     list-style: none;
     width: 100%;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .sidebar-options a {
@@ -121,7 +122,7 @@ input{
 }
 
 .center-me{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -156,7 +157,7 @@ input{
 
 .option-text{
     margin-left: 2rem;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Montserrat-Medium';
     font-size: 1.4rem;
     color: #502274;
 }
@@ -233,11 +234,13 @@ a.backlink{
     text-align: left;
     font-family: 'Montserrat-Regular';
     min-width: 100px;
+    font-size: 10px;
 }
 
 .stocks td h3{
     display: inline-block;
     font-family: 'Montserrat-SemiBold';
+    font-size: 10px;
 }
 
 .stocks td img{
@@ -277,15 +280,55 @@ a.backlink{
     padding: 1.3rem 1.5rem;
     background-color: #FFFFFF; 
     border-radius: 3px;
-    padding-bottom: 1.7rem;
     box-shadow: 0.2rem 0.2rem 0.3rem #70707010;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-bar h2{
     font-family: 'Montserrat-SemiBold';
     font-size: 1.2rem;
 }
+
+.header-bar-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*height: 100%;*/
+    width: 7rem;
+}
+
+.header-bar-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.5s ease;
+}
+
+.header-bar-option:hover p{
+    color: #4A4A4A;
+}
+
+
+.header-bar-option-link{
+    text-decoration: none;
+    color: #9b9b9b;
+}
+.header-bar-option-text{
+    font-family: 'Montserrat-Medium';
+    font-size: 8px;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
 
 .underline{
     padding-bottom: 0.4rem;
@@ -370,7 +413,7 @@ a.backlink{
     background-color: #FFFFFF;
     box-shadow: 0.2rem 0.2rem 0.3rem #70707010;
     border-radius: 3px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .box-header{
@@ -537,7 +580,7 @@ h2.footer-heading{
 
 .footer .stocks td{
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* padding: 1rem 2rem; */
     min-width: 100px;
     margin-bottom: 5px;
@@ -596,7 +639,7 @@ h2.footer-heading{
         width: 25%;
     }
     .center-me{
-        width: 65%;
+        width: 100%;
         text-align: center;
         padding: 0 0.5rem;
     }
@@ -729,6 +772,13 @@ h2.footer-heading{
         visibility: hidden; 
     }
 
+    .withdraw-sidebar-main{
+        margin-top: 3rem;
+    }
+    .sidebar-options{
+        margin-top: 0;
+    }
+
     .withdraw-sidebar-logo{
         margin: 2rem 0
     }
@@ -810,7 +860,7 @@ h2.footer-heading{
     }
 
     .center-me{
-        width: 60%;
+        width: 100%;
         padding-left: 2.5rem;
     }
     .plans{
@@ -883,7 +933,7 @@ h2.footer-heading{
         width: 80%;
     }
     .center-me{
-        width: 70%;
+        width: 100%;
     }
 
     .main-body{

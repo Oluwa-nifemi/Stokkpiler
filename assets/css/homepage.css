@@ -16,7 +16,22 @@
 
 @font-face{
     font-family: 'Segoe UI-Regular';
-    src: url('../fonts/Segoe UI/Segoe UI.woff')
+    src: url('../fonts/Segoe UI/Segoe UI.woff');
+}
+
+@font-face{
+    font-family: 'Playfair-Display-Regular';
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Playfair-Display-Bold';
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.otf');
+}
+
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 
@@ -57,14 +72,6 @@ header{
     z-index: -1;
 }
 
-.Header-background-2{
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    transform: rotate(-0deg);
-    width: 15%;
-    opacity: 0.5;
-}
 
 .Header-content{
     position: relative;
@@ -156,19 +163,23 @@ nav.navbar{
 
 
 .Header-Large-Heading{
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     color: #FFFFFF;   
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Playfair-Display-Regular';
+    font-weight: 100;
+    margin-top: 4rem;
     margin-bottom: 1rem;
+    text-transform: capitalize;
+    width: 80%;
 }
 
 .Header-lead-text{
     font-size: 1.6rem;
     text-align: left;
     color: #7AA1B9;
-    font-family: 'Segoe UI-Regular';
+    font-family: 'Poppins-Regular';
     width: 80%;
-    line-height: 1.7;
+    line-height: 2;
     margin-bottom: 5rem;
 }
 
@@ -180,7 +191,7 @@ nav.navbar{
     font-size: 1.3rem;
     font-family: 'Montserrat-Regular';
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 0.2rem 0.35rem rgba(0, 0, 0, 0.534);
+    box-shadow: 0 0.2rem 0.35rem rgba(0, 0, 0, 0.2);
 }
 
 
@@ -189,19 +200,21 @@ nav.navbar{
 }
 
 section.why-stockpiler{
-    padding: 19rem 35rem;
-    padding-bottom: 0;
+    padding: 6rem 20rem;
+    padding-top: 10rem;
+    margin: 2rem auto;
+    text-align: center;
     /* background-color: red; */
 }
 
 .why-stockpiler-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 .why-stockpiler-heading-lead{
     font-size: 2.5rem;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'PlayfairDisplay-Bold';
     color: #23616D;
     margin-bottom: 1rem;    
 }
@@ -217,7 +230,7 @@ section.why-stockpiler{
 }
 
 .reason-header{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 0.4rem;
     font-family: 'Montserrat-SemiBold'; 
     color: #23616D;
@@ -231,18 +244,19 @@ section.why-stockpiler{
 
 
 .Features{
-    padding: 19rem 30rem;
+    padding: 6rem 20rem;
     padding-bottom: 0;
+    margin: 2rem auto;
 }
 
 .Features-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 .Features-heading-lead{
     font-size: 2.5rem;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'PlayfairDisplay-Bold';
     color: #23616D;
     margin-bottom: 1rem;   
 }
@@ -256,28 +270,29 @@ section.why-stockpiler{
 .Features-body{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
+    align-content: center;
 }
 
 .feature{
     position: relative;
-    flex-basis: 50%;
+    flex-basis: 40%;
     padding: 4rem;
-    text-align: center;
+    text-align: left;
     margin: 5rem 0;
 }
 
 .feature-img {
     position: absolute;
-    top: 0;
-
 }
 
 .feature-heading{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin: 0 auto;
     margin-bottom: 1rem;
     font-family: 'Montserrat-SemiBold'; 
     color: #23616D;
+    width: 90%;
 }
 
 .feature-text{
@@ -286,35 +301,58 @@ section.why-stockpiler{
     font-family: 'Montserrat-Regular';
     color: #7AA1B9;
     margin: 0 auto;
-    text-align: center;
-    /* text-align: justify;     */
+    text-align: left;
 }
 
-.feature-1-img{
-    top: 0;
-    left: 0;
-}
-
-.feature-2-img{
+.feature-image-container{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    z-index: -1;
+}
+
+.top-left{
+    left: 0;
+  margin-top: -2rem;  
+}
+
+.top-right{
+    right: 2rem;
+    margin-top: -2rem;  
+}
+
+.bottom-left{
+    left: 0;
+    bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.bottom-right{
+    bottom: 1rem;
+    margin-top: 1rem;
+    right: 2rem;
+
 }
 
 
+
+
 .How-it-works{
-    padding: 19rem 30rem;
-    padding-bottom: 0;   
+    padding: 6rem 30rem;
 }
 
 .How-it-works-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 .How-it-works-heading-lead{
     font-size: 2.5rem;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'PlayfairDisplay-Bold';
     color: #23616D;
     margin-bottom: 1rem;   
 }
@@ -335,11 +373,12 @@ section.why-stockpiler{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-content: center;
     align-items: center;
 }
 
 .method-group{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -347,7 +386,7 @@ section.why-stockpiler{
 }
 
 .method-group:not(:last-child){
-    margin-bottom: 13rem;
+    margin-bottom: 8rem;
 }
 
 .reverse{
@@ -359,7 +398,7 @@ section.why-stockpiler{
 }
 
 .method-heading{
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-family: 'Montserrat-SemiBold';
     margin-bottom: 0.8rem;
     color: #23616D;
@@ -393,19 +432,18 @@ section.why-stockpiler{
 
 
 .FAQs{
-    padding: 19rem 30rem;
-    padding-bottom: 0;    
+    padding: 6rem 30rem;
 }
 
 .FAQs-heading{
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 
 .FAQs-heading-lead{
     font-size: 2.5rem;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Playfair-Display-Bold';
     color: #23616D;
     margin-bottom: 1rem;   
 }
@@ -437,10 +475,13 @@ section.why-stockpiler{
 }
 
 .faq-heading{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     font-family: 'Montserrat-SemiBold'; 
     color: #23616D;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .faq-text{
@@ -449,25 +490,10 @@ section.why-stockpiler{
     font-family: 'Montserrat-Regular';
     color: #7AA1B9;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     /* text-align: justify;     */
 }
 
-.faq-1-img{
-    top: 0;
-    left: 0;
-}
-
-.faq-2-img{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.faq-3-img{
-    bottom: 0;
-    right: 0;
-}
 
 
 footer{
@@ -814,41 +840,27 @@ a.sidebar-link{
     .Header-background-2{
         display: none;
     }
-    section.why-stockpiler{
-        padding: 14rem 20rem;
-        text-align: center;
-    }
+    
     .why-stockpiler-heading-lead{
         font-size: 3rem;
     }
     .reason-header{
         margin-bottom: 1rem;
     }
-    .Features-heading-lead{
-        font-size: 3rem;
-    }
-    .Features{
-        padding: 14rem 20rem;
-    }
-
+    
     .How-it-works-heading-lead{
         font-size: 3rem;
     }
 
-    .How-it-works{
-        padding: 14rem 20rem;
-    }
 
     .FAQs-heading-lead{
         font-size: 3rem;
     }
-    .FAQs{
-        padding: 14rem 19rem;
-    }
+    
 }
 
 
-@media(max-width: 1000px){
+@media(max-width: 1200px){
     footer{
         padding: 15rem 5rem;
         padding-bottom: 0;
@@ -893,19 +905,19 @@ a.sidebar-link{
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 900px){
     section.why-stockpiler{
-        padding: 10rem 5rem;
+        padding: 8rem 6rem;
         text-align: center;
     }
     .How-it-works{
-        padding: 10rem 5rem;
+        padding: 8rem 6rem;
     }
     .Features{
-        padding: 10rem 5rem;
+        padding: 8rem 6rem;
     }
     .FAQs{
-        padding: 10rem 5rem;
+        padding: 8rem 6rem;
     }
 
     .Header-content{
@@ -1087,12 +1099,31 @@ a.sidebar-link{
         flex-direction: column;
     }
 
-    .feature-text{
-        width: 50%;
-    }
     .feature{
+        text-align: center;
         margin: 0;
     }
+
+    .feature-heading{
+        text-align: center;
+    }
+
+
+    .feature-text{
+        width: 50%;
+        text-align: center;
+    }
+
+    .faq-heading{
+        text-align: center;
+    }
+
+    .faq-text{
+        text-align: center;
+    }
+
+
+
     
     section.why-stockpiler{
         padding: 4rem 2rem;

@@ -100,6 +100,8 @@ input{
     list-style: none;
     width: 100%;
     text-align: center;
+    margin-top: 3rem;
+
 }
 
 .sidebar-options a {
@@ -116,7 +118,7 @@ input{
 }
 
 .center-me{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -155,7 +157,7 @@ input{
 
 .option-text{
     margin-left: 2rem;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Montserrat-Medium';
     font-size: 1.4rem;
     color: #502274;
 }
@@ -232,11 +234,13 @@ a.backlink{
     text-align: left;
     font-family: 'Montserrat-Regular';
     min-width: 100px;
+    font-size: 10px;
 }
 
 .stocks td h3{
     display: inline-block;
     font-family: 'Montserrat-SemiBold';
+    font-size: 10px;
 }
 
 .stocks td img{
@@ -603,7 +607,7 @@ h2.footer-heading{
 
 .footer .stocks td{
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* padding: 1rem 2rem; */
     min-width: 100px;
     margin-bottom: 5px;
@@ -856,7 +860,7 @@ span.Important{
         width: 25%;
     }
     .center-me{
-        width: 65%;
+        width: 100%;
         text-align: center;
         padding: 0 0.5rem;
     }
@@ -995,6 +999,14 @@ span.Important{
         margin: 2rem 0;
     }
 
+    .withdraw-sidebar-main{
+        margin-top: 3rem;
+    }
+
+    .sidebar-options{
+        margin-top: 0;
+    }
+
     .close{
         display: block;
         position: absolute;
@@ -1078,7 +1090,7 @@ span.Important{
     }
 
     .center-me{
-        width: 60%;
+        width: 100%;
         padding-left: 2.5rem;
     }
     .plans{
@@ -1147,7 +1159,7 @@ span.Important{
         width: 80%;
     }
     .center-me{
-        width: 70%;
+        width: 100%;
     }
 
     .main-body{
