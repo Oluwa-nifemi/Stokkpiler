@@ -181,7 +181,7 @@
                         Add card to your account
                     </p>
                     <button class="add-card-btn">
-                        <img src="../assets/images/add.svg" alt="">
+                        <img src="../assets/images/add-1.svg" alt="">
                     </button>
                     <p class="add-card-text">
                         Add a card
@@ -197,19 +197,26 @@
                         You can only add the local card of your chosen country or a dollar card. If you do not have a Dollar Card, <br> <a href="">click here</a> to get a virtual Dollar Card with GetBarter
                     </p>
                     <div class="form-group">
-                        <label for="name">Name on Card</label>
+                        <label for="name">Name your Card<span class="required-star">*</span></label>
                         <input type="text" id="name" placeholder="Samuel Fapoun" required>
+                        <small>Give your Debit Card a name to help when making a transaction</small>
                     </div>
                     <div class="form-group">
-                        <label for="card-number">Card Number</label>
+                        <label for="name">Name on Card <span class="required-star">*</span></label>
+                        <input type="text" id="name" placeholder="Samuel Fapoun" required>
+                        <small>The name written on your Debit Card</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number<span class="required-star">*</span></label>
                         <input type="text" id="card-number" placeholder="1234-XXXX-XXXX-XXXX" maxlength="19" required>
+                        <small>The bold number on your Debit Card</small>
                     </div>
                     <div class="form-group inline">
-                        <label for="expiry-date">Expiry Date</label>
+                        <label for="expiry-date">Expiry Date<span class="required-star">*</span></label>
                         <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
                     </div>
                     <div class="form-group inline">
-                        <label for="cvv">CVV</label>
+                        <label for="cvv">CVV<span class="required-star">*</span></label>
                         <input type="password" id="cvv" placeholder="***" maxlength="3" required>
                     </div>
                     <p class="disclaimer">You will not be billed until the start date of your savings</p>
