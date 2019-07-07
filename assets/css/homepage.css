@@ -352,7 +352,7 @@ section.why-stockpiler{
 
 
 .How-it-works{
-    padding: 5rem 30rem;
+    padding: 5rem 20rem;
 }
 
 .How-it-works-heading{
@@ -377,6 +377,8 @@ section.why-stockpiler{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .How-it-works-body{
@@ -401,6 +403,9 @@ section.why-stockpiler{
 
 .reverse{
     flex-direction: row-reverse;
+}
+.reverse img{
+    margin-right: 2rem;
 }
 
 .method{
@@ -876,20 +881,20 @@ a.sidebar-link{
     }
 
     section.why-stockpiler{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         text-align: center;
         padding-bottom: 0;
     }
     .How-it-works{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         padding-bottom: 0;
     }
     .Features{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         padding-bottom: 0;
     }
     .FAQs{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         padding-bottom: 0;
     }
     nav.navbar{
@@ -933,6 +938,9 @@ a.sidebar-link{
     }
     .How-it-works{
         padding: 8rem 6rem;
+    }
+    .How-it-works-body{
+        width: 90%;
     }
     .Features{
         padding: 8rem 6rem;
@@ -1094,7 +1102,7 @@ a.sidebar-link{
         left: 50%;
     }
     .FAQs-heading{
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
     }
 
     .method-image{
@@ -1203,7 +1211,7 @@ a.sidebar-link{
     }
 
     .reason-text{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -1212,16 +1220,16 @@ a.sidebar-link{
     }
 
     .FAQs-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .Features-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .why-stockpiler-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .How-it-works-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .why-stockpiler-body{
         text-align: center;
