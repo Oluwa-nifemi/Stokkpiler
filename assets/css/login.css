@@ -13,6 +13,11 @@
     src: url('../fonts/montserrat/Montserrat-Medium.otf')
 }
 
+@font-face{
+    font-family: 'Rubik Medium';
+    src: url('../fonts/Rubik/Rubik-Medium.ttf')
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -106,8 +111,8 @@ button{
     background-color: #F0F0F0;
     z-index: 2;
     box-sizing: border-box;
-    color: #828282;
-    font-size: 12px
+    color: #6C63FF;
+    font-size: 10px
 }
 
 .login-social-line{
@@ -150,8 +155,8 @@ button{
     color: #502274;
     display: block;
     text-decoration: none;
-    font-family: 'Montserrat-Regular';
-    font-size: 14px;
+    font-family: 'Rubik Medium';
+    font-size: 12px;
     margin: 20px auto;
     outline: none;
 }
@@ -163,7 +168,7 @@ button{
 
 .forgot-password,.terms-and-conditions{
     font-family: 'Montserrat-Regular';
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
     text-align: center;
     color: #828282;
