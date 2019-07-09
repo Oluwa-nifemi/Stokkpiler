@@ -21,7 +21,7 @@
 
         <div class="withdraw-sidebar-main">
             <ul class="sidebar-options">
-                <a href="./dashboard.html">
+                <a href="./home.html">
                     <li class="sidebar-option">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/ios-white-business.svg" alt="">
@@ -32,8 +32,19 @@
                         </div>
                     </li>
                 </a>
-                <a href="./plans.html">
+                 <a href="./dashboard.html">
                     <li class="sidebar-option">
+                        <div class="center-me">
+                                <img class="hoverImage" src="../assets/images/dashboard-white.svg" alt="">
+                                <img class="normalImage" src="../assets/images/dashboard.svg" alt="">
+                                <span class="option-text">
+                                    Dashboard
+                                </span>
+                        </div>
+                    </li>
+                </a>
+                <a href="./plans.html">
+                    <li class="sidebar-option  active">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/md-white-stats.svg" alt="">
                                 <img class="normalImage" src="../assets/images/md-stats.svg" alt="">
@@ -55,7 +66,7 @@
                     </li>
                 </a>
                 <a href="./withdraw.html">
-                    <li class="sidebar-option active">
+                    <li class="sidebar-option">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/ios-white-send.svg" alt="">
                                 <img class="normalImage" src="../assets/images/ios-send.svg" alt="">
@@ -160,6 +171,58 @@
                 </div>
     
                 <div class="main-body">
+                     <div class="overlay">
+                        <div class="Add-Card-box">
+                            <div class="Add-card-box-header">
+                                <h2> <span class="underline">ADD</span>CARD</h2>
+                                <img src="../assets/images/cancel.svg" class="x-button" alt="">
+                            </div>
+                            <p class="invalid">Invalid Card, Please check if your card has expired</p>
+                            <form action="" class="Add-card-box-form">
+                                
+                            <div class="form-group-full">
+                                <div class="form-group-header">
+                                     <h2>Name your card</h2> 
+                                </div>
+                                <input type="text" class="form-input-full" placeholder="Gtbank">
+                                <p class="additional-info">
+                                    Give your card a name to hep when making a transaction.
+                                </p>
+                            </div>
+                            <div class="form-group-full">
+                                <div class="form-group-header">
+                                     <h2>Name on card</h2> 
+                                </div>
+                                <input type="text" class="form-input-full" placeholder="Samuel Fapoun">
+                                <p class="additional-info">
+                                    The name written on your Debit Card
+                                </p>
+                            </div>
+                            <div class="form-group-full">
+                                <div class="form-group-header">
+                                     <h2>Card Number</h2> 
+                                </div>
+                                <input type="text" class="form-input-full" placeholder="1234-XXXX-XXXX-XXXX">
+                                <p class="additional-info">
+                                    The bold number on your Debit Card
+                                </p>
+                            </div>
+                            <div class="form-group-half margin-right">
+                                <div class="form-group-header">
+                                     <h2>Expiry Date</h2> 
+                                </div>
+                                <input type="date" class="form-input-full" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group-half">
+                                <div class="form-group-header">
+                                     <h2>CVV</h2> 
+                                </div>
+                                <input type="text" class="form-input-full" placeholder="...">
+                            </div>
+                            <button class="btn plans-submit">Add card</button>
+                            </form>
+                        </div>
+                    </div>
                     <form action="/pages/" method="POST" class="NewPlanForm">
                         <h1 class="planName">Lagos House</h1>
                         <div class="form-group-full">
@@ -168,10 +231,6 @@
                                 <img class="question-mark" src="" alt=""> 
                             </div>
                             <input type="text" class="form-input-full" value="Lagos House">
-                            <div class="check-box">
-                                <input type="checkbox" name="ckeck2" id="check"> 
-                                <label for="check">Click here for one time deposits</label>
-                            </div>
                         </div>
 
 
@@ -193,7 +252,7 @@
 
                                     </ul>
                                 </div>
-
+                                <input type="text" class="hidden-input" name="Deposit frequency">
                             </div>
                             <!-- add special type of drop down -->
                         </div>
@@ -295,19 +354,17 @@
                                 </div>
                                 <div class="options-holder">
                                     <ul>
-                                        <a class="addCardLink" href="./no-card.html">
-                                        <li class="drop-down-option">Add a card</li>                                            
-                                        </a>
+                                        <li class="drop-down-option Add-card-Trigger">Add a card</li>                                            
                                         <li class="drop-down-option">Business</li>
 
                                     </ul>
                                 </div>
-
+                                <input type="text" class="hidden-input" name="Card">
                             </div>
                             <!-- add special type of drop down -->
                         </div>
 
-                        <button class="btn plans-submit">Save</button>
+                        <button class="btn plans-submit">Update</button>
                     </form>
                 </div>
     </div>
@@ -364,6 +421,8 @@
     <script src="../assets/js/no-plans.js"></script>
     <script src="../assets/js/sliderAction.js"></script>
     <script src="../assets/js/Required-inputs.js"></script>
+    <script src="../assets/js/close-img.js"></script>
+
 
 
 </body>
