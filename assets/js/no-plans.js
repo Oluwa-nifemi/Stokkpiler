@@ -1,4 +1,4 @@
-const slideBitches = (e) => {
+const slideBar = (e) => {
 
     // main js
     
@@ -67,4 +67,11 @@ const slideBitches = (e) => {
     }
 }
 
-document.addEventListener("DOMContentLoaded", slideBitches)
+document.addEventListener("DOMContentLoaded", () => {
+    if(location.search.includes('new=true')){
+        setTimeout(() => {
+            document.querySelector(".add-plan-image").click()
+        },300)
+    }
+    slideBar()
+})

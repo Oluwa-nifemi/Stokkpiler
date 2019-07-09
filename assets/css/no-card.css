@@ -245,6 +245,7 @@ button{
 .rates tr:nth-of-type(n + 2) td:nth-of-type(n + 2){
     font-weight: 1000;
     font-size: 10px;
+    font-family: 'Montserrat-Semibold'
 }
 
 .user-controls{
@@ -433,6 +434,7 @@ form button{
     width: 0;
     height: 0;
     transition: 500ms;
+    position: relative;
 }
 
 .success *{
@@ -440,8 +442,25 @@ form button{
     transition: 500ms;
 }
 
+.close-modal{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
 .success img{
     margin-top: 60px;
+}
+
+.close-modal img{
+    margin-top: 0;
 }
 
 .success.active{
@@ -958,10 +977,6 @@ button{
 .success *{
     opacity: 0;
     transition: 500ms;
-}
-
-.success img{
-    margin-top: 60px;
 }
 
 .success.active{

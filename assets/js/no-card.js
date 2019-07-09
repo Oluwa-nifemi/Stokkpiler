@@ -35,3 +35,21 @@ document.querySelector('form').addEventListener('submit',(e) => {
         document.querySelector('.success').classList.add('show')
     },350)
 })
+
+document.querySelector('.close-modal').addEventListener('click',(e) => {
+    e.preventDefault()
+
+    document.querySelector('.success').classList.remove('show')
+    setTimeout(() => {
+        document.querySelector('.success').classList.remove('active')
+    },350)
+    setTimeout(() => {
+        document.querySelector('.success-background').classList.add('hide')
+    },700)
+})
+
+window.addEventListener('DOMContentLoaded', () => {
+    if(location.href.includes('new=true')){
+        document.querySelector('.add-card-btn').click()
+    }
+})
