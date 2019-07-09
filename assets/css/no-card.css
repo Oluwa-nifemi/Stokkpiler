@@ -13,6 +13,16 @@
     src: url('../fonts/montserrat/Montserrat-Medium.otf')
 }
 
+@font-face{
+    font-family: 'Rubik Medium';
+    src: url('../fonts/Rubik/Rubik-Medium.ttf')
+}
+
+@font-face{
+    font-family: 'Rubik Regular';
+    src: url('../fonts/Rubik/Rubik-Regular.ttf')
+}
+
 body{
     margin: 0;
     background-color: #F0F0F0;
@@ -278,6 +288,11 @@ button{
     color:#6C63FF;
 }
 
+.card-rules{
+    font-family: 'Montserrat-Semibold';
+    font-size: 18px;
+}
+
 .add-card{
     color: #9B9B9B;
     margin: 50px auto 0px;
@@ -320,7 +335,7 @@ form{
 }
 
 form .card-rules{
-    margin: 0 0 46px;
+    margin: 0 0 35px;
     text-align: left;
 }
 
@@ -377,7 +392,7 @@ form .card-rules{
     margin-bottom: 20px;
 }
 
-form button{
+form button{ 
     width: 160px;
     height: 40px;
     align-items: center;
@@ -386,10 +401,10 @@ form button{
     border: none;
     border-radius: 3px;
     font-size: 12px;
-    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-family: 'Rubik Medium', sans-serif;
     color: white;
-    outline: none
-
+    outline: none;
+    display: block;
 }
 
 .success-background{
@@ -894,20 +909,6 @@ button{
     margin: auto
 }
 
-form{
-    padding-left: 50px;
-    font-family: 'Montserrat-Medium', sans-serif
-}
-
-form .card-rules{
-    margin: 0 0 46px;
-    text-align: left;
-}
-
-.form-group{
-    margin-bottom: 35px;
-}
-
 .form-group *{
     display: block;
 }
@@ -919,55 +920,11 @@ form .card-rules{
     margin-top: 5px;
 }
 
-.form-group label{
-    font-size: 12px;
-}
-
-.form-group input{
-    width: 450px;
-    height: 40px;
-    border: 1px solid #D8D8D8;
-    border-radius: 3px;
-    box-sizing: border-box;
-    outline: none;
-    padding-left: 10px;
-    font-family: 'Montserrat-Regular', sans-serif
-}
-
-.form-group input::placeholder{
-    font-size: 8px;
-    font-family: 'Montserrat-Medium', sans-serif;
-}
-
-.form-group.inline{
-    display: inline-block;
-    margin-right: 45px;
-}
-
-.form-group.inline input{
-    width: 200px;
-}
-
 .disclaimer{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 10px;
     color: #9B9B9B;
     margin: 0 0 20px;
-}
-
-form button{
-    width: 160px;
-    height: 40px;
-    align-items: center;
-    text-align: center;
-    background-color: #502274;
-    border: none;
-    border-radius: 3px;
-    font-size: 12px;
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    color: white;
-    outline: none
-
 }
 
 .success-background{

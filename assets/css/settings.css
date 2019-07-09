@@ -319,8 +319,7 @@ button{
 }
 
 .content__form{
-    padding-left: 50px;
-    padding-top: 20px;
+    padding: 20px 50px;
     box-sizing: border-box;
 }
 
@@ -348,8 +347,24 @@ button{
     font-size: 14px;
 }
 
-.image-box img{
+.image-box .profile-picture{
     margin-right: 16px;
+}
+
+.current-image{
+    display: flex;
+    position: relative;
+}
+
+.current-image button{
+    background: transparent;
+    border: none;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    position: absolute;
+    bottom: 3px;
+    right: 24px;
 }
 
 .upload-image{

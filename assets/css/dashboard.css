@@ -277,6 +277,22 @@ button{
     background-color: transparent;
 }
 
+
+.new-plan{
+    width: 160px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #502274;
+    color: white;
+    font-family: 'Rubik Medium';
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 70px 50px 20px;
+}
+
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -330,6 +346,7 @@ button{
     font-size: 12px;
     margin: 0;
     margin-top: 4px;
+    color: #9B9B9B;
 }
 
 .content__properties__details{
@@ -341,7 +358,7 @@ button{
 .content__properties__details .title{
     font-size: 10px;
     font-family: 'Montserrat-Medium',sans-serif;
-    width: 65%;
+    width: 45%;
     display: inline-block;
 }
 
@@ -349,6 +366,14 @@ button{
 .content__properties__details .amount,.content__amount__deposited .amount{
     font-family: 'Montserrat-Bold',sans-serif;
     font-size: 24px;
+}
+
+.content__properties__details .target-amount{
+    color: #9B9B9B;
+    font-size: 16px;
+    font-family: 'Montserrat-Bold',sans-serif;
+    position: relative;
+    top: 1px;
 }
 
 .content__amount__deposited{
@@ -360,6 +385,22 @@ button{
 
 .content__amount__deposited .amount{
     margin-top: 20px;
+}
+
+.content__amount__deposited .target{
+    color: #9B9B9B;
+    font-family: 'Montserrat-Medium';
+    font-size: 12px;
+    margin: 0 0 7px;        
+}
+
+.target-details{
+    font-family: 'Montserrat-Medium';
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 0 6px;
 }
 
 .card.brown .header{
@@ -398,7 +439,7 @@ button{
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 920px){
     .sidebar{
         width: 30%;
     }
@@ -440,8 +481,9 @@ button{
     .sidenav__container.active{
         display: block;
     }    
-    .cards{
-        margin-top: 70px;
+    .new-plan{
+        margin-top: 100px;
+        margin-left: 20px; 
     }
     .top{
         position: fixed;
