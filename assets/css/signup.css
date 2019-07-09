@@ -60,6 +60,10 @@ button{
     margin-bottom: 20px;
 }
 
+.mb-10{
+    margin-bottom: 10px;
+}
+
 .signup input:not([type=checkbox]){
     border: 1px solid rgba(155, 155, 155, 0.3);
     width: 100%;
@@ -79,6 +83,7 @@ button{
     display: inline-flex;
     margin-bottom: 0;
     border-radius: 3px;
+    margin-top: 0;
 }
 
 .signup input.half:first-of-type{
@@ -157,17 +162,17 @@ button{
 .signup-social-text{
     font-family: 'Montserrat-Medium';
     text-align: center;
-    width: 225px;
+    width: 150px;
     margin: 0 auto;
     background-color: #F0F0F0;
     z-index: 2;
     box-sizing: border-box;
-    color: #828282;
-    font-size: 12px
+    font-size: 10px;
+    color: #6C63FF;
 }
 
 .signup-social-line{
-    height: 2px;
+    height: 1px;
     background-color: rgba(155, 155, 155, 0.3);
     position: absolute;
     width: 100%;
@@ -203,23 +208,28 @@ button{
 .login{
     width: fit-content;
     text-align: center;
-    color: #502274;
     display: block;
-    text-decoration: none;
     font-family: 'Montserrat-Regular';
-    font-size: 14px;
+    font-size: 12px;
     margin: 20px auto;
     outline: none;
+    color: #828282;
 }
 
-.login:hover{
+.login a{
+    color: #6C63FF;
+    text-decoration: none;    
+    margin-left: 5px;
+}
+
+.login a:hover{
     border-bottom: 1px solid #502274;
     margin-bottom: 19px;
 }
 
 .forgot-password,.terms-and-conditions{
     font-family: 'Montserrat-Regular';
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
     text-align: center;
     color: #828282;
@@ -230,7 +240,7 @@ button{
     text-decoration: none;
 }
 
-.forgot-password + hr{
+.signup hr{
     width: auto;
     margin-bottom: 2.5rem;
     margin-left: 0;
@@ -247,7 +257,9 @@ button{
     .signup input.half{
         width: 100%;
     }
-
+    .signup input.half:last-of-type{
+        margin-top: 10px;
+    }
 }
 
 @media(max-width: 800px){
@@ -262,6 +274,9 @@ button{
     .signup input.half{
         width: 49%;
     }
+    .signup input.half:last-of-type{
+        margin-top: 0px;
+    }
 }
 
 @media(max-width: 500px){
@@ -271,13 +286,9 @@ button{
     .signup input.half{
         width: 100%;
     }
-    .forgot-password{
-        /*font-size: 0.9rem;*/
+    .signup input.half:last-of-type{
+        margin-top: 10px;
     }
-    .terms-and-conditions{
-        /*font-size: 0.9rem;*/
-    }
-    
 }
 
 @media(max-height: 720px){

@@ -338,6 +338,7 @@ button{
     color: white;
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .add-plan p{
@@ -405,6 +406,15 @@ button{
 .download-pdf span{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 12px;
+}
+
+.download-pdf span .line{
+    width: 30px;
+    height: 4px;
+    background-color: #502274;
+    display: inline-block;
+    position: absolute;
+    margin-top: 5px;
 }
 
 .download-pdf button{

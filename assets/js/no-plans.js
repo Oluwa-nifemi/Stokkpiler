@@ -1,22 +1,37 @@
-const slideBitches = (e) => {
+const slideBar = (e) => {
 
     // main js
     
     const AddPlan = document.querySelector(".add-plan-image");
+    const depositOptions = document.querySelector(".choose-deposit-option")
+    const AddcardTrigger = document.querySelectorAll(".Add-card-Trigger")
+    const overlay = document.querySelector(".overlay")
+
     const EmptyDiv = document.querySelector(".empty-div")
-    const Form = document.querySelector(".NewPlanForm")
     const listOfSpecialInputs = document.querySelectorAll(".special-dropdown")
 
     if (AddPlan !== null) {
         AddPlan.addEventListener("click", (e) => {
-            EmptyDiv.style.display = "none"
-            Form.classList.add("show-form")
+            AddPlan.style.display = "none"
+            depositOptions.classList.add("show-form-flex")
         })    
     }
+
+
+    AddcardTrigger.forEach(trigger => {
+        trigger.addEventListener("click", (e) => {
+            overlay.classList.add('show-form')
+        })  
+    })
+
+
+
 
     listOfSpecialInputs.forEach((input) => {
         input.addEventListener("click", (e) => {
             input.firstElementChild.firstElementChild.textContent =  e.target.textContent;
+            input.lastElementChild.value = e.target.textContent
+            console.log(input.lastElementChild)
         })
     })
 
@@ -41,15 +56,8 @@ const slideBitches = (e) => {
         updateSlider(sliderValue)
     })
 
-    // slider.addEventListener("mousemove", )
+   
 
-    // slider.addEventListener("touchmove", (e) => {
-    //     let sliderValue = slider.value
-    //     console.log("noo")
-    //     updateSlider(sliderValue)
-    // })
-
-    console.log(slider) 
 
 
     const updateSlider = (val) => {
@@ -59,4 +67,11 @@ const slideBitches = (e) => {
     }
 }
 
-document.addEventListener("DOMContentLoaded", slideBitches)
+document.addEventListener("DOMContentLoaded", () => {
+    if(location.search.includes('new=true')){
+        setTimeout(() => {
+            document.querySelector(".add-plan-image").click()
+        },300)
+    }
+    slideBar()
+})

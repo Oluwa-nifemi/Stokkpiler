@@ -21,6 +21,16 @@
 
 
 
+
+
+
+
+
+/* Action classes */
+
+
+
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -177,12 +187,13 @@ main{
 
 
 .overlay{
-    position: absolute;
+    position: fixed;
     display: none;
     z-index: 200;
     height: 100vh;
-    width: 100%;
-    background-color: rgba(155, 155, 155, 0.57);
+    min-height: 100%;
+    width: 82%;
+    background-color: rgba(0, 0, 0, 0.57);
     /* background-color: red; */
 }
 
@@ -197,10 +208,13 @@ main{
     /* left: 50%; */
     transform: translate(-50%, -50%);
     padding: 3rem 5rem;
+    overflow: hidden;
 }
 
 .confirmation-header{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .confirmation-header h2{
@@ -212,12 +226,52 @@ main{
     border-bottom: 2px solid #502274;
     padding-bottom: 0.5rem;
 }
+.confirmation-body{
+    height: 80%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
 
 table.popup{
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 100%;
-    height: 70%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+table.popup tbody.rows{
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+tbody.rows::-webkit-scrollbar{
+    background-color: #fff;
+    width:  6px;
+    cursor: pointer;
+}
+
+tbody.rows::-webkit-scrollbar-thumb{
+    background-color: #9b9b9b;
+    border-radius:  5px;
+    cursor: pointer;
+}
+
+
+table.popup tr{
+    height: 6rem;
+    padding: 0.8rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+table.popup tr:nth-child(2n){
+    background-color: #f7f7f7;
 }
 
 th{
@@ -231,15 +285,14 @@ td{
 
 .popup td{
     font-size: 1rem;
-    text-align: center;
-    border: 1px solid #F0F0F0;
-    margin: 0;
+    flex-basis: 33.3%;
+    color: #4A4A4A;
+}
+.popup th{
+    flex-basis: 33.3%;
+    text-align: left;   
 }
 
-.top-cell{
-    border: 1px solid #F0F0F0;
-    border-top: none;
-}
 
 .bottom-cell{
     border: 1x solid #f0f0f0;
@@ -268,12 +321,21 @@ td{
     border-radius: 4px;
 }
 
-.notify-img{
+.notify-img-container{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.close-img{
+    position: absolute;
+    z-index: 10;
+    right: 2rem;
+    top: 2rem;
+    display: none;
+}
+
 
 .success-img{
     display: none;
@@ -311,12 +373,28 @@ td{
 }
 
 .plans{
-    width: 45%;
+    width: 50%;
+}
+
+.checkbox-div{
+    margin: 1.2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.checkbox-div input{
+    margin-right: 0.5rem;
+}
+
+form input{
+    font-family: 'Montserrat-Medium';
+    font-size: 10px;
 }
 
 .form-group-full{
     width: 100%;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 
 .form-group-header{
@@ -327,7 +405,7 @@ td{
 .form-group-header h2{
     font-size: 1.2rem;
     font-family: 'Montserrat-Medium';
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .form-group-full label{
@@ -346,6 +424,10 @@ td{
     width: 70%;
     display: flex;
     justify-content: space-between;
+}
+
+.radio-group input[type=radio]{
+    vertical-align: bottom;
 }
 
 .units-of{
@@ -462,6 +544,38 @@ a.backlink{
 .block-international{
     transform: translateX(-2rem);
 }
+
+
+/*update*/
+.show-form{
+    display: block;
+    opacity: 0;
+    animation: showForm 1s ease 0.2s 1 forwards;
+}
+.show-form-flex{
+    display: flex;
+    opacity: 0;
+    animation: showForm 1s ease 0.2s 1 forwards;
+}
+
+.x-button{
+    cursor: pointer;
+}
+
+
+
+
+
+@keyframes showForm{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 
 
 
@@ -638,6 +752,9 @@ h2.footer-heading{
         margin-left: 25%;
         width: 75%;
     }
+    .overlay{
+        width: 75%;
+    }
     .plans{
         width: 60%;
     }
@@ -654,6 +771,9 @@ h2.footer-heading{
     }
     main{
         margin-left: 32%;
+        width: 68%;
+    }
+    .overlay{
         width: 68%;
     }
     .plans{
@@ -677,8 +797,11 @@ h2.footer-heading{
         height: 85%;
     }
 
-    .notify-img{
+    .notify-img-container{
         width: 80%;
+    }
+    .notify-img{
+        width: 100%;
     }
 }
 
@@ -688,7 +811,7 @@ h2.footer-heading{
         display: none;
         z-index: 800;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: rgba(155, 155, 155, 0.57);
     }
 
@@ -733,6 +856,10 @@ h2.footer-heading{
     main{
         margin-left: 0;
         width: 100%;
+        min-height: 100%;
+    }
+    .overlay{
+        width: 100%;
     }
 
 
@@ -754,7 +881,7 @@ h2.footer-heading{
         padding: 3rem 2rem;
     }
 
-    .notify-img{
+    .notify-img-container{
         width: 80%;
     }
     .visible{
@@ -798,7 +925,7 @@ h2.footer-heading{
         width: 95%;
     }
 
-    .notify-img{
+    .notify-img-container{
         width: 90%;
     }
 

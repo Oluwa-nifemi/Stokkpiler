@@ -1,4 +1,3 @@
-console.log("I am here")
 const arrInputs = document.querySelectorAll('input')
 
 arrInputs.forEach(input => {

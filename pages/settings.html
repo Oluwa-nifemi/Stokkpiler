@@ -209,15 +209,18 @@
                         Details about your Personal Information
                     </p>
                     <div class="image-box">
-                        <img src="../assets/images/profile-picture.svg">
-                        <span class="upload-image">
-                            Upload new image
-                        </span>
+                        <div class="current-image">
+                            <img src="../assets/images/profile-picture.svg" class="profile-picture">
+                            <button class="change-image" onclick="document.querySelector('.add-profile-picture').click()">
+                                <img src="../assets/images/change-prof-picture.svg">
+                            </button>
+                        </div>
                         <span class="remove-image">
                             Remove
                         </span>
                     </div>
                     <form method="post">
+                        <input type="file" style="display:none" name="profile-picture" class="add-profile-picture">
                         <div class="form-group">
                             <label for="name">First Name</label>
                             <input type="text" id="name" required>
@@ -233,6 +236,10 @@
                         <div class="form-group">
                             <label for="number">Phone Number</label>
                             <input type="text" id="number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country of Residence</label>
+                            <input type="text" id="country" required>
                         </div>
                         <button type="submit">Update</button>
                     </form>

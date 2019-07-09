@@ -18,6 +18,16 @@
     src: url('../fonts/copperplate/OPTICopperplate-Light.otf')
 }
 
+@font-face{
+    font-family: 'Rubik Medium';
+    src: url('../fonts/Rubik/Rubik-Medium.ttf')
+}
+
+@font-face{
+    font-family: 'Rubik Regular';
+    src: url('../fonts/Rubik/Rubik-Regular.ttf')
+}
+
 body{
     margin: 0;
     background-color: #F0F0F0;
@@ -235,7 +245,8 @@ button{
 
 .rates tr:nth-of-type(n + 2) td:nth-of-type(n + 2){
     font-weight: 1000;
-    font-size:10px;
+    font-size: 10px;
+    font-family: 'Montserrat-Semibold'
 }
 
 .rates.bottom{
@@ -288,6 +299,7 @@ button{
     margin: auto;
     color: white;
     font-family: 'Copperplate Light';
+    position: relative;
 }
 
 .card.black{
@@ -304,6 +316,82 @@ button{
 
 .card.dark-green{
     background-color: #23B173;
+}
+
+.remove-card{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.card:hover .remove-card{
+    opacity: 1;
+}
+
+.remove-card-box{
+    position: absolute;
+    top: 36px;
+    right: 14px;
+    height: 150px;
+    width: 230px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 23px 17px;
+    box-sizing: border-box;
+    display: none;
+    opacity: 0;
+    transition: 250ms;
+}
+
+.remove-card-box.active{
+    opacity: 1;
+}
+
+.remove-card-box__header{
+    font-size: 12px;
+    font-family: 'Montserrat Regular';
+    margin: 0 0 10px;
+    color: black;
+}
+
+.remove-card-box__description{
+    font-family: 'Montserrat Regular';
+    font-size: 8px;
+    color: #9B9B9B;
+    margin: 0 0 34px;
+}
+
+.remove-card__buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.remove-card__button{
+    outline: none;
+    font-family: 'Rubik Medium';
+    font-size: 12px;
+    width: 66px;
+    border-radius: 3px;
+    border: none;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    color: #502274;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.remove-card__button--bg-purple{
+    background-color: #502274;
+    color: white;
+    margin-left: 5px;
 }
 
 .card__brands{
@@ -346,6 +434,30 @@ button{
 
 .card__details div p:last-of-type{
     font-size: 14px;
+}
+
+.add-card{
+    width: 100%;
+    height: 230px;
+    padding: 66px 0 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #502274;
+    border: 1px dashed #502274;
+    border-radius: 9px;
+    box-sizing: border-box;
+    max-width: 380px;
+    margin: auto;
+    font-family: 'Rubik Regular';
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.add-card img{
+    height: 24px;
+    width: 24px;
 }
 
 @media(max-width: 1100px){
