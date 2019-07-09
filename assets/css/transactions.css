@@ -407,6 +407,15 @@ button{
     font-size: 12px;
 }
 
+.download-pdf span .line{
+    width: 30px;
+    height: 4px;
+    background-color: #502274;
+    display: inline-block;
+    position: absolute;
+    margin-top: 5px;
+}
+
 .download-pdf button{
     border-radius: 3px;
     background-color: transparent;
