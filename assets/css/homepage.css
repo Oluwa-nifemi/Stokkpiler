@@ -67,9 +67,17 @@ header{
 
 .Header-background{
     position: absolute;
-    transform: translateY(-35%);
+    transform: translateY(-30%);
     width: 108%;
     z-index: -1;
+}
+
+.img-blocks{
+    width: 55%;
+}
+
+.text-section{
+    width: 45%;
 }
 
 
@@ -147,8 +155,8 @@ nav.navbar{
 
 
 .btn{
-    padding: 0.7rem 3rem;
-    border-radius: 5px;
+    padding: 0.7rem 4rem;
+    border-radius: 3px;
 }
 
 
@@ -157,41 +165,39 @@ nav.navbar{
     justify-content: space-between;
 }
 
-.text-section{
-    flex-basis: 40%;
-}
-
 
 .Header-Large-Heading{
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     color: #FFFFFF;   
     font-family: 'Playfair-Display-Regular';
     font-weight: 100;
-    margin-top: 4rem;
+    margin: 0 auto;
+    margin-top: 7rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
-    width: 80%;
+    width: 100%;
 }
 
 .Header-lead-text{
     font-size: 1.6rem;
     text-align: left;
-    color: #7AA1B9;
+    color: #E2E1E7;
     font-family: 'Poppins-Regular';
-    width: 80%;
+    width: 100%;
     line-height: 2;
+    margin: 0 auto;
     margin-bottom: 5rem;
 }
 
 .header-btn{
-    border: 2px solid #502274;
-    background-color: #502274;
-    color: #FFFFFF;
+    background-color: #FFF;
+    color: #502274;
     text-decoration: none;
     font-size: 1.3rem;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Poppins';
     transition: box-shadow 0.3s ease;
     box-shadow: 0 0.2rem 0.35rem rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -200,9 +206,9 @@ nav.navbar{
 }
 
 section.why-stockpiler{
-    padding: 6rem 20rem;
+    padding: 5rem 20rem;
     padding-top: 10rem;
-    margin: 2rem auto;
+    margin: 0 auto;
     text-align: center;
     /* background-color: red; */
 }
@@ -225,26 +231,32 @@ section.why-stockpiler{
     font-family: 'Montserrat-Regular';
 }
 
+.why-stockpiler-body{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .reason{
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 
 .reason-header{
     font-size: 1.8rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
     font-family: 'Montserrat-SemiBold'; 
-    color: #23616D;
+    color: #000000;
 }
 
 .reason-text{
     font-size: 1.2rem;
     font-family: 'Montserrat-Regular';
-    color: #7AA1B9;
+    color: #4A4A4A;
 }
 
 
 .Features{
-    padding: 6rem 20rem;
+    padding: 5rem 20rem;
     padding-bottom: 0;
     margin: 2rem auto;
 }
@@ -288,20 +300,18 @@ section.why-stockpiler{
 
 .feature-heading{
     font-size: 1.8rem;
-    margin: 0 auto;
     margin-bottom: 1rem;
     font-family: 'Montserrat-SemiBold'; 
-    color: #23616D;
+    color: #000000;
     width: 90%;
 }
 
 .feature-text{
     font-size: 1.3rem;
-    width: 90%;
     font-family: 'Montserrat-Regular';
-    color: #7AA1B9;
-    margin: 0 auto;
+    color: #4A4A4A;
     text-align: left;
+    width: 80%;
 }
 
 .feature-image-container{
@@ -342,7 +352,7 @@ section.why-stockpiler{
 
 
 .How-it-works{
-    padding: 6rem 30rem;
+    padding: 5rem 20rem;
 }
 
 .How-it-works-heading{
@@ -367,6 +377,8 @@ section.why-stockpiler{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .How-it-works-body{
@@ -392,23 +404,27 @@ section.why-stockpiler{
 .reverse{
     flex-direction: row-reverse;
 }
+.reverse img{
+    margin-right: 2rem;
+}
 
 .method{
     flex-basis: 30%;
 }
 
 .method-heading{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'Montserrat-SemiBold';
     margin-bottom: 0.8rem;
-    color: #23616D;
+    color: #000;
 }
 
 .method-text{
+    width: 80%;
     font-size: 1.4rem;
     text-align: left;
-    color: #7AA1B9;
-    font-family: 'Montserrat-Regular';
+    color: #4A4A4A;
+    font-family: 'Montserrat-Medium';
 }
 
 .method-last{
@@ -432,7 +448,7 @@ section.why-stockpiler{
 
 
 .FAQs{
-    padding: 6rem 30rem;
+    padding: 5rem 30rem;
 }
 
 .FAQs-heading{
@@ -478,20 +494,17 @@ section.why-stockpiler{
     font-size: 1.8rem;
     margin-bottom: 1rem;
     font-family: 'Montserrat-SemiBold'; 
-    color: #23616D;
+    color: #000;
     width: 90%;
-    margin: 0 auto;
     text-align: left;
 }
 
 .faq-text{
     font-size: 1.3rem;
-    width: 90%;
     font-family: 'Montserrat-Regular';
-    color: #7AA1B9;
-    margin: 0 auto;
+    color: #4A4A4A;
     text-align: left;
-    /* text-align: justify;     */
+    width: 80%;
 }
 
 
@@ -500,7 +513,6 @@ footer{
     padding: 15rem  10rem;
     padding-bottom: 0;
     background-color: #262C30;
-    /* width: 100%; */
 }
 
 .footer-body{
@@ -608,11 +620,11 @@ footer{
 
 .footer-form-submit{
     margin: 3rem 0;
-    padding: 0.8rem 3rem;
-    color: #FFFFFF;
+    padding: 0.8rem 3.5rem;
+    color: #502274;
     border: none;
-    background-color: #502274;
-    border-radius: 4px;
+    background-color: #fff;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -824,9 +836,7 @@ a.sidebar-link{
         overflow-x: hidden;
         position: fixed;
     }
-    .Header-background{
-        transform: translateY(-27%);
-    }
+    
     img.img-blocks{
         width: 55% !important;
     }
@@ -861,25 +871,30 @@ a.sidebar-link{
 
 
 @media(max-width: 1200px){
-    footer{
+     footer{
         padding: 15rem 5rem;
         padding-bottom: 0;
     }
+
+    .heading-top{
+        margin-bottom: 7rem;
+    }
+
     section.why-stockpiler{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         text-align: center;
         padding-bottom: 0;
     }
     .How-it-works{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         padding-bottom: 0;
     }
     .Features{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         padding-bottom: 0;
     }
     .FAQs{
-        padding: 15rem 10rem;
+        padding: 15rem 8rem;
         padding-bottom: 0;
     }
     nav.navbar{
@@ -887,12 +902,13 @@ a.sidebar-link{
     }
     .Header-background{
         position: absolute;
-        transform: translateY(-20%);
+        transform: translateY(-24%);
         width: 108%;
         z-index: -1;
     }
     .Header-Large-Heading{
         font-size: 3rem;
+        margin-top: 3rem;
     }
     
     img.img-blocks{
@@ -900,6 +916,16 @@ a.sidebar-link{
     }
     .Header-lead-text{
         margin-bottom: 4rem;
+    }
+
+    .feature-text{
+        width: 90%
+    }
+    .faq-text{
+        width: 90%;
+    }
+    .method-text{
+        width: 100%;
     }
     
 }
@@ -913,6 +939,9 @@ a.sidebar-link{
     .How-it-works{
         padding: 8rem 6rem;
     }
+    .How-it-works-body{
+        width: 90%;
+    }
     .Features{
         padding: 8rem 6rem;
     }
@@ -925,7 +954,7 @@ a.sidebar-link{
     }
 
     .heading-top{
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
 
     .Header-Large-Heading{
@@ -951,6 +980,7 @@ a.sidebar-link{
     }
     .Header-lead-text{
         margin-bottom: 5rem;
+        color: #7AA1B9;
     }
     .talk{
         flex-basis: 50%;
@@ -964,6 +994,15 @@ a.sidebar-link{
 
     .push {
         margin-right: 2rem;
+    }
+    .feature-text{
+        width: 100%
+    }
+    .faq-text{
+        width: 100%;
+    }
+    .method-text{
+        width: 100%;
     }
 
 }
@@ -1063,7 +1102,7 @@ a.sidebar-link{
         left: 50%;
     }
     .FAQs-heading{
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
     }
 
     .method-image{
@@ -1122,8 +1161,6 @@ a.sidebar-link{
         text-align: center;
     }
 
-
-
     
     section.why-stockpiler{
         padding: 4rem 2rem;
@@ -1174,7 +1211,7 @@ a.sidebar-link{
     }
 
     .reason-text{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -1183,16 +1220,31 @@ a.sidebar-link{
     }
 
     .FAQs-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .Features-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .why-stockpiler-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .How-it-works-heading{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+    }
+    .why-stockpiler-body{
+        text-align: center;
+    }
+    .feature-text{
+        margin: 0 auto;
+    }
+    .feature-heading{
+        margin: 0 auto;
+    }
+    .faq-text{
+        margin: 0 auto;
+    }
+    .faq-heading{
+        margin: 0 auto;
     }
     
 }

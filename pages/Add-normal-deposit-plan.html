@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/editPlan.css">
-    <title>Stokkpiler | Edit Plan</title>
+    <link rel="stylesheet" href="../assets/css/plan.css">
+    <title>Stokkpiler | Plans</title>
 </head>
 <body>
     
-
     <div class="withdraw-sidebar">
             <div class="close">
                     <div class="bar bar-left"></div>
@@ -21,7 +20,7 @@
 
         <div class="withdraw-sidebar-main">
             <ul class="sidebar-options">
-                <a href="./home.html">
+                <a href="">
                     <li class="sidebar-option">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/ios-white-business.svg" alt="">
@@ -32,7 +31,7 @@
                         </div>
                     </li>
                 </a>
-                 <a href="./dashboard.html">
+                <a href="./dashboard.html">
                     <li class="sidebar-option">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/dashboard-white.svg" alt="">
@@ -44,7 +43,7 @@
                     </li>
                 </a>
                 <a href="./plans.html">
-                    <li class="sidebar-option  active">
+                    <li class="sidebar-option active">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/md-white-stats.svg" alt="">
                                 <img class="normalImage" src="../assets/images/md-stats.svg" alt="">
@@ -101,7 +100,7 @@
             </ul>
         </div>
 
-        <a href="./login.html">
+       <a href="./login.html">
         <div class="logout">
                 <img src="../assets/images/logout.svg" alt="">
                 <span class="option-text">
@@ -118,11 +117,11 @@
 
         <div class="main-container">
             <div class="main-header">
-                    <div class="open">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
+                            <div class="open">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
                     <a href="http://" class="backlink">
                         <div class="back">
                                 <img src="../assets/images/Path 3 Copy.svg" alt="">
@@ -147,7 +146,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Internatinal</td>
+                            <td>International</td>
                             <td>
                                 <img class="down-arrow" src="../assets/images/Group 44.svg" alt="">
                                 <h3>$2</h3>
@@ -171,7 +170,7 @@
                 </div>
     
                 <div class="main-body">
-                     <div class="overlay">
+                    <div class="overlay">
                         <div class="Add-Card-box">
                             <div class="Add-card-box-header">
                                 <h2> <span class="underline">ADD</span>CARD</h2>
@@ -223,20 +222,36 @@
                             </form>
                         </div>
                     </div>
-                    <form action="/pages/" method="POST" class="NewPlanForm">
-                        <h1 class="planName">Lagos House</h1>
+                    <form action="/pages/" method="POST" class="NewPlanForm normal-deposit-form show-form">
                         <div class="form-group-full">
                             <div class="form-group-header">
-                                 <h2>Plan Name <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2>
+                                 <h2>Plan Name  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2>
                                 <img class="question-mark" src="" alt=""> 
                             </div>
-                            <input type="text" class="form-input-full" value="Lagos House">
+                            <input type="text" class="form-input-full">
+                            <div class="check-box">
+                                <input type="checkbox" name="ckeck2" id="check"> 
+                                <label for="check">Click here for one time deposits</label>
+                            </div>
                         </div>
-
 
                         <div class="form-group-full">
                             <div class="form-group-header">
-                                 <h2>Deposit frequency  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
+                                 <h2>Choose Building Type</h2> 
+                            </div>
+                            <input type="text" class="form-input-full" placeholder="e.g  1 Bedroom Apartment">
+                        </div>
+
+                        <div class="form-group-full">
+                            <div class="form-group-header">
+                                 <h2>Estimation of materials needed</h2> 
+                            </div>
+                            <input type="text" class="form-input-full" placeholder="1000 Units of Blocks, 100 Bags of Cement">
+                        </div>
+
+                        <div class="form-group-full">
+                            <div class="form-group-header">
+                                 <h2>Deposit frequency   <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
                             </div>
                             <div class="special-dropdown">
                                 <div class="value-holder">
@@ -257,23 +272,9 @@
                             <!-- add special type of drop down -->
                         </div>
 
-
                         <div class="form-group-full">
                             <div class="form-group-header">
-                                 <h2>Auto Deposit  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span>  </h2> 
-                            </div>
-                            <input type="text" class="form-input-full paddingLeft" value="20,000.00" >
-                            <div class="currencySymbol">
-                                $
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="form-group-full">
-                            <div class="form-group-header">
-                                <h2>Choose Materials  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2>
+                                <h2>Choose Materials   <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2>
                             </div>
                             <div class="select-group">
                                 <div class="radio-group">
@@ -293,8 +294,6 @@
                                 
                             </div>
                         </div>
-
-
                         <div class="form-group-full">
                             <div class="form-group-header">
                                 <h2>Stokkpile target  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2>
@@ -315,41 +314,65 @@
 
                         <div class="form-group-full">
                             <div class="form-group-header">
-                                <h2>Plan Status  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span>  </h2>
+                                    <h2>Set priority for Building Materials  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2>
                             </div>
-                            <div class="select-group">
-                                <div class="radio-group">
-                                        <input type="radio" name="connected" id="active">
-                                        <label for="Blocks">Active</label>
-                                </div>                            
-
-                                <div class="radio-group">
-                                        <input type="radio" name="connected" id="On hold">
-                                        <label for="cement">On hold</label>
+                            <div class="slideContainer">
+                                <div class="top-slider">
+                                    <span class="current">
+                                        0%
+                                    </span>
+                                    <span class="negative">
+                                        100%
+                                    </span>
                                 </div>
-
-                                <div class="radio-group">
-                                    <!-- Leave me alone i'm Important -->
+                                <div class="sliderContainerInner">
+                                    <div class="sliderBackground"></div>
+                                     <input type="range" min="0" max="100" value=0 class="slider" id="myRange">
                                 </div>
-                                
+                                <div class="bottom-slider">
+                                    <span class="left">units of blocks</span>
+                                    <span class="right">units of cement</span>
+                                </div>
                             </div>
                         </div>
 
-
                         <div class="form-group-full">
                             <div class="form-group-header">
-                                 <h2>Next Deposit Date</h2> 
+                                 <h2>When is your start date?  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
                             </div>
                             <input type="date" class="form-input-full">
                         </div>
 
                         <div class="form-group-full">
                             <div class="form-group-header">
-                                 <h2>Change Debit Card<span class="Important"><img src="" alt=""></span> </h2> 
+                                 <h2>Stockpile Country  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
+                            </div>
+                            <div class="special-dropdown">
+                                <div class="value-holder">
+                                    <span class="Value-text">Nigeria</span>
+
+                                    <img src="../assets/images/dropDown.svg" alt="">
+                                </div>
+                                <div class="options-holder">
+                                    <ul>
+                                        <li class="drop-down-option">Nigeria</li>
+                                        <li class="drop-down-option">Ghana</li>
+                                        <li class="drop-down-option">Kenya</li>
+
+                                    </ul>
+                                </div>
+                                <input type="text" class="hidden-input" name="stockpile-Country">
+                            </div>
+                            <!-- add special type of drop down -->
+                        </div>
+                        <div class="form-group-full">
+                            <div class="form-group-header">
+                                 <h2>Select Card  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
                             </div>
                             <div class="special-dropdown">
                                 <div class="value-holder">
                                     <span class="Value-text">Add a card</span>
+
                                     <img src="../assets/images/dropDown.svg" alt="">
                                 </div>
                                 <div class="options-holder">
@@ -364,10 +387,23 @@
                             <!-- add special type of drop down -->
                         </div>
 
-                        <button class="btn plans-submit">Update</button>
+                        <div class="form-group-full">
+                                <div class="form-group-header">
+                                     <h2>Auto Deposit  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
+                                </div>
+                                <input type="text" class="form-input-full paddingLeft">
+                                <div class="currencySymbol">
+                                    $
+                                </div>
+                            </div>
+
+                        <button class="btn plans-submit">Save</button>
                     </form>
+                 
                 </div>
     </div>
+
+
     <div class="footer">
             <div class="footer-inner">
                             <table class="stocks">
@@ -401,20 +437,7 @@
         
                                 </table>            
             </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>    
 
     </main>
 
@@ -422,7 +445,6 @@
     <script src="../assets/js/sliderAction.js"></script>
     <script src="../assets/js/Required-inputs.js"></script>
     <script src="../assets/js/close-img.js"></script>
-
 
 
 </body>

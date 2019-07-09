@@ -625,6 +625,89 @@ h2.footer-heading{
 
 
 
+/*updates*/
+.list{
+    /*display: none;*/
+}
+.plan-group{
+    cursor: pointer;
+}
+
+.cancel{
+    cursor: pointer;    
+} 
+
+.invoice{
+    display: none;
+    padding:0;
+    padding-bottom: 8rem;
+}
+
+
+.invoice p {
+    color: #9b9b9b;
+    font-size:  1rem;
+    font-family: 'Montserrat-Medium';
+}
+
+.invoice h2{
+    font-size:  1.6rem;
+    font-family: "Montserrat-Medium";
+    color:  #000;
+}
+
+.invoice p.value{
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.invoice p.value-price{
+    font-size:  3rem;
+    color:  #000;
+}
+
+
+.invoice-row{
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    padding:2rem 3rem;
+    padding-bottom: 0;
+    /*align-items: center;*/
+
+}
+.invoice-row-header{
+    background-color: #DDDBF1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.left-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.invioce-detail{
+    flex-direction: column;
+    align-items: center;;
+}
+
+.invoice-row div.exception{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.invoice-row hr{
+    background-color: #EAEAEA;
+    height: 2px;
+    width: 100%;
+}
 
 
 
@@ -671,6 +754,11 @@ h2.footer-heading{
         background-color: transparent;
         box-shadow: none;
         padding: 2rem 0;
+    }
+
+    .invoice{
+        background-color:   #FFFFFF;
+        padding-top:    0;
     }
 
     .plan-Header{

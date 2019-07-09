@@ -21,7 +21,7 @@
 
             <div class="withdraw-sidebar-main">
                 <ul class="sidebar-options">
-                    <a href="./dashboard.html">
+                    <a href="./home.html">
                         <li class="sidebar-option">
                             <div class="center-me">
                                     <img class="hoverImage" src="../assets/images/ios-white-business.svg" alt="">
@@ -32,6 +32,17 @@
                             </div>
                         </li>
                     </a>
+                     <a href="./dashboard.html">
+                    <li class="sidebar-option">
+                        <div class="center-me">
+                                <img class="hoverImage" src="../assets/images/dashboard-white.svg" alt="">
+                                <img class="normalImage" src="../assets/images/dashboard.svg" alt="">
+                                <span class="option-text">
+                                    Dashboard
+                                </span>
+                        </div>
+                    </li>
+                </a>
                     <a href="./plans.html">
                         <li class="sidebar-option">
                             <div class="center-me">
@@ -109,13 +120,18 @@
                         <div class="withdrawal-confirmation">
                                 <div class="confirmation-header">
                                     <h2> <span class="underline">WITH</span>DRAWAL CONFIRMATION</h2>
+                                    <img src="../assets/images/cancel.svg" class="x-button" alt="">
                                 </div>
-                             <table class="popup">
-                                 <tr>
+                                <div class="confirmation-body">
+                                    <table class="popup">
+                                <thead>
+                                    <tr>
                                      <th class="top-cell left-cell">Plan Name</th>
-                                     <th  class="top-cell" >Materials to be withdrawn</th>
-                                     <th  class="top-cell right-cell" >Location</th>
-                                 </tr>
+                                    <th  class="top-cell" >Materials to be withdrawn</th>
+                                    <th  class="top-cell right-cell" >Location</th>
+                                    </tr>
+                                </thead>        
+                                <tbody class="rows">
                                  <tr>
                                      <td class="left-cell">Lagos House</td>
                                      <td>
@@ -136,6 +152,52 @@
                                          <p>4, samuel Elegushi street, Lagos</p>
                                      </td>
                                  </tr>
+
+                                 <tr>
+                                    <td class="left-cell">Lagos House</td>
+                                     <td>
+                                         <p>100 Bags of Cement</p>
+                                         <p>700 Units of Blocks</p>
+                                     </td>
+                                     <td class="right-cell">
+                                         <p>4, samuel Elegushi street, Lagos</p>
+                                     </td>
+                                 </tr>
+
+
+                                 <tr>
+                                    <td class="left-cell">Lagos House</td>
+                                     <td>
+                                         <p>100 Bags of Cement</p>
+                                         <p>700 Units of Blocks</p>
+                                     </td>
+                                     <td class="right-cell">
+                                         <p>4, samuel Elegushi street, Lagos</p>
+                                     </td>
+                                 </tr>
+
+
+                                 <tr>
+                                    <td class="left-cell">Lagos House</td>
+                                     <td>
+                                         <p>100 Bags of Cement</p>
+                                         <p>700 Units of Blocks</p>
+                                     </td>
+                                     <td class="right-cell">
+                                         <p>4, samuel Elegushi street, Lagos</p>
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="left-cell">Lagos House</td>
+                                     <td>
+                                         <p>100 Bags of Cement</p>
+                                         <p>700 Units of Blocks</p>
+                                     </td>
+                                     <td class="right-cell">
+                                         <p>4, samuel Elegushi street, Lagos</p>
+                                     </td>
+                                 </tr>
+
                                  <tr>
                                         <td class="left-cell">Lagos House</td>
                                         <td>
@@ -156,17 +218,22 @@
                                             <p>4, samuel Elegushi street, Lagos</p>
                                         </td>
                                  </tr>
-
+ 
+                                </tbody>
 
                              </table>
+                                </div>
+                             
                              <button class="confirm">
                             confirm
                              </button>   
                         </div>
-                        <img src="../assets/images/Group 82.svg" alt="success-img" class="notify-img success-img">
-                        <img src="../assets/images/Group 86.svg" alt="failed-img" class="notify-img failed-img">
+                        <div class="notify-img-container">
+                            <img src="../assets/images/cancel.svg" class="close-img x-button" alt="">
+                            <img src="../assets/images/Group 82.svg" alt="success-img" class="notify-img success-img">
+                            <img src="../assets/images/Group 86.svg" alt="failed-img" class="notify-img failed-img">
+                        </div>
                 </div>
-
 
 
 
@@ -233,6 +300,12 @@
                                         <img class="question-mark" src="" alt=""> 
                                     </div>
                                     <input type="text" class="form-input-full">
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="checkMe">
+                                        <label for="checkMe">
+                                            click here to schedule for material's delivery to your construction site by our pick up agents
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="form-group-full">
                                     <div class="form-group-header">
@@ -320,5 +393,13 @@
     <script src="../assets/js/withdraw.js"></script>
     <script src="../assets/js/sliderAction.js"></script>
     <script src="../assets/js/Required-inputs.js"></script>
+    <script src="../assets/js/close-img.js"></script>
 </body>
 </html>
+
+
+
+<!-- add the close tag to the each of the pop ups and make them close their parent divs -->
+<!-- remove the lines from the table -->
+<!-- make every alternate row the grey color -->
+<!-- make the table scrollable -->
