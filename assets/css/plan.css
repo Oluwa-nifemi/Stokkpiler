@@ -53,10 +53,6 @@ body{
 .container{
     width: 100%;
     height: 100%;      
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
 }
 
 input{
@@ -272,6 +268,8 @@ a.backlink{
 .main-body{
     padding: 6rem 5rem;
     width: 100%;
+    height: 100%;
+    position: relative;
     
 }
 
@@ -282,7 +280,8 @@ a.backlink{
     justify-content: center;
     align-content: center;
     /* position: absolute; */
-    height: 50rem;
+    height: 55rem;
+    position: relative;
 }
 
 
@@ -480,10 +479,110 @@ a.backlink{
 }
 
 
+/*updates*/
 
 
+.choose-deposit-option{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.choose-deposit-option img{
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.choose-deposit-option img:hover{
+    transform: scale(1.03);
+}
+
+.overlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: 9999;
+    display: none;
+    margin-left: 18%;
+    width: 82%;
+}
 
 
+.Add-Card-box{
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 85%;
+    padding: 3rem 6rem;
+}
+
+.Add-Card-box .form-group-full{
+    margin-bottom: 1.5rem;
+}
+
+.Add-Card-box .form-group-full .form-group-header{
+    margin-bottom: 0.7rem;
+}
+
+.Add-Card-box .form-group-full .form-group-header h2{
+    margin-bottom: 0;
+}
+
+
+.Add-card-box-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.Add-card-box-header h2{
+    color: #000;
+    font-family:"Montserrat-SemiBold"; 
+}
+
+.Add-Card-box button{
+    margin-top: 2rem;
+}
+
+.additional-info{
+    color: #9B9B9B;
+    font-family: 'Montserrat-Regular';
+    margin-top: 0.75rem;
+}
+
+.form-group-half{
+    width: 45%;
+    display: inline-block;
+}
+
+.margin-right{
+    margin-right: 9.1%;
+}
+
+/*invalid card registeration phrase*/
+.invalid{
+    font-family: 'Montserrat-Regular';
+    margin: 1rem 0 3rem 0;
+    color: #B21F1E;
+    display: none;
+}
+
+.hidden-input{
+    display: none;
+}
+.x-button{
+    cursor: pointer;
+}
 
 
 
@@ -496,6 +595,17 @@ a.backlink{
     opacity: 0;
     animation: showForm 1s ease 0.2s 1 forwards;
 }
+.show-form-flex{
+    display: flex;
+    opacity: 0;
+    animation: showForm 1s ease 0.2s 1 forwards;
+}
+
+.hidden{
+
+}
+
+
 
 
 
@@ -868,6 +978,14 @@ span.Important{
         margin-left: 25%;
         width: 75%;
     }
+    .overlay{
+        margin-left: 25%;
+        width: 75%
+    }
+    .Add-Card-box{
+        width: 80%;
+        padding: 3rem 4rem;
+    }
     .plans{
         width: 60%;
     }
@@ -895,6 +1013,10 @@ span.Important{
     main{
         margin-left: 32%;
         width: 68%;
+    }
+    .overlay{
+        margin-left: 32%;
+        width: 68%
     }
     .plans{
         width: 80%;
@@ -976,6 +1098,11 @@ span.Important{
 }
 
 @media (max-width: 768px){
+    .choose-deposit-option{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
     .cover-overlay{
         position: absolute;
         display: none;
@@ -1027,6 +1154,11 @@ span.Important{
     }
     
     main{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .overlay{
         margin-left: 0;
         width: 100%;
     }
@@ -1085,6 +1217,18 @@ span.Important{
 }
 
 @media (max-width: 575px){
+    .bottom-text-anchor{
+        margin-bottom: 5rem;
+    }
+    .form-group-half{
+        width: 100%;
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .Add-Card-box{
+        width: 85%;
+        height: 95%
+    }
     .withdraw-sidebar{
         width: 70%;
     }
@@ -1179,4 +1323,5 @@ span.Important{
         /* margin-left: 1%; */
     }
 }
+
 
