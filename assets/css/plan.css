@@ -1072,6 +1072,8 @@ span.Important{
     flex-direction: column;  
 }
 
+
+
 .type-1 .directional-arrow{
     display: flex;
     align-items: center;    
@@ -1086,6 +1088,15 @@ span.Important{
     display:  flex;
     align-items: center;
 }
+
+.forwards{
+        display: block;
+}
+.down{
+    display: none;
+}
+
+
 
 @media (max-width: 1300px) {
     .withdraw-sidebar{
@@ -1125,7 +1136,35 @@ span.Important{
     .serial{
         width: 7rem;
     }
-        
+     
+    .steps-row{
+        flex-direction: column;
+        align-items:  center; 
+    }
+    .steps-row.reverse{
+        flex-direction: column-reverse;
+    }   
+    .type-1{
+        flex-direction: column;
+    }
+    .type-1 .directional-arrow{
+        flex-direction: column;
+    }
+    .type-3{
+        flex-direction: column-reverse; 
+    }
+    .forwards{
+        display: none;
+    }
+    .down{
+        display: block
+    }
+    .directional-arrow.six{
+        justify-content: center;    
+    }
+    .reverse{
+        margin-bottom: 5rem; 
+    }
 }
 
 @media (max-width: 1000px){
