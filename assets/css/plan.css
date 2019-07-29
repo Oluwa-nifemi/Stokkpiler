@@ -179,9 +179,8 @@ main{
     margin-left: 18%;
     width: 82%;
     height: 100%;
-    /* background-color: orangered; */
     position: relative;
-    /* position: relative;  */
+    min-height: 100vh;
 }
 
 .main-header{
@@ -275,12 +274,6 @@ a.backlink{
 
 .empty-div{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    /* position: absolute; */
-    height: 55rem;
     position: relative;
 }
 
@@ -294,6 +287,8 @@ a.backlink{
 .bottom-text-anchor{
     font-family: 'Montserrat-Regular';
     font-size: 1.2rem;
+    margin-top: 5rem;
+    text-align: center;
 }
 
 
@@ -493,6 +488,7 @@ a.backlink{
 .choose-deposit-option img{
     cursor: pointer;
     transition: transform 0.3s ease-out;
+    margin-bottom: 3rem;
 }
 
 .choose-deposit-option img:hover{
@@ -950,16 +946,6 @@ span.Important{
 }
 
 
-/*a.plan-link{
-    display: flex;  
-    flex-direction: row; 
-    justify-content: space-evenly;
-    align-items: center; 
-    text-decoration: none;
-    cursor: pointer;
-    width:  100%; 
-}
-*/
 .plan-group{
     display: flex;
     flex-direction: row;
@@ -1097,6 +1083,10 @@ span.Important{
     display: none;
 }
 
+.show-div{
+    margin-top: 5rem;
+    display: flex;
+}
 
 
 @media (max-width: 1300px) {
@@ -1169,13 +1159,6 @@ span.Important{
 }
 
 @media (max-width: 1000px){
-    a.plan-link{
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #FFFFFF;
-        border-radius: 5px;
-        box-shadow: 0.2rem 0.3rem 0.3rem #70707010;
-    }
     .withdraw-sidebar{
         width: 32%;
     }
@@ -1270,7 +1253,6 @@ span.Important{
     .choose-deposit-option{
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 5rem;
     }
     .cover-overlay{
         position: absolute;
@@ -1390,8 +1372,13 @@ span.Important{
 }
 
 @media (max-width: 575px){
+    .choose-deposit-option{
+        margin-top: 0;
+    }
+
     .bottom-text-anchor{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
     }
     .form-group-half{
         width: 100%;
@@ -1415,7 +1402,7 @@ span.Important{
     }
 
     .main-body{
-        padding: 8rem 3rem 0;
+        padding: 8rem 3rem;
     }
 
     .stocks{
@@ -1435,10 +1422,12 @@ span.Important{
     }
 
     .footer{
-        display: block;
         display: flex;
         justify-content: center;
-        position: relative;
+        align-items: center;
+        position: absolute;
+        bottom: 0rem;
+        width: 100%;
     }
 
     h2.footer-heading{
