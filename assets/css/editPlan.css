@@ -404,6 +404,7 @@ a.backlink{
     /* padding: 2rem 0; */
     font-family: 'Montserrat-Regular';
     font-size: 1.2rem;
+    position: relative;
 }
 
 .value-holder{
@@ -438,13 +439,16 @@ a.backlink{
     border-radius: 3px;
     width: 227.5px;
     z-index: 1000px;
-    transform: translateY(-1.5rem);
-    float: right;
-    margin-right: 1.5rem;
+    /*transform: translateY(-1.5rem);*/
+    /*float: right;*/
+    /*margin-right: 1.5rem;*/
     box-shadow: 0.3rem 0.7rem 0.5rem #70707021;
     overflow: hidden;
     display: none;
     opacity: 0;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 .options-holder ul{

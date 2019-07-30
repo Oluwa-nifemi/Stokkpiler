@@ -245,7 +245,8 @@ table.popup tbody.rows{
     overflow-y: scroll;
     height: 100%;
     width: 100%;
-    padding: 0 1rem;
+    padding: 5rem 1rem;
+    padding-top: 0;
 }
 
 tbody.rows::-webkit-scrollbar{
@@ -626,6 +627,7 @@ a.backlink{
     opacity: 0;
     display: none;
 }
+
 
 .showSuccess{
     opacity: 0;

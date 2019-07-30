@@ -439,6 +439,7 @@ a.backlink{
     font-family: 'Montserrat-Medium';
     font-size: 1rem;
     color: #9B9B9B;
+    margin-bottom: 1rem;
 }
 
 
@@ -481,7 +482,7 @@ button.btn{
     color: #FFFFFF;
     background-color: #502274;
     border-radius: 3px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-family: 'Montserrat-Regular';
 }
 
@@ -654,6 +655,7 @@ h2.footer-heading{
     font-size:  1.6rem;
     font-family: "Montserrat-Medium";
     color:  #000;
+    margin: 1rem 0;
 }
 
 .invoice p.value{
@@ -704,9 +706,10 @@ h2.footer-heading{
 }
 
 .invoice-row hr{
-    background-color: #EAEAEA;
+    background-color: rgba(234, 234, 234, 0.6);
     height: 2px;
     width: 100%;
+    border: none;
 }
 
 
