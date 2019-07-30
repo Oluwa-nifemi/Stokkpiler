@@ -7,6 +7,7 @@ const clImg = document.querySelector(".close-img")
 closeImgbtn.forEach(button => {
 	button.addEventListener('click', (e) => {
 		overlayImage.classList.remove("show-form")
+		overlayImage.classList.remove("backgroundBlend")
 		if(cfm !== null){
 			cfm.classList.remove("hideConfirmation")
 		}

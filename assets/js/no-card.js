@@ -14,6 +14,7 @@ document.querySelector('#card-number').addEventListener('input', function(){
     this.value = split.join('-')
 })
 
+
 document.querySelector('#expiry-date').addEventListener('input', function(){
     const {value} = this;
     const split = value.split('/').join('').split('').reduce((acc,cur,i) => {

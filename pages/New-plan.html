@@ -1,3 +1,5 @@
+<!-- The page that pos up when there are already plans but you just fell like adding a new one -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/css/plan.css">
-    <title>Stokkpiler | Home</title>
+    <title>Stokkpiler | New Plan</title>
 </head>
 <body>
     
@@ -20,8 +22,8 @@
 
         <div class="withdraw-sidebar-main">
             <ul class="sidebar-options">
-                <a href="./home.html">
-                    <li class="sidebar-option active">
+                <a href="">
+                    <li class="sidebar-option">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/ios-white-business.svg" alt="">
                                 <img class="normalImage" src="../assets/images/ios-business.svg" alt="">
@@ -31,7 +33,7 @@
                         </div>
                     </li>
                 </a>
-                 <a href="./dashboard.html">
+                <a href="./dashboard.html">
                     <li class="sidebar-option">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/dashboard-white.svg" alt="">
@@ -43,7 +45,7 @@
                     </li>
                 </a>
                 <a href="./plans.html">
-                    <li class="sidebar-option">
+                    <li class="sidebar-option active">
                         <div class="center-me">
                                 <img class="hoverImage" src="../assets/images/md-white-stats.svg" alt="">
                                 <img class="normalImage" src="../assets/images/md-stats.svg" alt="">
@@ -100,7 +102,7 @@
             </ul>
         </div>
 
-        <a href="./login.html">
+       <a href="./login.html">
         <div class="logout">
                 <img src="../assets/images/logout.svg" alt="">
                 <span class="option-text">
@@ -117,15 +119,14 @@
 
         <div class="main-container">
             <div class="main-header">
-                    <div class="open">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
+                            <div class="open">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
                     <a href="http://" class="backlink">
                         <div class="back">
-                                <img src="../assets/images/Path 3 Copy.svg" alt="">
-                                <h2>Back</h2>
+                                
                             </div>
                     </a>
                     <table class="stocks">
@@ -146,7 +147,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Internatinal</td>
+                            <td>International</td>
                             <td>
                                 <img class="down-arrow" src="../assets/images/Group 44.svg" alt="">
                                 <h3>$2</h3>
@@ -170,133 +171,63 @@
                 </div>
     
                 <div class="main-body">
-                    <div class="steps-row">
-                            <div class="step-group type-1">
-                                <div class="step-card yellow">
-                                    <h2>Step 1</h2>
-                                    <p>
-                                        Click on the <span class="emphasis">Add New Plan Button</span>
-                                    </p>
-
-                                    <a href="./no-plan.html" class="btn-link">
-                                        Add new plan
-                                    </a>
-
+                        <div class="choose-deposit-option show-div">
+                            <a href="./Add-normal-deposit-plan.html" class="plan-type plan-type-normal">
+                                <img src="../assets/images/Group 89.svg" alt="">
+                                <p>Normal deposit</p>
+                                <!-- <img src="../assets/images/Group 90.svg" alt="" class="normal-deposit">                                 -->
+                            </a>
+                            <a href="./Add-one-time-deposit-plan.html" class="plan-type plan-type-once">
+                                <img src="../assets/images/Group 89.svg" alt="">
+                                <!-- <img src="../assets/images/Group 91.svg" alt="" class="one-time-deposit">                                 -->
+                                <p>One-time deposit</p>
+                            </a>
+                        </div>
+                        <p class="bottom-text-anchor">
+                                Deposit with us and get building materials in return
+                        </p>
+                    </div>
+                  <div class="footer">
+                                <div class="footer-inner">
+                                                <table class="stocks">
+                                                        <tr>
+                                                            <td>Rates</td>
+                                                            <td>Blocks</td>
+                                                            <td>Cement</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Local</td>
+                                                            <td>
+                                                                <img src="../assets/images/Group 44.svg" alt="">
+                                                                <h3>N200</h3>
+                                                            </td>
+                                                            <td>
+                                                                <img src="../assets/images/Group 38.svg" alt="">
+                                                                <h3>N200</h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Internatinal</td>
+                                                            <td>
+                                                                <img class="down-arrow" src="../assets/images/Group 44.svg" alt="">
+                                                                <h3>$2</h3>
+                                                            </td>
+                                                            <td>
+                                                                <img class="up-arrow" src="../assets/images/Group 38.svg" alt="">
+                                                                <h3>$2</h3>
+                                                            </td> 
+                                                        </tr>
+                            
+                                                    </table>            
                                 </div>
-                        <div class="directional-arrow">
-                            <img src="../assets/images/Group 94.svg" alt="" class="point-forward forwards">
-                            <img src="../assets/images/Group 96.svg" alt="" class="point-downawrd down">
-    
-                        </div>
-                    </div>
-                    <div class="step-group type-1">
-                        <div class="step-card pink">
-                            <h2>Step 2</h2>
-                                    <p>
-                                        Fill the form for the new plan
-                                    </p>
+                            </div>  
 
-                        </div>
-                        <div class="directional-arrow">
-                            <img src="../assets/images/Group 94.svg" alt="" class="point-backwards forwards">
-                            <img src="../assets/images/Group 96.svg" alt="" class="point-downawrd down">
-                        </div>
-                    </div>
-                    <div class="step-group type-2">
-                        <div class="step-card blue">
-                            <h2>Step 3</h2>
-                                    <p>
-                                        Add a valid debit card before you finish filling the new plan form.
-                                    </p>
-                        </div>
-                        <div class="directional-arrow">
-                            <img src="../assets/images/Group 96.svg" alt="" class="point-downawrd">
-                        </div>
-                    </div>  
-                   </div>
-                   <div class="steps-row reverse">
-                            <div class="step-group type-3">
-                        <div class="step-card purple">
-                            <h2>Step 6</h2>
-                                    <p>
-                                        Enjoying the depositing ride to withdraw building materials in the future.
-                                    </p>
-                        </div>
-                        <div class="directional-arrow six">
-                            <img src="../assets/images/Group 95.svg" alt="" class="point-backwards forwards">
-                            <img src="../assets/images/Group 96.svg" alt="" class="point-downawrd down">
-                        </div>
-                    </div>
-                    <div class="step-group type-3">
-                        <div class="step-card cyan">
-                            <h2>Step 5</h2>
-                                    <p>
-                                        Check our dashboard to see you updated plan
-                                    </p>
+             
 
-                                    <a href="./dashboard.html" class="btn-link">
-                                        Dashboard
-                                    </a>
-
-                        </div>
-                        <div class="directional-arrow">
-                            <img src="../assets/images/Group 95.svg" alt="" class="point-backwards forwards">
-                        </div>
-                    </div>
-                    <div class="step-group type-2">
-                        <div class="step-card green">
-                            <h2>Step 4</h2>
-                                    <p>
-                                        Submit the form
-                                    </p>
-                        </div>
-                        <div class="directional-arrow">
-                            <img src="../assets/images/Group 96.svg" alt="" class="point-backwards down">
-                        </div>
-                    </div>  
-                   </div>
-                    
-                </div>
-    </div>
-    <div class="footer">
-            <div class="footer-inner">
-                            <table class="stocks">
-                                    <tr>
-                                        <td>Rates</td>
-                                        <td>Blocks</td>
-                                        <td>Cement</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Local</td>
-                                        <td>
-                                            <img src="../assets/images/Group 44.svg" alt="">
-                                            <h3>N200</h3>
-                                        </td>
-                                        <td>
-                                            <img src="../assets/images/Group 38.svg" alt="">
-                                            <h3>N200</h3>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Internatinal</td>
-                                        <td>
-                                            <img class="down-arrow" src="../assets/images/Group 44.svg" alt="">
-                                            <h3>$2</h3>
-                                        </td>
-                                        <td>
-                                            <img class="up-arrow" src="../assets/images/Group 38.svg" alt="">
-                                            <h3>$2</h3>
-                                        </td> 
-                                    </tr>
-        
-                                </table>            
-            </div>
-        </div>
+                        
     </main>
 
     <script src="../assets/js/sliderAction.js"></script>
-    <script src="../assets/js/Required-inputs.js"></script>
     
-
 </body>
 </html>
