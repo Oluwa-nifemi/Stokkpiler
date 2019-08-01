@@ -125,14 +125,6 @@
     box-sizing: border-box;
 }
 
-.notifications svg circle{
-    display: none;
-}
-
-.notifications.active svg circle{
-    display: none;
-}
-
 .sidenav-btn{
     height: 100%;
     border: none;
@@ -201,13 +193,13 @@
 
 .rates td img{
     vertical-align: middle;
-    margin-right: 2px
+    margin-right: 2px;
 }
 
 .rates tr:nth-of-type(n + 2) td:nth-of-type(n + 2){
-    font-weight: 1000;
+    font-weight: bold;
     font-size: 10px;
-    font-family: 'Montserrat-Bold'
+    font-family: 'Montserrat-SemiBold';
 }
 
 .user-controls{
@@ -233,3 +225,53 @@
     background-color: transparent;
 }
 
+@media(min-height: 700px){
+    .sidebar{
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 965px){
+    .sidebar {
+        width: 24%;
+    }
+}
+
+@media(max-width: 800px) {
+    .sidebar {
+        width: 30%;
+        box-shadow: none;
+    }
+
+    .rates.bottom {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(221, 219, 241, 0.8);
+        width: 100%;
+        padding: 10px 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 600px){
+    .sidebar.sidenav.active{
+        width: 50%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .sidenav__container.active{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+    .sidenav-btn{
+        display: inline-block;
+    }
+}
+
+@media(max-width: 450px){
+    .sidebar.sidenav.active{
+        width: 70%;
+    }
+}

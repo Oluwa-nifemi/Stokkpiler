@@ -253,6 +253,12 @@ button{
     border-bottom: 1px solid #6C63FF
 }
 
+@media(min-height: 700px) and (min-width: 800px){
+    .signup{
+        padding-top: 125px;
+    }
+}
+
 @media(max-width: 950px){
     .signup input.half{
         width: 100%;

@@ -192,6 +192,12 @@ button{
     border-bottom: 1px solid #6C63FF
 }
 
+@media(min-height: 700px) and (min-width: 800px){
+    .login{
+        padding-top: 165px;
+    }
+}
+
 @media(max-width: 800px){
     .woman{
         display: none;

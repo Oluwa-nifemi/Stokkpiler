@@ -245,8 +245,9 @@ button{
 }
 
 .rates tr:nth-of-type(n + 2) td:nth-of-type(n + 2){
-    font-weight: 1000;
+    font-weight: bold;
     font-size: 10px;
+    font-family: 'Montserrat-SemiBold';
 }
 
 .user-controls{
@@ -301,7 +302,7 @@ button{
 }
 
 .total-amount{
-    width: 248px;
+    flex-basis: 22%;
     border-radius: 3px;
     background-color: white;
     margin-right: 14px;
@@ -309,7 +310,7 @@ button{
 }
 
 .materials-withdrawn{
-    width: 290px;
+    flex-basis: 30%;
     border-radius: 3px;
     background-color: white;
     margin-right: 14px;
@@ -317,7 +318,7 @@ button{
 }
 
 .materials-left{
-    width: 290px;
+    flex-basis: 30%;
     border-radius: 3px;
     background-color: white;
     margin-right: 14px;
@@ -325,7 +326,7 @@ button{
 }
 
 .add-plan{
-    width: 185px;
+    flex-basis: 18%;
     border-radius: 3px;
     background-color: #502274;
     border: 1px solid #EAEAEA;

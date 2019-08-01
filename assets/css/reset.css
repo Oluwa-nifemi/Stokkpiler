@@ -141,6 +141,12 @@ hr{
     border: none;
 }
 
+@media(min-height: 700px) and (min-width: 800px) {
+    .reset-header{
+        margin-top: 100px;
+    }
+}
+
 @media(max-width: 800px){
     .forgot-password{
         display: none;

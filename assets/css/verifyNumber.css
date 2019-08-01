@@ -225,6 +225,11 @@ a.hoverme:hover{
     }
 }
 
+@media(min-height: 700px) and (min-width: 800px) {
+    main{
+        padding-top: 8rem
+    }
+}
 
 @media(max-width: 1300px){
 
