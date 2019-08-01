@@ -68,10 +68,10 @@ const slideBar = (e) => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    if(location.search.includes('new=true')){
-        setTimeout(() => {
-            document.querySelector(".add-plan-image").click()
-        },300)
-    }
+    // if(location.search.includes('new=true')){
+    //     setTimeout(() => {
+    //         document.querySelector(".add-plan-image").click()
+    //     },20)
+    // }
     slideBar()
 })

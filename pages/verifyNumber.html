@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="../assets/css/verifyNumber.css">
 </head>
 <body>
-    <img class="success-image" src="../assets/images/Group 51.svg" alt="success image">
+    <div class="notify-image-container">
+        <img class="notify-img success-image" src="../assets/images/Group 51.svg" alt="success image">
+        <img src="../assets/images/cancel.svg" class="close-img x-button" alt="">
+        <img src="../assets/images/Group 86.svg" alt="failed-img" class="notify-img failed-img">
+    </div>
     <div class="overlay"></div>
     <div class="container">
         <header>
             <h2 class="Lead-Heading"> <a href="#"> Stokkpile.com </a></h2>
         </header>
         <main>
-            <img src="../assets/images/phoneGreenTick.svg" alt="phone Image" >
+            <img src="../assets/images/phoneGreenTick.svg" alt="phone Image" class="phone-image" >
             <form class="Verification-form">
                 <div class="form-heading">Verify Your Phone Number</div>
                 <div class="form-body">
@@ -29,7 +33,7 @@
                     <div class="footer">
                         <div class="separationLine"></div>
                         <p class="footer-paragraph">
-                        <span class="call"> <a class="hoverme" href="#">Terms, Conditions</a></span> and <span class="call"> <a class="hoverme" href="#">privacy policy</a>
+                        <span class="call"> <a class="hoverme" href="#">Terms & Conditions</a></span> and <span class="call"> <a class="hoverme" href="#">privacy policy</a>
                         </span>
                         </p>
                     </div>
@@ -40,6 +44,7 @@
 
     <script src="../assets/js/verifyNumber.js"></script> 
     <script src="../assets/js/Required-inputs.js"></script>
+    <script src="../assets/js/close-img.js"></script>
     
 </body>
 </html>
