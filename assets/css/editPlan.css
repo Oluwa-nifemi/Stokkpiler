@@ -188,8 +188,8 @@ input{
 
 
 main{
-    margin-left: 18%;
-    width: 82%;
+    margin-left: 17%;
+    width: 83%;
     height: 100%;
     /* background-color: orangered; */
     position: relative;
@@ -502,8 +502,8 @@ a.backlink{
     background-color: rgba(0, 0, 0, 0.57);
     z-index: 9999;
     display: none;
-    margin-left: 18%;
-    width: 82%;
+    margin-left: 17%;
+    width: 83%;
 }
 
 
