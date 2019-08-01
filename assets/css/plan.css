@@ -1485,7 +1485,7 @@ a.plan-type:hover{
 }
 
 
-@media(max-width: 450px){
+@media(max-width: 575px){
     .sidebar.sidenav.active{
         width: 80%;
     }

@@ -205,7 +205,7 @@ button{
     background-color: var(--green-bg)
 }
 
-@media(max-width: 965px){
+@media(max-width: 1300px){
     .cards{
         grid-gap: 40px 10px;
         padding: 20px 20px 0;
@@ -227,8 +227,6 @@ button{
 
 @media(max-width: 920px){
     .main{
-        width: 70%;
-        margin-left: 30%;
         padding-bottom: 0;
     }
     .cards{
@@ -237,29 +235,23 @@ button{
     .links .link, .logout__link{
         padding-left: 20%;
     }
-    .rates.top{
-        display: none;
-    }
-    .rates.bottom{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        background-color: rgba(221, 219, 241, 0.8);
-        width: 100%;
-        padding: 10px 5px;
-    }
-    .rates td{
-        width: 100px;
+}
+
+@media(max-width: 800px){
+    .main{
+        width: 70%;
+        margin-left: 30%;
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .new-plan{
         margin-top: 100px;
         margin-left: 20px; 
     }
     .top{
         position: fixed;
+        z-index: 10;
     }
     .main{
         width: 100%;
@@ -279,7 +271,7 @@ button{
     }
 }
 
-@media(max-width: 450px){
+@media(max-width: 575px){
     .card{
         height: unset;
     }

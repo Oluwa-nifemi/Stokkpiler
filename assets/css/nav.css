@@ -232,7 +232,7 @@
     }
 }
 
-@media(max-width: 965px){
+@media(max-width: 1300px){
     .sidebar {
         width: 24%;
     }
@@ -243,7 +243,9 @@
         width: 30%;
         box-shadow: none;
     }
-
+    .rates{
+        display: none;
+    }
     .rates.bottom {
         display: flex;
         justify-content: center;
@@ -254,7 +256,7 @@
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .sidebar.sidenav.active{
         width: 50%;
         box-shadow: 0 0 40px rgba(0,0,0,0.5);
@@ -270,7 +272,7 @@
     }
 }
 
-@media(max-width: 450px){
+@media(max-width: 575px){
     .sidebar.sidenav.active{
         width: 70%;
     }
