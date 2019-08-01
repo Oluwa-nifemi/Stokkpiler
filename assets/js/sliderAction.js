@@ -1,24 +1,22 @@
 let hamburger = document.querySelector(".open")
-let sliderClose = document.querySelector(".close")
-let menu = document.querySelector(".withdraw-sidebar")
+let sliderClose = document.querySelector(".sidenav-close")
+let menuContainer = document.querySelector(".sidenav__container")
+let menu = document.querySelector(".sidenav")
 let overlayNew = document.querySelector(".cover-overlay")
-
 
 
 const openSlider = () => {
     overlayNew.style.display = "block"
-    menu.classList.add("slidein")    
-    menu.classList.add("visible")
+    menuContainer.classList.add("active")        
+    setTimeout(() => {
+        menu.classList.add("active")
+    }, 100)    
 }
 
-
 const closeSlider = () => {
-
-    menu.classList.add("slideout")
+    menu.classList.remove("active")
     setTimeout(() => {
-        menu.classList.remove("slidein")
-        menu.classList.remove("slideout")
-        menu.classList.remove("visible")
+        menuContainer.classList.remove("active")
         overlayNew.style.display = "none"
     }, 400)
 
