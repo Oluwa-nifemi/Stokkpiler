@@ -253,6 +253,95 @@ button{
     border-bottom: 1px solid #6C63FF
 }
 
+.select{
+    position: relative;
+}
+
+.select--inline{
+    display: inline-block;
+    width: 49%;
+}
+
+.select input{
+    background-color: white;
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.select__options-toggle-btn{
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+}
+
+.select .select-options{
+    padding: 0;
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: top 100ms;
+    background-color: white;
+    z-index: 4;
+    opacity: 0;
+    border: 1px solid transparent;
+    top: 150px;
+    border-radius: 4px;
+}
+
+.input-div:hover + .select-options,
+.select-options:hover{
+    height: 200px;
+    border-color: rgba(155, 155, 155, 0.3);
+    top: 30px;
+    opacity: 1;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);*/
+}
+
+.select-option{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    transition: 300ms;
+    padding: 0 5px;
+    cursor: pointer;
+    color: rgb(70, 70, 70);
+    min-width: 140px;
+}
+
+.select-option button{
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    color: rgb(70, 70, 70);
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 11px;
+    outline: none;
+}
+
+.select .select-options li:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.select__options-toggle-btn img{
+    height: 100%;
+}
+
+.select.title{
+    width: 30%;
+}
+
 @media(min-height: 700px) and (min-width: 800px){
     .signup{
         padding-top: 125px;
