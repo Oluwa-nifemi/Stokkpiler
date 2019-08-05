@@ -243,10 +243,11 @@
         box-shadow: none;
     }
     .rates{
-        display: none;
+        /*display: none;*/
     }
     .rates.bottom {
-        display: flex;
+        /*display: flex;*/
+        display: none;
         justify-content: center;
         background-color: rgba(221, 219, 241, 0.8);
         width: 100%;

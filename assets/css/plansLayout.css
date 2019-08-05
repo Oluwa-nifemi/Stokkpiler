@@ -263,6 +263,10 @@ main{
     display: none;
 }
 
+.footer{
+    display: none!important;
+}
+
 .rates td{
     margin-bottom: 5px;
     min-width: 100px;
@@ -448,7 +452,9 @@ main{
     }
 
     .rates{
-        display: none;
+        /*display: none;*/
+        padding-left: 21px;
+        box-sizing: border-box;
     }
 
     .sidenav-btn{
