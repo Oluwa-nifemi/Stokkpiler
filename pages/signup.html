@@ -22,7 +22,31 @@
                 </div>
                 <div class="row">
                     <input type="email" name="email" class="half" placeholder="Email" required>
-                    <input type="text" name="country" class="half" placeholder="Country of Residence" required>
+                    <div class="select select--inline form-group">
+                        <div class="input-div">
+                            <input type="text" name="country" id="country" placeholder="Country" disabled>
+                            <button type="button" class="select__options-toggle-btn">
+                                <img src="../assets/images/arrow-down-grey.svg">
+                            </button>
+                        </div>
+                        <ul class="select-options programs" data-target="country">
+                            <li class="select-option">
+                                <button type="button">Nigeria</button>
+                            </li>
+                            <li class="select-option">
+                                <button type="button">Nigeria</button>
+                            </li>
+                            <li class="select-option">
+                                <button type="button">Nigeria</button>
+                            </li>
+                            <li class="select-option">
+                                <button type="button">Nigeria</button>
+                            </li>
+                            <li class="select-option">
+                                <button type="button">Nigeria</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <input type="text" name="number" placeholder="Phone Number" required>
                 <div class="password-div">

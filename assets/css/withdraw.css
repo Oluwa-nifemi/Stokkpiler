@@ -67,7 +67,7 @@ body{
     z-index: 2008;
     height: 100vh;
     min-height: 100%;
-    width: 82%;
+    width: 83%;
     background-color: rgba(0, 0, 0, 0.57);
     /* background-color: red; */
 }
@@ -744,7 +744,7 @@ h2.footer-heading{
 }
 
 
-@media(max-width: 450px){
+@media(max-width: 575px){
     .sidebar.sidenav.active{
         width: 80%;
     }

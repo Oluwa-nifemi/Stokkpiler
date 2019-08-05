@@ -280,7 +280,7 @@ button{
 }
 
 .cards{
-    height: 148px;
+    min-height: 148px;
     width: 100%;
     display: flex;
     font-family: 'Montserrat-Regular', sans-serif;
@@ -521,7 +521,7 @@ button{
     }
 }
 
-@media(max-width: 965px){
+@media(max-width: 1300px){
     .sidebar{
         width: 24%;
     }
@@ -551,7 +551,7 @@ button{
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
     .sidebar{
         width: 30%;
     }
@@ -612,7 +612,7 @@ button{
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .sidebar.sidenav.active{
         width: 50%;
         box-shadow: 0 0 40px rgba(0,0,0,0.5);
@@ -622,6 +622,7 @@ button{
     }    
     .top{
         position: fixed;
+        z-index: 10;
     }
     .sidebar{
         display: none;
@@ -650,7 +651,7 @@ button{
     }
 }
 
-@media(max-width: 450px){
+@media(max-width: 575px){
     .sidebar.sidenav.active{
         width: 70%;
     }

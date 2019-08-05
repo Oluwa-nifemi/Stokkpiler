@@ -288,7 +288,7 @@ form button{
     margin-top: 5px;
 }
 
-@media(max-width: 965px){
+@media(max-width: 1300px){
     .main{
         width: 76%;
         margin-left: 24%;
@@ -307,7 +307,7 @@ form button{
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
     .main{
         width: 70%;
         margin-left: 30%;
@@ -332,6 +332,7 @@ form button{
         background-color: rgba(221, 219, 241, 0.8);
         width: 100%;
         padding: 10px 5px;
+        box-sizing: border-box;
     }
     .rates td{
         min-width: 100px;
@@ -363,12 +364,13 @@ form button{
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .status-background{
         width: 100%;
     }
     .top{
         position: fixed;
+        z-index: 10;
     }
     .main{
         width: 100%;
@@ -391,7 +393,7 @@ form button{
     }
 }
 
-@media(max-width: 450px){
+@media(max-width: 575px){
     .success.active{
         width: 90%;
         padding: 50px 10px;
