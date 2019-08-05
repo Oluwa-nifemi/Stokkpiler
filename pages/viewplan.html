@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../assets/css/viewplan.css">
+    <link rel="stylesheet" href="../assets/css/plansLayout.css">
     <title>Stokkpiler | View Plan</title>
 </head>
 <body>
@@ -142,59 +143,59 @@
 
 
         <div class="main-container">
-            <div class="main-header">
-                    <div class="open">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    <a href="http://" class="backlink">
-                        <div class="back">
-                                <img src="../assets/images/Path 3 Copy.svg" alt="">
-                                <h2>Back</h2>
-                            </div>
-                    </a>
-                    <table class="stocks">
-                        <tr>
-                            <td>Rates</td>
-                            <td>Blocks</td>
-                            <td>Cement</td>
-                        </tr>
-                        <tr>
-                            <td>Local</td>
-                            <td>
-                                <img src="../assets/images/Group 44.svg" alt="">
-                                <h3>&#8358 200</h3>
-                            </td>
-                            <td>
-                                <img src="../assets/images/Group 38.svg" alt="">
-                                <h3>&#8358 200</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Internatinal</td>
-                            <td>
-                                <img class="down-arrow" src="../assets/images/Group 44.svg" alt="">
-                                <h3>$2</h3>
-                            </td>
-                            <td>
-                                <img class="up-arrow" src="../assets/images/Group 38.svg" alt="">
-                                <h3>$2</h3>
-                            </td> 
-                        </tr>
-
-                    </table>
-                    <div class="personalize">
-                        <img class="notification-bell" src="../assets/images/Group 3.svg" alt="">
-                        <div class="avatar">
-                            <img src="../assets/images/Oval.svg" alt="">
-                        </div>
-                        <a href="./logout" class="logoutNav">
-                            Logout
-                        </a>
-                    </div>
+            <div class="top">
+                <button class="sidenav-btn">
+                   <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>                        
+                <div class="back">
+                    <img src="../assets/images/back.svg" alt="">
+                    <a href="">Back</a>
                 </div>
-    
+                <table class="rates top">
+                    <tr>
+                        <td>Rates</td>
+                        <td>Block</td>
+                        <td>Cement</td>
+                    </tr>
+                    <tr>
+                        <td>Local</td>
+                        <td>
+                            <img src="../assets/images/rate-down.svg" alt="">
+                            &#8358; 200
+                        </td>
+                        <td>
+                            <img src="../assets/images/rate-up.svg" alt="">
+                            &#8358; 2000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>International</td>
+                        <td>
+                            <img src="../assets/images/rate-down.svg" alt="">
+                            $2
+                        </td>
+                        <td>
+                            <img src="../assets/images/rate-up.svg" alt="">
+                            $2
+                        </td>
+                    </tr>
+                </table>
+                <div class="user-controls">
+                   <!--  <div class="notifications">
+                        <img src="../assets/images/notifications.svg" alt="">
+                    </div> -->
+                    <div class="user">
+                        <img src="../assets/images/user.svg" alt="">
+                    </div>
+                    <button class="logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+
+
                 <div class="main-body">
                     <div class="header-bar">
                         <h2> <span class="underline">Lagos</span> House</h2>

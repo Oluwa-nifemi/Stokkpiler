@@ -1,4 +1,4 @@
-let hamburger = document.querySelector(".open")
+let hamburger = document.querySelector(".sidenav-btn")
 let sliderClose = document.querySelector(".sidenav-close")
 let menuContainer = document.querySelector(".sidenav__container")
 let menu = document.querySelector(".sidenav")
