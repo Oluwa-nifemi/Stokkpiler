@@ -249,6 +249,7 @@ input{
 .drop-down-option{
     padding: 1rem 1.2rem;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .drop-down-option:hover{
@@ -286,19 +287,6 @@ input{
 }
 
 
-.overlay{
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.57);
-    z-index: 9999;
-    display: none;
-    margin-left: 18%;
-    width: 82%;
-}
 
 
 .Add-Card-box{
@@ -370,46 +358,6 @@ input{
 .x-button{
     cursor: pointer;
 }
-
-
-
-
-
-/* Action classes */
-
-.show-form{
-    display: block;
-    opacity: 0;
-    animation: showForm 1s ease 0.2s 1 forwards;
-}
-.show-form-flex{
-    display: flex;
-    opacity: 0;
-    animation: showForm 1s ease 0.2s 1 forwards;
-}
-
-.hidden{
-
-}
-
-
-
-
-
-
-@keyframes showForm{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-
-
-
-
 
 
 

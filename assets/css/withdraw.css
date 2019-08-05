@@ -61,10 +61,10 @@ body{
 
 
 
-.overlay{
+.overlayer{
     position: fixed;
     display: none;
-    z-index: 200;
+    z-index: 2008;
     height: 100vh;
     min-height: 100%;
     width: 82%;
@@ -564,7 +564,7 @@ h2.footer-heading{
         margin-left: 24%;
         width: 76%;
     }
-    .overlay{
+    .overlayer{
         width: 75%;
     }
     .plans{
@@ -586,8 +586,9 @@ h2.footer-heading{
         margin-left: 30%;
         width: 70%;
     }
-    .overlay{
-        width: 76%;
+    .overlayer{
+        width: 70%;
+        height: 70%;
     }
     .plans{
         width: 100%;
@@ -658,7 +659,7 @@ h2.footer-heading{
         height: 100%;
     }
 
-    .overlay{
+    .overlayer{
         width: 100%;
         min-height: 100vh;
     }

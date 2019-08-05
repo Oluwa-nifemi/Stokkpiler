@@ -87,6 +87,9 @@ input{
     z-index: 2003;
 
 }
+.sidebar.sidenav .logo{
+    margin: 30px 50px 0;
+}
 
 .sidenav-close{
     position: absolute;
@@ -308,6 +311,61 @@ main{
 }
 
 
+.overlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    z-index: 9999;
+    display: none;
+    margin-left: 17%;
+    width: 83%;
+}
+
+
+/* Action classes */
+
+.show-form{
+    display: block;
+    opacity: 0;
+    animation: showForm 1s ease 0.2s 1 forwards;
+}
+.show-form-flex{
+    display: flex;
+    opacity: 0;
+    animation: showForm 1s ease 0.2s 1 forwards;
+}
+
+.hidden{
+
+}
+
+
+
+
+
+
+@keyframes showForm{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1300px){
@@ -320,8 +378,8 @@ main{
     }
     .overlay{
         margin-left: 24%;
-        width: 76%
-        z-index 2002;
+        width: 76%;
+        z-index:; 2002;
     }
 
     .main-body{
@@ -411,6 +469,7 @@ main{
     .overlay{
         width: 100%;
         min-height: 100vh;
+        margin: 0;
     }
 
     .main-body{
