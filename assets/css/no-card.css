@@ -322,21 +322,6 @@ form button{
     .links .link, .logout__link{
         padding-left: 20%;
     }
-    .rates.top{
-        display: none;
-    }
-    .rates.bottom{
-        display: flex;
-        justify-content: center;
-        margin-top: auto;
-        background-color: rgba(221, 219, 241, 0.8);
-        width: 100%;
-        padding: 10px 5px;
-        box-sizing: border-box;
-    }
-    .rates td{
-        min-width: 100px;
-    }
     form{
         margin-bottom: 20px;
     }

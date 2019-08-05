@@ -287,24 +287,6 @@ button{
     .links .link, .logout__link{
         padding-left: 20%;
     }
-    .rates.top{
-        display: none;
-    }
-    .rates.bottom{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        background-color: rgba(221, 219, 241, 0.8);
-        width: 100%;
-        padding: 10px 5px;
-        box-sizing: border-box;
-    }
-    .rates td{
-        width: 100px;
-    }
-    .sidebar{
-        box-shadow: none;
-    }
 }
 
 @media(max-width: 768px){
