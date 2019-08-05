@@ -52,8 +52,6 @@
 }
 
 .links{
-    margin-bottom: auto;
-    margin-top: 30px;
     margin: 0;
 }
 
@@ -67,6 +65,7 @@
     display: flex;
     align-items: center;
     transition: 0.3s ease;
+    color: #502274;
 }
 
 .links .link a{
