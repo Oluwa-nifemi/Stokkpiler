@@ -388,24 +388,6 @@ form input{
 
 
 
-/* sidebar action classes */
-.bar{
-    /* width: 7px; */
-    height: 3px;
-    padding: 0 1.3rem;
-    border-radius: 1px;
-}
-
-.bar-left{
-    transform: rotate(45deg) translateY(0.2rem);
-}
-
-.bar-right{
-    transform: rotate(-45deg) translateY(-0.2rem);
-    /* background-color: #FFFFFF; */
-}
-
-
 .open{
     padding: 1rem 1.5rem 1rem 0;
     background-color: transparent;

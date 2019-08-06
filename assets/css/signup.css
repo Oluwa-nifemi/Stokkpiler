@@ -381,7 +381,11 @@ button{
     .signup input.half{
         width: 100%;
     }
-    .signup input.half:last-of-type{
+    .signup input.half:not(:first-of-type):last-of-type{
+        margin-top: 10px;
+    }
+    .select--inline{
+        width: 100%;
         margin-top: 10px;
     }
 }

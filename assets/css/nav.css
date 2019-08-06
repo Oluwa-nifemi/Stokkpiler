@@ -136,7 +136,7 @@
     outline: none;
     display: none;
     border-radius: 3px;
-    display: none;
+    padding: 0 4px;
 }
 
 .bar{
@@ -211,6 +211,10 @@
     margin-right: 50px
 }
 
+.user{
+    margin: 0 30px;
+}
+
 .logout{
     border: 1px solid #502274;
     border-radius: 5px;
@@ -235,6 +239,12 @@
     .sidebar {
         width: 24%;
     }
+    .logout{
+        display: none;
+    }
+    .user-controls,.user{
+        margin: 0;
+    }
 }
 
 @media(max-width: 800px) {
@@ -244,7 +254,17 @@
     }
     .rates{
         /*display: none;*/
+        width: 200px;
     }
+    .rates td{
+        width: 33%;
+        min-width: 50px;
+    }
+
+    .rates{
+        border-spacing: 5px;
+    }
+
     .rates.bottom {
         /*display: flex;*/
         display: none;
@@ -270,6 +290,15 @@
     }
     .sidenav-btn{
         display: inline-block;
+    }
+    .back{
+        display: none;
+    }
+    .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
     }
 }
 

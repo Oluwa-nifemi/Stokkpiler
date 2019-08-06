@@ -3,10 +3,9 @@
     src: url('../fonts/montserrat/Montserrat-SemiBold.otf');
 }
 
-
 @font-face{
     font-family: 'Montserrat-Regular';
-    src: url('../fonts/montserrat/Montserrat-Regular.otf');
+    src: url('../fonts/montserrat/Montserrat-Regular.otf')
 }
 
 @font-face{
@@ -211,7 +210,7 @@ main{
     outline: none;
     display: none;
     border-radius: 3px;
-    display: none;
+    padding: 0 4px;
 }
 
 .bar{
@@ -406,6 +405,9 @@ main{
     .logout{
         display: none; 
     }
+    .user-controls{
+        margin: 0;
+    }
 }
 
 @media (max-width:  768px){
@@ -453,8 +455,17 @@ main{
 
     .rates{
         /*display: none;*/
-        padding-left: 21px;
+        /*padding-left: 21px;*/
         box-sizing: border-box;
+        width: 200px
+    }
+    .rates td{
+        width: 33%;
+        min-width: 50px;
+    }
+
+    .rates{
+        border-spacing: 5px;
     }
 
     .sidenav-btn{
@@ -495,7 +506,8 @@ main{
     }
 
     .main-body{
-        padding: 8rem 2rem;
+        /*padding: 8rem 2rem;*/
+        padding: 3rem 2rem;
     }
     
 }

@@ -299,9 +299,6 @@ button{
 }
 
 @media(max-width: 1300px){
-    .sidebar{
-        width: 24%;
-    }
     .main{
         width: 76%;
         margin-left: 24%;
@@ -329,14 +326,6 @@ button{
 }
 
 @media(max-width: 1000px){
-    .sidebar{
-        width: 30%;
-    }
-    .main{
-        width: 70%;
-        margin-left: 30%;
-        padding-bottom: 0;
-    }
     .transactions{
         padding: 0;
         padding-bottom: 10px;
@@ -363,6 +352,13 @@ button{
     }
 }
 
+@media(max-width: 800px){
+    .main{
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+
 @media(max-width: 775px){
     .cards{
         grid-template-columns: 1fr;
@@ -373,41 +369,12 @@ button{
 }
 
 @media(max-width: 768px){
-    .sidebar.sidenav.active{
-        width: 50%;
-        box-shadow: 0 0 40px rgba(0,0,0,0.5);
-    }
-    .sidenav__container.active{
-        display: block;
-    }    
-    .top{
-        position: fixed;
-        z-index: 10;
-    }
-    .sidebar{
-        display: none;
+    .content{
+        margin-top: 70px;
     }
     .main{
         width: 100%;
-        margin: 0;
-    }
-    .sidenav-btn{
-        display: inline-block;
-    }
-    .top .back{
-        display: none;
-    }
-    .user-controls{
-        margin-right: 0;
-    }
-    .logo{
-        margin-left: 15%;
-    }
-    .links .link, .logout__link{
-        padding-left: 15%
-    }
-    .content{
-        margin-top: 70px;
+        margin-left: 0;
     }
 }
 
