@@ -3,7 +3,6 @@
     src: url('../fonts/montserrat/Montserrat-SemiBold.otf');
 }
 
-
 @font-face{
     font-family: 'Montserrat-Regular';
     src: url('../fonts/montserrat/Montserrat-Regular.otf');
@@ -102,6 +101,7 @@ input{
     height: 100%;
     flex-basis: 5%;
     justify-self: flex-start;
+    margin: 0 0.5rem;
 }
 .searchInput{
     border: none;
@@ -219,7 +219,7 @@ span.Important{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 85%;
+    min-height: 90%;
     padding: 3rem 6rem;
 }
 
@@ -316,6 +316,15 @@ span.Important{
     margin-left: 1.5rem;
 }
 
+.form-group-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third{
+    width: 30%;
+}
+
 
 
 
@@ -386,18 +395,20 @@ span.Important{
 
 @media (max-width: 575px){
     .header__bar{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .header__bar__name{
         width: 100%;
-        margin-bottom: 1rem;
+        /*margin-bottom: 1rem;*/
     }
     .searchbar{
         width: 100%;
+        margin-bottom: 2rem;
     }
     .Add-Card-box{
-        width: 80%;
+        width: 90%;
     }
+    
 }
 
 

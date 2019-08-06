@@ -5,13 +5,6 @@ let arr = []
 
 
 cardInput.addEventListener("input", function(e){
-	// console.log(e.target)
-	// console.log(arr)
-	// arr = e.target.value.split('')
-	// if (arr.length === 4 || arr.length === 9 || arr.length === 14 ){
-	// 	arr.push("-")
-	// 	e.target.value = arr.join('')
-	// }
 	const {value} = this;
     const split = value.split('-').join('').split('').reduce((acc,cur,i) => {
         if(!acc[Math.floor(i / 4)])

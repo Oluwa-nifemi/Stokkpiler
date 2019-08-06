@@ -14,6 +14,5 @@ verifyButton.addEventListener('click', (e) => {
     successImage.classList.add('showSuccess')
     closeImage.classList.add("showSuccess")	
     imgCont.classList.add('showSuccess')
-	}
-    
+	}  
 })
