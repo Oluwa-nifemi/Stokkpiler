@@ -3,7 +3,6 @@
     src: url('../fonts/montserrat/Montserrat-SemiBold.otf');
 }
 
-
 @font-face{
     font-family: 'Montserrat-Regular';
     src: url('../fonts/montserrat/Montserrat-Regular.otf');
@@ -50,216 +49,207 @@ input{
     font-size: 1.2rem;
 }
 
-.withdraw-sidebar{
-    width: 18%;
-    background-color: #FFFFFF;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0.3rem 0rem 1.5rem #70707013;
-}
-
-.withdraw-sidebar-logo{
-    width: 100%;
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.withdraw-sidebar-logo h1{
-    color: #502274;
-    font-family: 'Montserrat-SemiBold';
-    font-size: 2rem;
-    margin-top: 2rem;
-}
-
-.withdraw-sidebar-main{
-    width: 100%;
-    margin-bottom: auto;
-}
-
-.sidebar-options{
-    list-style: none;
-    width: 100%;
-    text-align: center;
-    margin-top: 3rem;
-
-}
-
-.sidebar-options a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.sidebar-option{
-    padding: 2rem 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.center-me{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-left: 1rem;
-}
-
-.logout{
-    margin-bottom: 3rem;
-}
-
-.hoverImage{
-    display: none;
-}
-
-.normalImage{
-    display: block;
-}
-
-.sidebar-option:hover{
+.btn{
+    border: none;
+    color: #fff;
+    font-family: "Montserrat-SemiBold";
     background-color: #502274;
+    padding: 0.9rem 2.85rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    margin-bottom: 2.5rem;
 }
-
-.sidebar-option:hover .option-text{
-    color: #FFFFFF;
-}
-
-.sidebar-option:hover .hoverImage{
-    display: block;
-}
-
-.sidebar-option:hover .normalImage{
-    display: none;
-}
-
-
-
-.option-text{
-    margin-left: 2rem;
-    font-family: 'Montserrat-Medium';
-    font-size: 1.4rem;
-    color: #502274;
-}
-
-.active{
-    background-color: #502274;
-}
-
-.active .hoverImage{
-    display: block;
-}
-
-.active .normalImage{
-    display: none;
-}
-
-.active .option-text{ 
-    color: #FFFFFF;
-}
-
-
-main{
-    margin-left: 17%;
-    width: 83%;
-    height: 100%;
-    /* background-color: orangered; */
-    position: relative;
-    /* position: relative;  */
-}
-
-.main-header{
-    height: 7rem;
-    background-color: #DDDBF1;
+.header__bar{
     width: 100%;
-    padding: 1.5rem 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
-
-a.backlink{
-    text-decoration: none;
-    color: inherit;
-    width: 20%;
-}
-
-.back{
+.header__bar__name{
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 1.3rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #00000010;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    height: 100%;
 }
 
-.back h2{
-    font-family: 'Montserrat-Medium';
-    font-size: 1.4rem;
-    letter-spacing: 0.53;
+.header__bar__name h2{
+    color: #4a4a4a;
+    font-family: "Montserrat-SemiBold"
+}
+
+.border__bottom{
+    border-bottom: 2px solid #502274;
+    padding-bottom: 3px;
+}
+.searchbar{
+    flex-basis: 68%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #00000010;   
+    display: flex;
+    align-items: center;
+}
+
+.search-image{
+    /*padding: 1.5rem;*/
+    height: 100%;
+    flex-basis: 5%;
+    justify-self: flex-start;
+    margin: 0 0.5rem;
+}
+.searchInput{
+    border: none;
+    /*height: 100%;*/
+    flex-basis: 95%;
+    outline: none;
+    color: #4a4a4a;
+    /*padding: 1.5rem;*/
+}
+/*syling the plans body*/
+
+.plans-body{
+    padding: 2rem 1.5rem;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+    box-shadow: 0.2rem 0.4rem 0.4rem #70707013;
+    height: 100%;
+    padding-bottom: 10rem;
+}
+
+span.Important{
     margin-left: 1rem;
 }
 
-
-.stocks{
-    width: 33%;
+.paddingLeft{
+    padding-left: 6rem;
 }
 
-.stocks tr{
+
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background-image: url("/assets/images/calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 2000;
+    padding: 0.3rem;
+}
+
+
+/* Advanced plans Style */
+
+.plan-Header{
     width: 100%;
-    /* background-color: red; */
-}
-
-
-.stocks td{
-    text-align: left;
-    font-family: 'Montserrat-Regular';
-    min-width: 100px;
-    font-size: 10px;
-}
-
-.stocks td h3{
-    display: inline-block;
-    font-family: 'Montserrat-SemiBold';
-    font-size: 10px;
-}
-
-.stocks td img{
-    margin-right: 0.5rem;
-}
-
-
-.personalize{
     display: flex;
-    height: 100%;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    flex-basis: 20%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
 }
 
-.logoutNav{
-    padding: 0.75rem 1.5rem;
-    border: 1px solid #502274;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #502274;
-    font-family: "Montserrat-SemiBold";
+.detail-container{
+    text-align: left;
+    width: 20rem;
+}
+
+.detail-container-actions{
+    width: 10.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.detail-container-actions img{
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.detail-container-actions img:hover{
+    background-color: rgba(155, 155, 155, 0.1);
+}
+
+.plan-Header .detail-container{
+    color: #4A4A4A;
+    font-family: 'Montserrat-Medium';
+    font-size: 1.2rem;
+}
+
+
+.plan-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.plan-group .detail-container{
+    color: #9B9B9B;
+    font-family: 'Montserrat-Regular';
     font-size: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+.plan-group:nth-child(2n){
+    background-color: rgba(216, 216, 216, 0.29);
+}
+
+.tag{
+    display: none;
+}
+
+.number-col{
+    width: 8rem;
 }
 
 
-.main-body{
-    padding: 6rem 5rem;
+
+.Add-Card-box{
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 90%;
+    padding: 3rem 6rem;
+}
+
+.Add-Card-box .form-group-full{
+    margin-bottom: 1.5rem;
+}
+
+.Add-Card-box .form-group-full .form-group-header{
+    margin-bottom: 0.7rem;
+}
+
+.Add-Card-box .form-group-full .form-group-header h2{
+    margin-bottom: 0;
+}
+
+
+.Add-card-box-header{
     width: 100%;
-    height: 100%;
-    position: relative;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.Add-card-box-header h2{
+    color: #000;
+    font-family:"Montserrat-SemiBold"; 
+}
+
+.Add-Card-box button{
+    margin-top: 2rem;
 }
 
 .open{
@@ -268,335 +258,138 @@ a.backlink{
     display: none;
 }
 
-.open .bar{
-    width: 100%;
-    background-color: #502274;
-}
-
-.open .bar:not(:last-child){
-    margin-bottom: 0.5rem;
-}
-
-/* Action classes */
-
-.openOverlay{
-    opacity: 0;
-    display: block;
-    animation: openOverlay 1s ease 1 forwards;
-
-}
-
-/* Footer */
-
-.footer{
-    padding: 0rem 5rem 1rem;
-    background-color: #50227410;
+.hidden-input{
     display: none;
-    margin-top: 10px;
 }
-
-h2.footer-heading{
-    font-size: 1.75rem;
-    margin-bottom: 3rem;
-    font-family: 'Montserrat-SemiBold';
+.x-button{
+    cursor: pointer;
 }
 
 
-.footer .stocks{
+/*styling the inputs*/
+.form-group-full label, .form-group-header{
+    font-family: 'Montserrat-medium';
+    color: #4A4A4A;
+    font-size: 0.8rem;
+}
+
+.form-input-full{
     width: 100%;
-    display: block;
-    border-spacing: 0 5px;
-    border-collapse: separate;
+    padding: 0.8rem 1rem;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    outline: none;
+}
+
+.currency__input__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.currencyHolder{
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat-Regular";
+    border: 1px solid #d8d8d8;
+    border-right: none;
+    display: flex;
+    align-items: center;
+}
+.currencyHolder img{
+    margin-left: 1.5rem;
+}
+
+.form-group-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third{
+    width: 30%;
 }
 
 
-.footer .stocks tr{
-    width: fit-content;
-    /* background-color: #502274; */
-}
-
-
-.footer .stocks td{
-    text-align: left;
-    font-size: 1rem;
-    /* padding: 1rem 2rem; */
-    min-width: 100px;
-    margin-bottom: 5px;
-}
-
-
-
-
-
-
-/* Animations classes */
-
-.slidein{
-    animation: slideIn 0.4s 1 forwards;
-}
-
-.slideout{
-    animation: slideOut 0.4s 1 forwards;
-}
-
-
-/*Animations*/
-
-@keyframes slideIn{
-    from{
-        opacity: 1;
-        transform: translateX(-100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideOut{
-    from{
-        opacity: 1;
-        transform: translateX(0%)
-    }
-    to{
-        opacity: 1;
-        transform: translateX(-100%)
-    }
-
-}
 
 
 /*Media Queries*/
 
 @media (max-width: 1300px){
-    .withdraw-sidebar{
-        width: 25%;
-    }
-
-    .center-me{
-        width: 100%;
-        text-align: center;
-        padding: 0 0.5rem;
-    }
-
-    main{
-        margin-left: 25%;
-        width: 75%;
-    }
-
-    .overlay{
-        margin-left: 25%;
-        width: 75%
-    }
-
-
-    .main-body{
-        padding: 1rem 6rem;
-    }
+    
 
 }
 
 
 @media (max-width: 1000px){
-    
-    .withdraw-sidebar{
-        width: 32%;
+    /* plan items */
+
+     .plans-body{
+        background-color: transparent;
+        box-shadow: none;
+        padding: 2rem 0;
     }
 
-    main{
-        margin-left: 32%;
-        width: 68%;
-    }
-
-    .overlay{
-        margin-left: 32%;
-        width: 68%
-    }
-
-    .plans{
-        width: 80%;
-    }
-
-    .logoutNav{
+    .plan-Header{
         display: none;
     }
+    
+    p.tag{
+        display: inline-block;
+        font-family: 'Montserrat-SemiBold';
+        color: #000000;
+        font-size: 1.2rem;
+        margin-right: 0.7rem;
+        margin-bottom: 0.7rem;
 
-    .stocks{
-        flex-basis: 50%;
     }
 
-    .personalize{
-        flex-basis: 13%;
+    .plan-group{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #FFFFFF;
+        margin-bottom: 5rem;
+        border-radius: 5px;
+        box-shadow: 0.2rem 0.3rem 0.3rem #70707010;
+        padding: 2rem;
+
     }
 
-    a.backlink{
-        flex-basis: 10%;
+    .detail-container-actions{
+        align-self: flex-end;
+        margin-top: 1rem;
     }
 
-    .withdrawal-confirmation{
-        width: 90%;
-        height: 85%;
+    .plan-group:nth-child(2n){
+        background-color: #FFFFFF;
     }
 
-    .notify-img{
-        width: 80%;
+    .detail-container{
+        flex-direction: row;
+        width: 100%;
     }
-
-
-
+    .Add-Card-box{
+        width: 70%;
+    }
 }
 
 
 @media (max-width: 768px){
-    .cover-overlay{
-        position: absolute;
-        display: none;
-        z-index: 999;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        background-color: rgba(155, 155, 155, 0.57);
-    }
-
-
-    .withdraw-sidebar{
-        width: 45%;
-        box-shadow: 0.3rem 0.1rem 1.3rem #70707030;
-        transform: translateX(-100%);
-        visibility: hidden; 
-    }
-
-    .withdraw-sidebar-logo{
-        margin: 2rem 0;
-    }
-
-    .withdraw-sidebar-main{
-        margin-top: 3rem;
-    }
-
-    .sidebar-options{
-        margin-top: 0;
-    }
-
-    .close{
-        display: block;
-        position: absolute;
-        top: 1.5rem;
-        right: 0.5rem;
-        padding: 2rem;
-    }
-
-    .close .bar{
-        background-color: #502274;
-    }
-
-
-    .center-me{
-        /* background-color: red; */
-        /* justify-content: center; */
-        padding-left: 2rem;
-    }
     
-    main{
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .main-container{
-        padding-bottom: 20px;
-    }
-
-    .open{
-        display: block;
-    }
-
-    .visible{
-        visibility: visible;
-    }
-
-    .close{
-        display: block;
-        position: absolute;
-        top: 1rem;
-        right: 0rem;
-        padding: 2rem;
-    }
-
-    .close .bar{
-        background-color: #502274;
-    }
-
 }
-
-@media (max-width: 620px){
-    .center-me{
-        padding-left: 0.7rem;
-    }
-}
-
-
 
 @media (max-width: 575px){
-    .withdraw-sidebar{
-        width: 70%;
+    .header__bar{
+        flex-direction: column-reverse;
     }
-
-    .center-me{
+    .header__bar__name{
         width: 100%;
-        padding-left: 2.5rem;
+        /*margin-bottom: 1rem;*/
     }
-    
-    .main-body{
-        padding: 8rem 3rem 0;
+    .searchbar{
+        width: 100%;
+        margin-bottom: 2rem;
     }
-
-    .stocks{
-        display: none;
-    }
-
-    .personalize{
-        flex-basis: 20%;
-    }
-
-    .withdrawal-confirmation{
-        width: 95%;
-    }
-
-    .notify-img{
+    .Add-Card-box{
         width: 90%;
-    }
-
-    .footer{
-        display: block;
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-
-    h2.footer-heading{
-        position: absolute;
-        top: 2.5rem;
-        /* left: 4.5rem; */
-    }
-
-    .footer .stocks{
-        margin-top: 3rem;
-    }
-
-    /* half inputs */
-
-    .units-of{
-        width: 100%;
-    }
-
-    .half-groups{
-        width: 49%;
-        margin-left: 1%;
-    }
-
-    .half-input{
-        width: 100%;
     }
     
 }
@@ -605,19 +398,7 @@ h2.footer-heading{
 
 
 @media (max-width: 425px){
-    .withdraw-sidebar{
-        width: 80%;
-    }
-    .center-me{
-        width: 100%;
-    }
-
-    .main-body{
-        padding: 8rem 2rem;
-    }
-    .personalize{
-        flex-basis: 23%;
-    }
+    
 }
 
 

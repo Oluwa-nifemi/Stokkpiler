@@ -215,6 +215,14 @@ a.hoverme:hover{
     display: block !important;
     animation: displayImage 1s ease 1s 1 forwards;
 }
+@keyframes displayImage{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 @keyframes fadeIn{
     from {
@@ -239,24 +247,7 @@ a.hoverme:hover{
     }
 }
 
-<<<<<<< HEAD
-@media(min-height: 700px) and (min-width: 800px) {
-    main{
-        padding-top: 8rem
-    }
-}
-=======
-@keyframes displayImage{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
 
-
->>>>>>> 63459d1f4ff419991ed60b9d8484e9f66a91250b
 
 @media(max-width: 1300px){
 
@@ -332,7 +323,13 @@ a.hoverme:hover{
 
     .form-heading{
         font-size: 2.1rem;
+        margin: 0 auto;
         margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+    .form-body{
+         margin: 0 auto;
+         width: 100%;
     }
 
     .Lead-text{
@@ -353,13 +350,12 @@ a.hoverme:hover{
     main{
         margin-top: 5rem;
         justify-content: center;
-        padding: 0 1rem;
+        padding: 0 3rem;
         width: 100%;
     }
 
     .Verification-form{
-        margin-top: -3rem;
-        margin-left: 0;
+        margin: 0 auto;
         flex-basis: 100%;
     }
 
@@ -418,6 +414,9 @@ a.hoverme:hover{
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
+     main{
+        padding: 0 1rem;
+    }
 }
 
 
@@ -425,5 +424,8 @@ a.hoverme:hover{
     .container{
         overflow: auto;
     }
+
 }
+
+
 
