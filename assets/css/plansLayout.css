@@ -345,7 +345,7 @@ main{
 
 
 
-
+    
 
 
 @keyframes showForm{
@@ -525,14 +525,24 @@ main{
 
 @media (max-width:  575px){
     .sidebar.sidenav.active{
+        width: 100%;
+    }
+    .sidenav__container{
+        z-index: 2001;
         width: 70%;
+
     }
 
 }
 
 @media (max-width:  450px){
     .sidebar.sidenav.active{
+        width: 100%;
+    }
+    .sidenav__container{
+        z-index: 2001;
         width: 80%;
+
     }
 
     .main-body{

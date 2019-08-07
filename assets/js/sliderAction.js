@@ -23,5 +23,5 @@ const closeSlider = () => {
 
 
 hamburger.addEventListener("click", openSlider)
-sliderClose.addEventListener("click", closeSlider)
+// sliderClose.addEventListener("click", closeSlider)
 overlayNew.addEventListener("click", closeSlider)
