@@ -19,7 +19,6 @@ const closeSlider = () => {
         menuContainer.classList.remove("active")
         overlayNew.style.display = "none"
     }, 400)
-
 }
 
 

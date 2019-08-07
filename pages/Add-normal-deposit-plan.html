@@ -15,9 +15,9 @@
         <div class="sidenav__container">
             <div class="sidebar sidenav">
                 <a class="logo" href="../index.html">Stokkpile.com</a>
-                <button class="sidenav-close">
+                <!-- <button class="sidenav-close">
                     <img src="../assets/images/close.svg">
-                </button>
+                </button> -->
                 <div class="links">
                     <div class="link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11.667" height="15" viewBox="0 0 11.667 15">
@@ -193,58 +193,7 @@
                     </button>
                 </div>
             </div>
-           <!--  <div class="main-header">
-                            <div class="open">
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                                <div class="bar"></div>
-                            </div>
-                    <a href="http://" class="backlink">
-                        <div class="back">
-                                <img src="../assets/images/Path 3 Copy.svg" alt="">
-                                <h2>Back</h2>
-                            </div>
-                    </a>
-                    <table class="stocks">
-                        <tr>
-                            <td>Rates</td>
-                            <td>Blocks</td>
-                            <td>Cement</td>
-                        </tr>
-                        <tr>
-                            <td>Local</td>
-                            <td>
-                                <img src="../assets/images/Group 44.svg" alt="">
-                                <h3>&#8358 200</h3>
-                            </td>
-                            <td>
-                                <img src="../assets/images/Group 38.svg" alt="">
-                                <h3>&#8358 200</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>International</td>
-                            <td>
-                                <img class="down-arrow" src="../assets/images/Group 44.svg" alt="">
-                                <h3>$2</h3>
-                            </td>
-                            <td>
-                                <img class="up-arrow" src="../assets/images/Group 38.svg" alt="">
-                                <h3>$2</h3>
-                            </td> 
-                        </tr>
-
-                    </table>
-                    <div class="personalize">
-                        <img class="notification-bell" src="../assets/images/Group 3.svg" alt="">
-                        <div class="avatar">
-                            <img src="../assets/images/Oval.svg" alt="">
-                        </div>
-                        <a href="./logout" class="logoutNav">
-                            Logout
-                        </a>
-                    </div>
-                </div> -->
+          
     
                 <div class="main-body">
                     <div class="overlay">
@@ -306,10 +255,7 @@
                                 <img class="question-mark" src="" alt=""> 
                             </div>
                             <input type="text" class="form-input-full">
-                            <div class="check-box">
-                                <input type="checkbox" name="ckeck2" id="check"> 
-                                <label for="check">Click here for one time deposits</label>
-                            </div>
+                           <p class="input-detail">kindly give your plan a name</p>
                         </div>
 
                         <div class="form-group-full">
@@ -330,7 +276,7 @@
                                 </div>
                                 <input type="text" class="hidden-input" name="Card">
                             </div>
-                            <!-- add special type of drop down -->
+                           <p class="input-detail">kindly select a building plan</p>
                         </div>
 
 
@@ -361,6 +307,7 @@
                                 </div>
                                 <input type="text" class="hidden-input" name="Deposit frequency">
                             </div>
+                           <p class="input-detail">select how often you want to make a deposit</p>
                             <!-- add special type of drop down -->
                         </div>
 
@@ -454,6 +401,7 @@
                                     </ul>
                                 </div>
                                 <input type="text" class="hidden-input" name="stockpile-Country">
+                               <p class="input-detail">kindly choose a stokkpile country</p>
                             </div>
                             <!-- add special type of drop down -->
                         </div>
@@ -475,6 +423,7 @@
                                     </ul>
                                 </div>
                                 <input type="text" class="hidden-input" name="Card">
+                               <p class="input-detail">kindly choose a pre-registered Debit Card</p>
                             </div>
                             <!-- add special type of drop down -->
                         </div>
@@ -483,12 +432,14 @@
                                 <div class="form-group-header">
                                      <h2>Auto Deposit  <span class="Important"><img src="../assets/images/Reason for saving.svg" alt=""></span> </h2> 
                                 </div>
-                                <input type="text" class="form-input-full paddingLeft">
-                                <div class="currencySymbol">
-                                    $
-                                </div>
-                            </div>
-
+                                <div class="wierdDiv">
+                                        <div class="currencySymbol">
+                                                $
+                                            </div>
+                                    <input type="text" class="form-input-full wierdInput">
+                                </div> 
+                               <p class="input-detail">The amount you want to deposit according to your deposit frequency</p>
+                            </div> 
                         <button class="btn plans-submit">Save</button>
                     </form>
                  
