@@ -6,13 +6,6 @@ document.querySelector('.sidenav-btn').addEventListener('click',() => {
     },50)
 })
 
-document.querySelector('.sidenav-close').addEventListener('click',() => {
-    toggleClass(document.querySelector('.sidenav'),'active')
-    setTimeout(() => {
-        toggleClass(sidenavContainer,'active')
-    },400)
-})
-
 const toggleClass = (elem,className) => {
     if(elem.classList.contains(className)){
         elem.classList.remove(className)

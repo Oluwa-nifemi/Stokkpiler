@@ -74,6 +74,7 @@ input{
     z-index: 1000;
     top: 0;
     display: none;
+    cursor: pointer;
 }
 
 .sidebar.sidenav{
@@ -130,7 +131,8 @@ input{
 
 .links .link a{
     color: #502274;
-    text-decoration: none
+    text-decoration: none;
+    width: 100%;
 }
 
 .links .link.active{
@@ -210,6 +212,7 @@ main{
     display: none;
     border-radius: 3px;
     padding: 0 4px;
+    cursor: pointer;
 }
 
 .bar{
@@ -448,6 +451,7 @@ main{
         top: 0;
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 2000;
+         cursor: pointer;
     }
 
     .sidenav{
@@ -457,6 +461,7 @@ main{
     .sidebar.sidenav.active{
         width: 100%;
         box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        cursor: auto;
     }
 
     .sidenav__container{
