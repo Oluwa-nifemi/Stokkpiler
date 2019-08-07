@@ -137,12 +137,18 @@
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    position: relative;
     height: 70px;
     background-color: #DDDBF1;
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.main{
+    /*padding-top: 70px;*/
 }
 
 .sidenav-btn{

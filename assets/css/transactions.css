@@ -236,7 +236,9 @@ button{
 
 .transaction p,.transactions__header p{
     padding-left: 20px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .transaction p span.label{

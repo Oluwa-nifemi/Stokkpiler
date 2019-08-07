@@ -41,9 +41,10 @@ button{
 
 .content{
     grid-template-columns: 1fr 2.5fr;
-    height: calc(100% - 70px);
+    /*height: calc(100% - 70px);*/
+    height: 100%;
     box-sizing: border-box;
-    overflow: auto;
+    /*overflow: auto;*/
     display: grid;
 }
 
