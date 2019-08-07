@@ -269,6 +269,7 @@ main{
     margin-bottom: 5px;
     min-width: 100px;
     font-size: 10px;
+    color: #000;
 }
 
 .rates td img{
@@ -290,6 +291,7 @@ main{
 
 .user{
     margin: 0 30px;
+    height: 31px;
 }
 
 .logout{
@@ -385,7 +387,12 @@ main{
 
 
 
-
+@media(min-height: 700px){
+    .sidebar{
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+}
 
 
 @media (max-width: 1300px){
@@ -425,7 +432,7 @@ main{
     .logout{
         display: none; 
     }
-    .user-controls{
+    .user-controls,.user{
         margin: 0;
     }
 }
