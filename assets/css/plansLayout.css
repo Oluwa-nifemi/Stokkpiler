@@ -311,6 +311,8 @@ main{
     width: 85px;
     justify-content: center;
     background-color: transparent;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .main-body{
