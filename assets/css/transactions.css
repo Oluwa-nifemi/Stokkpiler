@@ -338,6 +338,7 @@ button{
     }
     .transaction{
         display: block;
+        padding: 5px 0;
     }
     .transaction p:not(:nth-of-type(1)){
         text-align: left
@@ -349,9 +350,11 @@ button{
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-right: 5px;
-    }   
+        margin: 5px 0;
+    }
     .transactions__header__small{
         display: block;
+        margin: 10px 0;
     }
 }
 
