@@ -43,6 +43,7 @@ button{
     background-color: #F0F0F0;
     min-height: 100vh;
 }
+
 .main{
     width: 83%;
     margin-left: 17%;
@@ -271,6 +272,33 @@ button{
     background-color: rgba(216, 216, 216, 0.29)
 }
 
+@media(max-width: 1300px){
+    .main{
+        width: 76%;
+        margin-left: 24%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+    .total-amount,.materials-withdrawn,.materials-left,.add-plan{
+        margin: 0 auto;
+        width: 248px;
+    }
+    .content{
+        padding: 30px 20px;
+        padding-bottom: 0;
+    }
+    .transactions{
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    .transaction, .transactions__header{
+        height: unset;
+    }
+}
+
 @media(max-width: 1050px){
     .cards{
         height: unset
@@ -297,33 +325,6 @@ button{
     }
     .user-controls{
         margin-right: 0px;
-    }
-}
-
-@media(max-width: 1300px){
-    .main{
-        width: 76%;
-        margin-left: 24%;
-    }
-    .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 10px;
-    }
-    .total-amount,.materials-withdrawn,.materials-left,.add-plan{
-        margin: 0 auto;
-        width: 248px;
-    }
-    .content{
-        padding: 30px 20px;
-        padding-bottom: 0;
-    }
-    .transactions{
-        display: grid;
-        grid-template-rows: 1fr;
-    }
-    .transaction, .transactions__header{
-        height: unset;
     }
 }
 
@@ -381,9 +382,6 @@ button{
 }
 
 @media(max-width: 575px){
-    .sidebar.sidenav.active{
-        width: 70%;
-    }
     .content{
         padding: 30px 0 0;
     }
