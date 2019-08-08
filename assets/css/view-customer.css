@@ -59,7 +59,12 @@ button{
 
 .top-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.top-cards > div{
+    min-width: 300px;
 }
 
 .user-card{
@@ -71,6 +76,7 @@ button{
     align-items: center;
     padding: 0 30px 0 20px;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .user-name{
@@ -92,6 +98,7 @@ button{
     background-color: #008000;
     border-radius: 5px;
     height: 144px;
+    margin: 0 auto 20px;
 }
 
 .deposited__header,.withdrawn__header{
@@ -174,9 +181,10 @@ button{
     align-items: flex-start;
     justify-content: center;
     border-bottom: 2px solid transparent;
+    outline: none;
 }
 
-.toggle-button--active{
+.is-active{
     font-family: Montserrat-SemiBold,sans-serif;
     color: #000;
     border-bottom-color: #502274;
@@ -184,8 +192,56 @@ button{
 }
 
 .toggle-button span{
-    margin: 0 0 10px;
+    margin: 0 0 14px;
     /*TODO Fix this patchy code plix*/
+}
+
+.table{
+    padding: 1px 15px 20px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 13px;
+    min-height: calc(100vh - 400px);
+    border: 1px solid #EAEAEA;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    display: none;
+}
+
+.table.show{
+    display: block;
+}
+
+.table__row{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 0.5fr;
+    font-family: Montserrat-Regular,sans-serif;
+    font-size: 12px;
+    height: 44px;
+    border-radius: 3px;
+    padding-left: 20px;
+    color: #9B9B9B;
+}
+
+.table__row--header{
+    font-family: Montserrat-Medium,sans-serif;
+    color: #000;
+}
+
+.table__row:nth-of-type(2n){
+    background-color: rgba(216, 216, 216, 0.29);
+}
+
+.table__row > span{
+    display: flex;
+    align-items: center;
+}
+
+.table__row .label{
+    display: none;
+}
+
+.table__serial-number{
+    color: #4A4A4A;
 }
 
 @media(max-width: 1300px){
@@ -209,6 +265,43 @@ button{
     .main{
         width: 100%;
         margin-left: 0;
+    }
+    .table{
+        padding: 0;
+    }
+    .table__row{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-between;
+        padding: 10px 20px;
+        color: #444a43;
+    }
+    .table__row--header{
+        display: none;
+    }
+    .table__link{
+        height: unset;
+        width: fit-content;
+    }
+    .table__row > span{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .table__row .label{
+        display: inline-flex;
+        color: #000;
+        width: 100px;
+    }
+    span.table__serial-number{
+        display: none;
+    }
+    .customer-table__link img{
+        display: none;
+    }
+    .customer-table__link span{
+        display: inline-flex;
+        color: #888888;
     }
 }
 

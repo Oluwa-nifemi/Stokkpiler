@@ -219,20 +219,336 @@
                 </div>
             </div>
             <div class="toggle-bar">
-                <button class="toggle-button toggle-button--active">
+                <button class="toggle-button is-active" data-target="deposited">
                     <span>
                         Deposited
                     </span>
                 </button>
-                <button class="toggle-button">
+                <button class="toggle-button" data-target="withdrawn">
                     <span>
                         Withdrawn
                     </span>
                 </button>
             </div>
+            <!--TODO Correct this show class using modular CSS-->
+            <div id="deposited" class="table show">
+                <div class="table__row table__row--header">
+                        <span>
+                            S/N
+                        </span>
+                    <span>
+                            Transaction ID
+                        </span>
+                    <span>
+                            Billing Date
+                        </span>
+                    <span>
+                            Amount (&#8358;)
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            1.
+                        </span>
+                        <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                        <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                        <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                    </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            2.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            3.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            4.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            5.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            6.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            7.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            8.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Billing Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                    <span>
+                            <span class="label">Amount (&#8358;):</span>
+                            3,000.00
+                        </span>
+                </div>
+            </div>
+            <div id="withdrawn" class="table">
+                <div class="table__row table__row--header">
+                    <span>
+                        S/N
+                    </span>
+                    <span>
+                        Transaction ID
+                    </span>
+                    <span>
+                        Withdrawal Materials
+                    </span>
+                    <span>
+                        Withdrawal Date
+                    </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            1.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            2.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            3.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            4.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            5.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            6.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            7.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+                <div class="table__row">
+                        <span class="table__serial-number">
+                            8.
+                        </span>
+                    <span>
+                            <span class="label">Transaction ID:</span>
+                            345648097657IF
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Materials:</span>
+                            100 Blocks, 12 Cements
+                        </span>
+                    <span>
+                            <span class="label">Withdrawal Date:</span>
+                            14.09.2019   00:00
+                        </span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<script>
+    [...document.querySelectorAll('.toggle-button')].forEach(button => {
+        const target = button.dataset.target;
+        button.addEventListener('click', () => {
+            document.querySelector('.table.show').classList.remove('show');
+            document.querySelector(`#${target}`).classList.add('show');
+            document.querySelector('.toggle-button.is-active').classList.remove('is-active');
+            button.classList.add('is-active')
+        })
+    })
+</script>
 <script src="../../assets/js/sidenav.js"></script>
 </body>
 </html>
