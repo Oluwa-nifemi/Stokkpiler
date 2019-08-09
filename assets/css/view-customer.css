@@ -249,6 +249,9 @@ button{
         width: 76%;
         margin-left: 24%;
     }
+    .user-card,.withdrawn{
+        margin: 0 auto 20px;
+    }
 }
 
 @media(max-width: 800px){
