@@ -81,7 +81,65 @@ input{
     color: #4a4a4a;
     font-family: "Montserrat-SemiBold"
 }
+.header__bar--optionHolder{
+    flex-basis: 30%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px #00000010;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    margin-right: 2rem;
+}
+.header--option{
+    color: #4A4A4A;
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.listHidden{
+    display: none;
+}
 
+.showList{
+    display: block;
+    -webkit-animation: show 0.5s ease 1 forwards;
+    -o-animation: show 0.5s ease 1 forwards;
+    animation: show 0.5s ease 1 forwards;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.header--option h2{
+    font-size: 1.3rem;
+    font-family: "Montserrat-Regular";
+}
+.bottom--bar{
+    height: 2px;
+    width: 100%;
+    transform: scale(0);
+    background-color: #502274;
+    opacity: 0;
+    transform-origin: center;
+    transition:  all 0.5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.header--option:hover .bottom--bar, .header--option-active .bottom--bar{
+    opacity: 1;
+    transform: scale(1);
+}
+.header--option:hover > h2, .header--option-active > h2 {
+    color: #000;
+}
 .border__bottom{
     border-bottom: 2px solid #502274;
     padding-bottom: 3px;
@@ -369,6 +427,21 @@ span.Important{
     .Add-Card-box{
         width: 70%;
     }
+     .header__bar{
+        flex-direction: column-reverse;
+    }
+    .header__bar__name{
+        width: 100%;
+        /*margin-bottom: 1rem;*/
+    }
+    .header__bar--optionHolder{
+        width: 100%;
+        margin-right: 0;
+    }
+    .searchbar{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -377,17 +450,7 @@ span.Important{
 }
 
 @media (max-width: 575px){
-    .header__bar{
-        flex-direction: column-reverse;
-    }
-    .header__bar__name{
-        width: 100%;
-        /*margin-bottom: 1rem;*/
-    }
-    .searchbar{
-        width: 100%;
-        margin-bottom: 2rem;
-    }
+    
     .Add-Card-box{
         width: 90%;
     }
