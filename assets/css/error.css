@@ -123,7 +123,7 @@ a.btn{
 @media (max-width: 769px){
     .text-content{
         width: 100%;
-        margin-top: -9rem;
+        /* margin-top: -9rem; */
     }
     .error-img{
         display: none;
@@ -132,10 +132,10 @@ a.btn{
 
 @media(max-width: 575px){
     main{
-        padding: 4rem 3rem; 
+        padding: 70px 3rem 4rem;
     }
     .text-content{
-        margin-top: -8rem;
+        /* margin-top: -8rem; */
     }
     .btn{
         display: block;
