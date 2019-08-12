@@ -242,7 +242,11 @@ button{
 }
 
 @media (max-width: 520px) {
-    .top-bar__search{
+    .top-bar__heading{
+        padding-left: 20px;
+    }
+    .top-bar__heading,.top-bar__search{
         flex-basis: 100%;
+        margin-right: 0;
     }
 }
