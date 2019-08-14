@@ -1,30 +1,43 @@
 const hamburger = document.querySelector(".hamburger");
-const overlay = document.querySelector(".outside-overlay");
-const sidebar = document.querySelector(".sidebar");
-const close = document.querySelector(".sidebar-close");
-const clickable = document.querySelector(".clickable");
+const bars = document.querySelectorAll(".hamburger-child")
+const menu = document.querySelector(".mobile-nav");
+hamburger.addEventListener("click", function(e){
+})
+let showing = false
+hamburger.addEventListener("click", (e) => {
+    if(!showing){
+        open()
+    }else{
+        close()
+    }
+    showing = !showing
+})
 
-
-hamburger.addEventListener('click', open)
-
-
-close.addEventListener("click", closeSideBar)
-
-clickable.addEventListener("click", closeSideBar) 
-
-
-function open() {
-    overlay.style.display = "flex";
-    clickable.style.display = "block"
-    sidebar.classList.add("sidebarAnim");
+menu.addEventListener("click", () => {
+    close()
+    showing = false
+})
+const open = (e) => {
+         bars[0].classList.add("rotateRight")
+         bars[1].classList.add("fadeAway")
+         bars[2].classList.add("rotateLeft")
+         menu.classList.add("show-mobile-nav")  
 }
+const close = (e) => {
+    bars[0].classList.remove("rotateRight")
+    bars[1].classList.remove("fadeAway")
+    bars[2].classList.remove("rotateLeft")
+    menu.classList.remove("show-mobile-nav")
+    bars[0].classList.add("notrotateRight")
+    bars[1].classList.add("notfadeAway")
+    bars[2].classList.add("notrotateLeft")
+    menu.classList.add("hide-mobile-nav")
 
-function closeSideBar() {
-    sidebar.classList.add("slideOutAnim");
     setTimeout(() => {
-    sidebar.classList.remove("sidebarAnim");
-    sidebar.classList.remove("slideOutAnim");    
-    overlay.style.display = "none";
-    clickable.style.display = "none"
-    },700)
+        bars[0].classList.remove("notrotateRight")
+        bars[1].classList.remove("notfadeAway")
+        bars[2].classList.remove("notrotateLeft")
+        menu.classList.remove("hide-mobile-nav")
+    }, 300)    
 }
+
