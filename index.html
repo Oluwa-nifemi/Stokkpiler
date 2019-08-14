@@ -8,47 +8,13 @@
     <link rel="stylesheet" href="assets/css/homepage.css">
 </head>
 <body>
-    <div class="outside-overlay">
-        <div class="clickable">
-        </div>
-        <div class="sidebar">
-            <div class="sidebar-header">
-                    <div class="sidebar-logo">
-                            Stokkpile.com
-                    </div>
-                    <div class="sidebar-close">
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-            </div>
-            <div class="sidebar-content">
-                <ul class="sidebar-options">
-                    <a class="sidebar-link" href="#">
-                        <li class="sidebar-option">
-                                Coperate       
-                        </li>
-                    </a>
-                    <a class="sidebar-link" href="#">
-                        <li class="sidebar-option">
-                                About       
-                        </li>
-                    </a>
-                    <a class="sidebar-link" href="#">
-                        <li class="sidebar-option">
-                                How it works      
-                        </li>
-                    </a>
-                    <a class="sidebar-link" href="#">
-                        <li class="sidebar-option">
-                                Blog    
-                        </li>
-                    </a>
-                </ul>
-                <div class="sidebar-buttons">
-                        <a class="sidebar-btn" href="./pages/login.html">Login</a>
-                        <a class="sidebar-btn" href="./pages/signup.html">Sign Up</a>
-                </div>
-            </div>
-        </div>
+        <div class="mobile-nav">
+          <ul class="mobile-nav-list">
+              <li class="mobile-nav-item"><a href="./index.html#whysection" class="mobile-nav-link">Why Stokkpiler</a></li>
+              <li class="mobile-nav-item"><a href="./index.html#howitworks" class="mobile-nav-link">How it works</a></li>
+              <li class="mobile-nav-item"><a href="./index.html#contactus" class="mobile-nav-link">Contact us</a></li>
+              <li class="mobile-nav-item"><a href="./pages/login.html" class="mobile-nav-link">Login</a></li>
+          </ul>
         </div>
     <div class="container">
         <header>
@@ -69,7 +35,7 @@
                                     <ul class="nav-options">
                                         <li class="nav-item">
                                             <a href="" class="navlink">
-                                                Coperate
+                                                Cooperate
                                             </a>
                                         </li>
                                         <li class="nav-item">
@@ -120,7 +86,7 @@
             <!-- <img src="assets/images//Path 6.svg" alt=""> -->
 
         </header>
-        <section class="why-stockpiler">
+        <section id="whysection" class="why-stockpiler">
             <div class="why-stockpiler-heading">
                 <h1 class="why-stockpiler-heading-lead">Why Stokkpiler?</h1>
                 <p class="why-stockpiler-heading-sub">
@@ -226,7 +192,7 @@
                     We will tell you how our process works.
                 </p>
             </div>
-            <div class="How-it-works-body">
+            <div class="How-it-works-body" id="howitworks">
                     <div class="method-group">
                         <div class="method">
                             <p class="method-heading">Sign Up</p>
@@ -328,7 +294,7 @@
                     </div>
             </div>
         </section>       
-        <footer>
+        <footer id="contactus">
             <div class="footer-body">
                 <div class="talk">
                         <div class="talk-heading">

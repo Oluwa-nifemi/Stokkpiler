@@ -38,7 +38,8 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    scroll-behavior: smooth;    
 }
 
 *,
@@ -111,12 +112,15 @@ header{
     display: none;
     flex-direction: column;
     width: 3.4rem;
+    cursor: pointer;
 }
 
 .hamburger-child{
+    transform-origin: center;
     height: 0.3rem;
     width: 100%;
-    background-color: #112C3D;
+    /*background-color: #112C3D;*/
+    background-color:  #502274;
 }
 
 .hamburger-child:not(:last-child){
@@ -155,7 +159,7 @@ nav.navbar{
 
 
 .btn{
-    padding: 0.7rem 4rem;
+    padding: 1rem 4rem;
     border-radius: 3px;
 }
 
@@ -682,160 +686,9 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-
-
-.outside-overlay{
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    background-color: #000000c0;
-    display: none;
-
-}
-
-.sidebar{
-    flex-basis: 85%;
-    background-color: #112C3D;
-}
-
-.clickable{
-    flex-basis: 15%;
-    background-color: #00000004;
+.mobile-nav{
     display: none;
 }
-
-/* sidebar design */
-
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transform: translateX(100%);
-}
-
-.sidebarAnim{
-    animation-name: slideIn;
-    animation-duration: 0.7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-}
-
-@keyframes slideIn{
-    from{
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-
-.slideOutAnim{
-    animation-name: slideOut;
-    animation-duration: 0.7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-}
-
-@keyframes slideOut{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(100%);
-    }
-}
-
-
-.sidebar-header{
-    flex-basis: 10%;
-    /* background-color: orangered; */
-    text-align: center;
-    padding: 1.5rem;
-    position: relative;
-    display: flex;
-    /* flex-direction: row-reverse; */
-    align-items: center;
-    justify-content: center;
-}
-
-.sidebar-logo{
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-family: 'Montserrat-SemiBold';
-    /* flex-basis: 80%; */
-}
-
-.sidebar-close{
-    /* display: none; */
-    /* flex-basis: 20%; */
-    position: absolute;
-    left: 2rem;
-    padding: 1rem;
-
-}
-
-.sidebar-close i {
-    color: #FFFFFF;
-    font-size: 1.7rem;
-}
-
-
-.sidebar-content{
-    margin-top: 9rem;
-    width: 100%;
-}
-
-.sidebar-options{
-    list-style: none;
-}
-
-.sidebar-option{
-    /* margin-bottom:rem; */
-    padding: 2rem 4rem;
-    background-color: #00000028;
-    transition: all 0.4s ease;
-}
-
-.sidebar-option:hover{
-    color: #FFFFFF; 
-    background-color: #0000006b;
-}
-
-a.sidebar-link{
-    color: #f0f0f0;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-family: "Montserrat-Regular";
-}
-
-.sidebar-buttons{
-    margin-top: 10rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.sidebar-btn{
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 1rem 3rem;
-    background-color: #502274c7;
-    font-size: 1.3rem;
-    font-family: 'Montserrat-Regular';
-    border-radius: 5px;
-}
-
-.sidebar-btn:hover{
-    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.178);
-}
-
 
 @media (max-width: 1500px){
     .container{
@@ -938,21 +791,243 @@ a.sidebar-link{
 
 
 @media(max-width: 900px){
+    .Header-content{
+        background-color: red;
+    }
+    .mobile-nav{
+    position: absolute;
+    top: 7.3rem;
+    background-color: #502274;
+    z-index: 200;
+    padding: 3rem;
+    width: 100%;
+    display: none; 
+    transition: all 0.3s ease;
+}
+.mobile-nav-list{
+    list-style: none;
+    width: 100%;
+}
+
+a.mobile-nav-link{
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: center;
+}
+li.mobile-nav-item{
+    width: 100%;
+    display: block;
+    text-align:  center; 
+}
+
+
+.show-mobile-nav{
+    display: flex;
+    -webkit-animation: showNav 0.3s ease-out  1 forwards;
+    -o-animation: showNav 0.3s ease-out  1 forwards;
+    animation: showNav 0.3s ease-out  1 forwards;
+}
+
+@keyframes showNav{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.hide-mobile-nav{
+    display: flex;
+    -webkit-animation: hideNav 0.3s ease-out  1 forwards;
+    -o-animation: hideNav 0.3s ease-out  1 forwards;
+    animation: hideNav 0.3s ease-out  1 forwards;
+}
+
+@keyframes hideNav{
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+    .rotateLeft{
+        -webkit-animation: rotateleft 0.3s ease-out 1 forwards;
+        -o-animation: rotateleft 0.3s ease-out 1 forwards;
+        animation: rotateleft 0.3s ease-out 1 forwards;
+    }
+
+    @keyframes rotateleft{
+        from {
+            transform: translate(0);
+        }
+        to{
+            transform: rotate(45deg) translateY(-1rem);
+        }
+    }
+
+    .notrotateLeft{
+        -webkit-animation: notrotateleft 0.3s ease-out 1 forwards;
+        -o-animation: notrotateleft 0.3s ease-out 1 forwards;
+        animation: notrotateleft 0.3s ease-out 1 forwards;
+    }
+
+    @keyframes notrotateleft{
+        from {
+            transform: rotate(45deg) translateY(-1rem);
+        }
+        to{
+            transform: translate(0);
+        }
+    }
+
+    .rotateRight{
+        -webkit-animation: rotateright 0.3s ease-out 1 forwards;
+        -o-animation: rotateright 0.3s ease-out 1 forwards;
+        animation: rotateright 0.3s ease-out 1 forwards;   
+    }
+    @keyframes rotateright{
+        from {
+            transform:  translate(0);
+        }
+        to {
+            transform:  rotate(-45deg) translate(-0.1rem, 1.1rem);
+        }
+    }
+    .notrotateRight{
+        -webkit-animation: notrotateright 0.3s ease-out 1 forwards;
+        -o-animation: notrotateright 0.3s ease-out 1 forwards;
+        animation: notrotateright 0.3s ease-out 1 forwards;   
+    }
+    @keyframes notrotateright{
+        from {
+            transform:  rotate(-45deg) translate(-0.1rem, 1.1rem);
+        }
+        to {
+            transform:  translate(0);
+        }
+    }
+    .fadeAway{
+            -webkit-animation: fadeaway 0.3s ease-out 1 forwards;
+        -o-animation: fadeaway 0.3s ease-out 1 forwards;
+        animation: fadeaway 0.3s ease-out 1 forwards;      
+    }
+
+    @keyframes fadeaway{
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+.notfadeAway{
+            -webkit-animation: notfadeaway 0.3s ease-out 1 forwards;
+        -o-animation: notfadeaway 0.3s ease-out 1 forwards;
+        animation: notfadeaway 0.3s ease-out 1 forwards;      
+    }
+
+    @keyframes notfadeaway{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+
+
+    .Header-background{
+        display: none;
+    }
+
+    nav.navbar{
+        display: none;
+    }
+
+    .hamburger  {
+        display: flex;
+    }
+
+    .header-background-3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -20;
+        height: 60vh;
+        width: 100%;
+        background-color: red;
+    }
+    .Header-background{
+        display: none;
+    }
+    .Header-content{
+        text-align:  center;  
+    }
+    .logo a {
+        /*color: #23616D;*/
+        color:  #502274;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo{
+        text-align: center;
+        /* flex-basis: 100%; */
+    }
+    .text-section{
+        flex-basis: 100%;
+    }
+    p.Header-lead-text{
+        text-align: center; 
+        color: #fff;
+    }
+    h1.Header-Large-Heading{
+        color:  #fff;
+        margin-top: 7rem;
+    }
+    .heading-top{
+        position: fixed;
+        background-color:  #f0f0f0;
+        padding: 2.5rem 2rem;
+        top: 0;
+        left: 0;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    }
+
     section.why-stockpiler{
         padding: 8rem 6rem;
+        padding-bottom: 0;
+        margin-bottom: 5rem;
         text-align: center;
     }
     .How-it-works{
         padding: 8rem 6rem;
+        padding-bottom: 0;
+        margin-bottom: 5rem;
     }
     .How-it-works-body{
         width: 90%;
     }
     .Features{
         padding: 8rem 6rem;
+        padding-bottom: 0;
+        margin-bottom: 5rem;
     }
     .FAQs{
         padding: 8rem 6rem;
+        padding-bottom: 0;
+        margin-bottom: 5rem;
     }
 
     .Header-content{
@@ -971,9 +1046,9 @@ a.sidebar-link{
         flex-basis: 75%;
     }
 
-    .logo{
+    /*.logo{
         margin-right: 2rem;
-    }
+    }*/
     .method{
         flex-basis: 40%;
     }
@@ -981,9 +1056,7 @@ a.sidebar-link{
         padding: 10rem 5rem;
         padding-bottom: 0;
     }
-    .text-section{
-        flex-basis: 77%;
-    }
+    
     .Header-lead-text{
         margin-bottom: 5rem;
         color: #7AA1B9;
@@ -1170,7 +1243,7 @@ a.sidebar-link{
 
     
     section.why-stockpiler{
-        padding: 4rem 2rem;
+        padding: 7rem 2rem;
         text-align: center;
     }
     .How-it-works{
@@ -1183,33 +1256,10 @@ a.sidebar-link{
         padding: 4rem 2rem;
     }
 
-    .Header-background{
-        display: none;
-    }
-
-    nav.navbar{
-        display: none;
-    }
-
-    .hamburger	{
-        display: flex;
-    }
-
     .text-section{
         flex-basis: 100%;
     }
 
-    .logo a {
-        color: #23616D;
-        text-decoration: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    .logo{
-        text-align: center;
-        /* flex-basis: 100%; */
-    }
 
     .Header-Large-Heading {
         font-size: 2.7rem;
@@ -1258,6 +1308,15 @@ a.sidebar-link{
 
 
 @media(max-width: 500px){
+    .header-background-3{
+        height: 60vh;
+    }
+    .Header-Large-Heading{
+        font-size:  2.5rem;
+    }
+    .Header-lead-text{
+        font-size: 1.5rem;  
+    }
     .feature-text{
         width: 90%;
     }
